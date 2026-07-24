@@ -4,6 +4,14 @@
 后续阶段将在此之下添加 core / adapters / stages / ai 等子模块。
 """
 
+from .adapters.base import run_sources
+from .adapters.registry import build_adapter, build_registry
+from .core.config import (
+    default_config_path,
+    load_categories,
+    load_sources_config,
+    project_root,
+)
 from .models import (
     CategoryBlock,
     DateIndex,
@@ -29,6 +37,8 @@ from .models import (
     Trend,
     TrendStatus,
 )
+from .pipeline import run_pipeline
+from .publish import publish_all, validate_published_data_schema
 from .validation import (
     validate_event,
     validate_production_trend,
@@ -39,6 +49,16 @@ __version__ = "0.2.0"
 
 __all__ = [
     "__version__",
+    "default_config_path",
+    "load_categories",
+    "load_sources_config",
+    "project_root",
+    "run_sources",
+    "build_adapter",
+    "build_registry",
+    "run_pipeline",
+    "publish_all",
+    "validate_published_data_schema",
     "Trend",
     "Event",
     "EventSourceRef",

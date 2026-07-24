@@ -273,9 +273,10 @@ def test_fetch_paginates_until_max_items():
     items = adapter.fetch()
     assert len(items) == 4
     # Two HTTP requests (two non-empty pages) before hitting the cap.
+    # (calls now hold urllib Request objects after the User-Agent change.)
     assert len(stub.calls) == 2
-    assert "start=0" in stub.calls[0]
-    assert "start=2" in stub.calls[1]
+    assert "start=0" in stub.calls[0].full_url
+    assert "start=2" in stub.calls[1].full_url
 
 
 def test_fetch_retries_then_succeeds():

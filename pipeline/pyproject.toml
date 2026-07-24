@@ -11,6 +11,8 @@ requires-python = ">=3.12"
 dependencies = [
     "pydantic>=2.7",
     "jsonschema>=4.21",
+    "referencing>=0.35",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]

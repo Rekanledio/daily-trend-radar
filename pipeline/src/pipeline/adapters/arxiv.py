@@ -29,6 +29,7 @@ Design notes:
 from __future__ import annotations
 
 import time
+import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Callable, Optional
@@ -44,6 +45,14 @@ from .base import AdapterError
 # ArXiv Atom namespace (the feed root carries xmlns=".../2005/Atom").
 _ATOM_NS = "http://www.w3.org/2005/Atom"
 _ARXIV_HOST = "arxiv.org"
+
+# ArXiv's API etiquette REQUIRES a descriptive User-Agent (it throttles the
+# generic ``Python-urllib`` default with HTTP 429). Identifies the client
+# per https://info.arxiv.org/help/api/tou.html -- a real, traceable UA.
+_USER_AGENT = (
+    "daily-trend-radar-pipeline/0.2.0 "
+    "(arxiv stage1-4A; +https://github.com/)"
+)
 
 
 # ---------------------------------------------------------------------------
@@ -305,7 +314,10 @@ class ArxivAdapter:
         for attempt in range(attempts):
             try:
                 self._rate_limit_wait()
-                with self._urlopen(url, self.config.timeout) as resp:
+                req = urllib.request.Request(
+                    url, headers={"User-Agent": _USER_AGENT}
+                )
+                with self._urlopen(req, self.config.timeout) as resp:
                     body = resp.read()
                     if isinstance(body, str):
                         return body.encode("utf-8")
@@ -314,9 +326,16 @@ class ArxivAdapter:
                 last_exc = exc
                 if attempt < attempts - 1:
                     if exc.code == 429:
+                        # Honor BOTH the server's Retry-After AND the source's
+                        # own rate-limit interval (ArXiv requires >=3s between
+                        # requests). Re-hitting faster only sustains the 429.
                         hdrs = getattr(exc, "headers", None)
                         retry_after = hdrs.get("Retry-After") if hdrs is not None else None
-                        self._sleep(self._parse_retry_after(retry_after))
+                        wait = max(
+                            self._parse_retry_after(retry_after),
+                            parse_rate_limit(self.config.rate_limit),
+                        )
+                        self._sleep(min(wait, 60.0))
                     else:
                         self._sleep(self._backoff(attempt))
                     continue
