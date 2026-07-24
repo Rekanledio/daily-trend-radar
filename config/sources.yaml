@@ -1,0 +1,40 @@
+# =============================================================================
+# Daily Trend Radar — 统一数据源配置（静态配置）
+# -----------------------------------------------------------------------------
+# 权威说明：PROJECT_RULES.md 第五部分 / ARCHITECTURE_REVIEW_v2.md 第 5 节
+#
+# 设计原则（两分离）：
+#   - 本文件为「静态配置」：人写、进仓库、版本化。描述“这个源是什么、怎么采、合不合规”。
+#   - 运行态（data/sources_state.json）由机器每次运行写入：描述“这个源最近跑得怎么样”。
+#   两者必须分离；新增/关闭源只改本文件，不动核心业务逻辑。
+#
+# 当前状态：仅定义统一配置结构，尚未配置任何真实数据源。
+#   —— 不配置未经确认的真实 URL，待数据源评估通过后再填入。
+# =============================================================================
+
+version: 1
+
+# 全局默认值（可被单个源覆盖）
+defaults:
+  timeout: 15        # 请求超时（秒）
+  retry_count: 2     # 失败重试次数
+  rate_limit: "1/5s" # 访问频率（每 5 秒 1 次）
+  max_items: 20      # 单源最大条目数（上限 20，与每板块 ≤20 红线一致）
+
+# 数据源列表（当前为空；结构示例如注释所示，未启用任何真实源）
+sources: []
+#
+# 单个数据源字段说明（示例，非真实配置，仅用于说明结构）：
+#   - id: example-source            # 唯一标识（字母/数字/下划线）
+#     name: "示例源"                # 展示名
+#     category: ai_research         # 分类：ai_research | opensource | ai_official | tech_news | social | game
+#     type: api                     # 类型：api | rss | page
+#     enabled: false                # 是否启用
+#     priority: 1                   # 优先级（数字越小越权威）
+#     max_items: 20                 # 覆盖 defaults.max_items
+#     timeout: 20                   # 覆盖 defaults.timeout
+#     retry_count: 2
+#     rate_limit: "1/3s"
+#     legal_status: official_api    # official_api | official_rss | public_page | third_party_legal | manual
+#     terms_url: "https://example.com/terms"        # 服务条款/使用条款链接
+#     endpoint: "https://example.com/feed.xml"      # 采集端点（仅示例占位，非真实源）

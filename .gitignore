@@ -1,0 +1,53 @@
+# ============================================================================
+# Daily Trend Radar — .gitignore
+# ============================================================================
+
+# ---- Node.js / Next.js ----
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+pip-wheel-metadata/
+
+# ---- Environment / Secrets ----
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ---- IDE / Editor ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs / Temp ----
+*.log
+logs/
+.tmp/
+.cache/
+
+# ---- Agent internal state (not project source, do not publish) ----
+.workbuddy/

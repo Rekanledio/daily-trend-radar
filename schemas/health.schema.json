@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daily-trend-radar.dev/schemas/health.schema.json",
+  "title": "HealthSnapshot",
+  "description": "data/health.json 健康快照。单源失败不影响总体；未运行过 Pipeline 时 overall 为 null。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "overall", "sources"],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "generated_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "快照生成时间，ISO 8601 UTC；未运行则为 null"
+    },
+    "overall": {
+      "type": ["string", "null"],
+      "enum": ["healthy", "degraded", "failed", null],
+      "description": "全局健康：全部正常=healthy，有降级=degraded，全失败=failed；从未运行=null"
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/SourceHealth" }
+    }
+  },
+  "$defs": {
+    "SourceHealth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "name", "category", "status"],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["healthy", "degraded", "failed", "disabled"]
+        },
+        "last_success": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "last_attempt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "last_error": { "type": ["string", "null"] },
+        "item_count": { "type": "integer", "minimum": 0 },
+        "response_time_ms": { "type": ["integer", "null"], "minimum": 0 },
+        "success_rate_7d": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "consecutive_failures": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

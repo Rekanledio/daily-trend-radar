@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daily-trend-radar.dev/schemas/trend.schema.json",
+  "title": "Trend",
+  "description": "一个真实、可追溯的热点/资讯条目。生产数据必须 original_url 非空且 is_mock=false。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "event_id", "source_id", "source_name", "category", "title",
+    "summary", "summary_origin", "original_url", "canonical_url", "tags",
+    "tags_origin", "published_at", "collected_at", "updated_at",
+    "heat_raw", "hot_score", "score_breakdown", "status", "lang", "is_mock"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "稳定哈希 = hash(source_id + canonical_url)"
+    },
+    "event_id": {
+      "type": ["string", "null"],
+      "description": "所属聚合事件 id；未聚合时为 null"
+    },
+    "source_id": { "type": "string", "minLength": 1 },
+    "source_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "采集时点的来源名快照（去规范化，便于前端展示且不受配置变更影响）"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "分类 id（可配置，非固定枚举；当前已知集见 DATA_CONTRACT.md）"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": {
+      "type": ["string", "null"],
+      "description": "原摘要或 AI 摘要；无则为 null"
+    },
+    "summary_origin": {
+      "type": "string",
+      "enum": ["original", "ai", "none"],
+      "description": "摘要来源：original=来自源/规则，ai=模型生成，none=无摘要"
+    },
+    "original_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "原始来源链接，生产必填且域名须与 source_id 声明一致"
+    },
+    "canonical_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "归一化 URL（去追踪参数/统一大小写），用于去重与 id 稳定；由 Normalize 阶段派生"
+    },
+    "author": { "type": ["string", "null"] },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "标签数组，原生或 AI 生成"
+    },
+    "tags_origin": {
+      "type": "string",
+      "enum": ["rule", "ai", "none"]
+    },
+    "published_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "原始发布时间，ISO 8601 UTC；源未提供则为 null"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "采集时间，ISO 8601 UTC"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "最近更新时间，ISO 8601 UTC"
+    },
+    "heat_raw": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "平台原始热度快照（播放/点赞/排名等），仅存不改"
+    },
+    "hot_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "HotScore 归一分（0-100）"
+    },
+    "score_breakdown": { "$ref": "#/$defs/ScoreBreakdown" },
+    "rank_in_source": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "在该源榜单中的排名；无则为 null"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "verified", "published", "rejected"]
+    },
+    "lang": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 10,
+      "default": "en",
+      "description": "内容语言代码，如 en/zh"
+    },
+    "is_mock": {
+      "type": "boolean",
+      "default": false,
+      "description": "是否为测试 Mock 数据；生产必须为 false"
+    }
+  },
+  "$defs": {
+    "ScoreBreakdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority", "heat", "freshness", "multi_source", "platform"],
+      "properties": {
+        "authority": { "type": "number", "minimum": 0, "maximum": 100 },
+        "heat": { "type": "number", "minimum": 0, "maximum": 100 },
+        "freshness": { "type": "number", "minimum": 0, "maximum": 100 },
+        "multi_source": { "type": "number", "minimum": 0, "maximum": 100 },
+        "platform": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  }
+}

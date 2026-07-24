@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daily-trend-radar.dev/schemas/event.schema.json",
+  "title": "Event",
+  "description": "一个真实事件的聚合层。多个 Trend 关联同一 Event，原始 Trend 不删除。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id", "title", "summary", "category", "sources",
+    "source_count", "trend_ids", "hot_score", "score_breakdown",
+    "published_at", "updated_at"
+  ],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": {
+      "type": ["string", "null"],
+      "description": "事件摘要，可基于成员真实内容；无则为 null"
+    },
+    "category": { "type": "string", "minLength": 1 },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/EventSourceRef" }
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "跨源命中数，必须等于 len(sources)"
+    },
+    "trend_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "关联 Trend id 集合，必须与 sources[].trend_id 一致"
+    },
+    "hot_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "事件热度 = 成员聚合（见 HotScore 设计）"
+    },
+    "score_breakdown": { "$ref": "#/$defs/ScoreBreakdown" },
+    "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "最早成员发布时间，ISO 8601 UTC"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "最新成员更新时间，ISO 8601 UTC"
+    }
+  },
+  "$defs": {
+    "EventSourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_name", "trend_id", "original_url", "title", "hot_score"],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "source_name": { "type": "string", "minLength": 1 },
+        "trend_id": { "type": "string", "minLength": 1 },
+        "original_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "该来源条目的原始链接，保留以便逐一追溯"
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "hot_score": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "ScoreBreakdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority", "heat", "freshness", "multi_source", "platform"],
+      "properties": {
+        "authority": { "type": "number", "minimum": 0, "maximum": 100 },
+        "heat": { "type": "number", "minimum": 0, "maximum": 100 },
+        "freshness": { "type": "number", "minimum": 0, "maximum": 100 },
+        "multi_source": { "type": "number", "minimum": 0, "maximum": 100 },
+        "platform": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  }
+}

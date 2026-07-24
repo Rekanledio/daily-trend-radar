@@ -1,0 +1,95 @@
+# Daily Trend Radar — CI
+#
+# 阶段 0 第四轮交付：第一版 GitHub Actions CI（空跑 + 契约测试自动化）。
+# 目标：每次 push / pull_request 自动执行
+#   Python：契约测试 + JSON Schema 验证 + 语法检查 + ruff
+#   Frontend：npm ci + TypeScript 类型检查 + 生产构建
+#
+# 设计原则（依据 PROJECT_RULES.md 与本轮要求）：
+#   1. 不依赖任何外部服务：无真实 API Key、无数据库、无 RSS、无 AI、无生产数据、无 Secret。
+#   2. 可在干净 GitHub Runner 中直接运行。
+#   3. 不执行 `npm audit fix --force`，漏洞仅记录不强行清零（避免破坏依赖树）。
+#   4. 禁止项：不接真实 API/RSS/AI、不建部署 workflow、不建定时任务、不改契约文件。
+#
+# 触发：push / pull_request（默认分支通配，便于 fork/PR 预检）。
+
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+# 最小权限：只读仓库内容即可完成构建与测试
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Python：契约测试 + JSON Schema 验证 + 语法检查 + ruff
+  # ---------------------------------------------------------------------------
+  python:
+    name: Python — contract tests & lint
+    runs-on: ubuntu-latest
+    # 项目要求 Python >= 3.12；当前锁定 3.12 单版本，避免过度复杂化（matrix 非必需）
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        working-directory: pipeline
+        run: |
+          python -m pip install --upgrade pip
+          pip install "pydantic>=2" jsonschema pytest ruff
+
+      - name: Compile check (syntax)
+        working-directory: pipeline
+        run: python -m compileall -q src tests
+
+      - name: Ruff lint
+        working-directory: pipeline
+        run: ruff check src tests
+
+      - name: Pytest (contract + JSON Schema validation)
+        working-directory: pipeline
+        run: pytest -q
+
+  # ---------------------------------------------------------------------------
+  # Frontend：npm ci + TypeScript 类型检查 + 生产构建
+  # ---------------------------------------------------------------------------
+  frontend:
+    name: Frontend — typecheck & build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      # 使用 npm ci（基于 package-lock.json，保证可复现），不改用 npm install
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: TypeScript typecheck
+        working-directory: frontend
+        run: npm run typecheck
+
+      - name: Build
+        working-directory: frontend
+        run: npm run build

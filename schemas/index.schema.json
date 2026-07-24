@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daily-trend-radar.dev/schemas/index.schema.json",
+  "title": "DateIndex",
+  "description": "data/index.json 历史日期索引。前端据此查询有哪些历史日期，不以单一 latest 为唯一数据源。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "latest_date", "available_dates", "categories", "date_index"],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "latest_date": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "最新数据日期指针（非唯一数据源）"
+    },
+    "available_dates": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+      "description": "所有可用数据日期列表（升序）"
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "出现过的全部分类 id 并集"
+    },
+    "date_index": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "total_items"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^\\d{4}/\\d{2}/\\d{4}-\\d{2}-\\d{2}\\.json$"
+          },
+          "total_items": { "type": "integer", "minimum": 0 },
+          "categories": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        }
+      },
+      "description": "日期 -> 文件路径与统计的映射"
+    }
+  }
+}

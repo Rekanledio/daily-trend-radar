@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daily-trend-radar.dev/schemas/source.schema.json",
+  "title": "SourcesConfig",
+  "description": "config/sources.yaml 解析后的结构。单一数据源为 Source，整文件为 SourcesConfig。配置与运行态严格分离（运行态见 sources-state.schema.json）。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "sources"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "timeout": { "type": "integer", "minimum": 1 },
+        "retry_count": { "type": "integer", "minimum": 0 },
+        "rate_limit": { "type": "string", "description": "频率限制，如 '1/3s'" },
+        "max_items": { "type": "integer", "minimum": 1, "maximum": 20 }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Source" }
+    }
+  },
+  "$defs": {
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "category", "type", "enabled", "priority",
+        "max_items", "timeout", "retry_count", "rate_limit", "legal_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9_]+$",
+          "description": "数据源唯一 id，注册表据此加载 Adapter"
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "type": "string", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": ["api", "rss", "page"],
+          "description": "api=官方接口, rss=官方订阅源, page=公开无鉴权页面"
+        },
+        "enabled": { "type": "boolean", "description": "是否参与采集" },
+        "priority": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "数字越小越优先/权威，用于 AuthorityScore"
+        },
+        "max_items": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20,
+          "description": "该源单次最多采集条数（同时是板块上限）"
+        },
+        "timeout": { "type": "integer", "minimum": 1, "description": "请求超时秒数" },
+        "retry_count": { "type": "integer", "minimum": 0, "description": "失败重试次数" },
+        "rate_limit": {
+          "type": "string",
+          "description": "访问频率限制，如 '1/3s'（每 3 秒 1 次）"
+        },
+        "legal_status": {
+          "type": "string",
+          "enum": ["official_api", "official_rss", "public_page", "third_party_legal", "manual"],
+          "description": "合规等级；仅这些状态可启用"
+        },
+        "terms_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "服务条款/使用条款链接"
+        },
+        "endpoint": { "type": ["string", "null"], "format": "uri" },
+        "query": { "type": ["string", "null"], "description": "查询参数/关键词" },
+        "fallback": {
+          "type": ["string", "null"],
+          "description": "降级方案标识（如 official_api 近似）"
+        },
+        "notes": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daily-trend-radar.dev/schemas/sources-state.schema.json",
+  "title": "SourcesState",
+  "description": "data/sources_state.json 运行时数据源状态。与 config/sources.yaml（静态配置）严格分离。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "sources"],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/SourceRuntimeState" }
+    }
+  },
+  "$defs": {
+    "SourceRuntimeState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "name", "category", "enabled", "status"],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1, "description": "来自配置" },
+        "name": { "type": "string", "minLength": 1, "description": "来自配置" },
+        "category": { "type": "string", "minLength": 1, "description": "来自配置" },
+        "enabled": { "type": "boolean", "description": "来自配置" },
+        "status": {
+          "type": "string",
+          "enum": ["healthy", "degraded", "failed", "disabled"],
+          "description": "运行态：由 Pipeline 写入"
+        },
+        "last_success": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "运行态"
+        },
+        "last_attempt": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "运行态"
+        },
+        "last_error": { "type": ["string", "null"], "description": "运行态" },
+        "item_count": { "type": "integer", "minimum": 0, "description": "运行态" },
+        "response_time_ms": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "运行态"
+        },
+        "consecutive_failures": { "type": "integer", "minimum": 0, "description": "运行态" },
+        "success_rate_7d": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "运行态"
+        }
+      }
+    }
+  }
+}
