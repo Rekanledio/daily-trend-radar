@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "updated_at": null,
+  "latest_date": "2026-07-24",
+  "available_dates": ["2026-07-24"],
+  "categories": ["ai_research"],
+  "date_index": {
+    "2026-07-24": {
+      "path": "2026/07/2026-07-24.json",
+      "total_items": 2,
+      "categories": { "ai_research": 2 }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-07-24",
+  "schema_version": "1.0",
+  "generated_at": "2026-07-24T09:00:00Z",
+  "pipeline_version": "0.2.0",
+  "ai_enabled": false,
+  "categories": {
+    "ai_research": {
+      "count": 2,
+      "items": [
+        {
+          "id": "t1",
+          "event_id": "ev1",
+          "source_id": "arxiv",
+          "source_name": "arXiv",
+          "category": "ai_research",
+          "title": "Test paper A",
+          "summary": null,
+          "summary_origin": "original",
+          "original_url": "https://arxiv.org/abs/0001",
+          "canonical_url": "https://arxiv.org/abs/0001",
+          "author": null,
+          "tags": [],
+          "tags_origin": "rule",
+          "published_at": null,
+          "collected_at": "2026-07-24T09:00:00Z",
+          "updated_at": "2026-07-24T09:00:00Z",
+          "heat_raw": null,
+          "hot_score": 80,
+          "score_breakdown": { "authority": 80, "heat": 80, "freshness": 80, "multi_source": 80, "platform": 80 },
+          "rank_in_source": 1,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false
+        },
+        {
+          "id": "t2",
+          "event_id": "ev1",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "ai_research",
+          "title": "Test repo B",
+          "summary": null,
+          "summary_origin": "original",
+          "original_url": "https://github.com/owner/repo",
+          "canonical_url": "https://github.com/owner/repo",
+          "author": null,
+          "tags": [],
+          "tags_origin": "rule",
+          "published_at": null,
+          "collected_at": "2026-07-24T09:00:00Z",
+          "updated_at": "2026-07-24T09:00:00Z",
+          "heat_raw": null,
+          "hot_score": 75,
+          "score_breakdown": { "authority": 75, "heat": 75, "freshness": 75, "multi_source": 75, "platform": 75 },
+          "rank_in_source": 1,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false
+        }
+      ]
+    }
+  },
+  "trends": [
+    {
+      "id": "t1",
+      "event_id": "ev1",
+      "source_id": "arxiv",
+      "source_name": "arXiv",
+      "category": "ai_research",
+      "title": "Test paper A",
+      "summary": null,
+      "summary_origin": "original",
+      "original_url": "https://arxiv.org/abs/0001",
+      "canonical_url": "https://arxiv.org/abs/0001",
+      "author": null,
+      "tags": [],
+      "tags_origin": "rule",
+      "published_at": null,
+      "collected_at": "2026-07-24T09:00:00Z",
+      "updated_at": "2026-07-24T09:00:00Z",
+      "heat_raw": null,
+      "hot_score": 80,
+      "score_breakdown": { "authority": 80, "heat": 80, "freshness": 80, "multi_source": 80, "platform": 80 },
+      "rank_in_source": 1,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false
+    },
+    {
+      "id": "t2",
+      "event_id": "ev1",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "ai_research",
+      "title": "Test repo B",
+      "summary": null,
+      "summary_origin": "original",
+      "original_url": "https://github.com/owner/repo",
+      "canonical_url": "https://github.com/owner/repo",
+      "author": null,
+      "tags": [],
+      "tags_origin": "rule",
+      "published_at": null,
+      "collected_at": "2026-07-24T09:00:00Z",
+      "updated_at": "2026-07-24T09:00:00Z",
+      "heat_raw": null,
+      "hot_score": 75,
+      "score_breakdown": { "authority": 75, "heat": 75, "freshness": 75, "multi_source": 75, "platform": 75 },
+      "rank_in_source": 1,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false
+    }
+  ],
+  "events": [
+    {
+      "event_id": "ev1",
+      "title": "Test event",
+      "summary": null,
+      "category": "ai_research",
+      "sources": [
+        { "source_id": "arxiv", "source_name": "arXiv", "trend_id": "t1", "original_url": "https://arxiv.org/abs/0001", "title": "Test paper A", "hot_score": 80 },
+        { "source_id": "github", "source_name": "GitHub", "trend_id": "t2", "original_url": "https://github.com/owner/repo", "title": "Test repo B", "hot_score": 75 }
+      ],
+      "source_count": 2,
+      "trend_ids": ["t1", "t2"],
+      "hot_score": 80,
+      "score_breakdown": { "authority": 80, "heat": 80, "freshness": 80, "multi_source": 80, "platform": 80 },
+      "published_at": "2026-07-24T09:00:00Z",
+      "updated_at": "2026-07-24T09:00:00Z"
+    }
+  ],
+  "metadata": {
+    "run_summary": { "sources_ok": 2, "sources_failed": 0, "total_dropped": 0 }
+  }
+}

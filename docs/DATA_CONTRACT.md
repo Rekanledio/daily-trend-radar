@@ -267,6 +267,7 @@ class DataRepository(Protocol):
 
 ## 12. 当前状态与下一步
 
-- 本轮交付：7 个 JSON Schema + Pydantic 模型 + 纯函数校验 + 双语言 Repository 接口 + TS 类型 + 契约测试（26 项全绿）。
-- 未做（按 PROJECT_RULES 限制）：`JsonFileRepository` 实现、Adapter、真实采集、AI、GitHub Actions、UI 页面、Mock 生产数据。
-- 下一步（待指令）：阶段 0 收尾 / 阶段 1 数据闭环（实现 `JsonFileRepository` + 各 Adapter + 完整 Pipeline）。
+- 阶段 0 与 阶段 1 第一轮已完成：7 个 JSON Schema + Pydantic 模型 + 纯函数校验 + 双语言 Repository 接口 + TS 类型 + 契约测试（Python 26 项 / 前端 11 项，全绿）+ `JsonFileRepository`（前端 `frontend/lib/repositories/`）。
+- **测试夹具隔离规则**：`frontend/lib/repositories/__fixtures__/` 仅用于单元测试；它**不会被** Python Pipeline 读取、**不会**发布到 `data/`、**不会**被 GitHub Actions 当作生产数据。即使其中存在 `is_mock=false` 的「合法样本」，它也只是测试夹具，不代表任何真实热点数据。
+- 未做（按 PROJECT_RULES 限制）：数据源 Adapter、真实采集、AI、GitHub Actions 定时/部署、Vercel 部署、Mock 生产数据。
+- 下一步（待指令）：实现各数据源 Adapter（ArXiv / GitHub / AI 官方 / 科技 RSS）+ 完整 Pipeline（采集→标准化→校验→去重→聚合→评分→排序→截断→发布）。

@@ -1,0 +1,44 @@
+{
+  "date": "2026-07-25",
+  "schema_version": "1.0",
+  "generated_at": "2026-07-25T09:00:00Z",
+  "pipeline_version": "0.2.0",
+  "ai_enabled": false,
+  "categories": {
+    "ai_research": {
+      "count": 1,
+      "items": [
+        {
+          "id": "x1",
+          "event_id": null,
+          "source_id": "arxiv",
+          "source_name": "arXiv",
+          "category": "ai_research",
+          "title": "Mock entry (must be rejected)",
+          "summary": null,
+          "summary_origin": "original",
+          "original_url": "https://arxiv.org/abs/9999",
+          "canonical_url": null,
+          "author": null,
+          "tags": [],
+          "tags_origin": "rule",
+          "published_at": null,
+          "collected_at": "2026-07-25T09:00:00Z",
+          "updated_at": "2026-07-25T09:00:00Z",
+          "heat_raw": null,
+          "hot_score": 10,
+          "score_breakdown": { "authority": 10, "heat": 10, "freshness": 10, "multi_source": 10, "platform": 10 },
+          "rank_in_source": 1,
+          "status": "published",
+          "lang": "en",
+          "is_mock": true
+        }
+      ]
+    }
+  },
+  "trends": [],
+  "events": [],
+  "metadata": {
+    "run_summary": { "sources_ok": 1, "sources_failed": 0, "total_dropped": 0 }
+  }
+}

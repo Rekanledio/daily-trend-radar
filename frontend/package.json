@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test lib/repositories/__tests__/json-file-repository.test.ts"
   },
   "dependencies": {
     "next": "^15.1.6",
