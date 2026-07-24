@@ -66,7 +66,7 @@ export interface Event {
   summary: string | null;
   category: string;
   sources: EventSourceRef[];
-  source_count: number; // == sources.length
+  source_count: number; // == distinct source_id count (NOT sources.length)
   trend_ids: string[]; // == sources.map(s => s.trend_id)
   hot_score: number; // 0-100
   score_breakdown: ScoreBreakdown;

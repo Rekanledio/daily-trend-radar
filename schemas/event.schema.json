@@ -25,7 +25,7 @@
     "source_count": {
       "type": "integer",
       "minimum": 0,
-      "description": "跨源命中数，必须等于 len(sources)"
+      "description": "跨源命中数 = distinct source_id 数量；不等于 len(sources)（同一来源多条转载保留每条 original_url 证据，但只计一次）"
     },
     "trend_ids": {
       "type": "array",

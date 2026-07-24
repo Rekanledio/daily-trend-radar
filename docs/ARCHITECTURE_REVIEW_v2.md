@@ -335,7 +335,7 @@ Event {
   sources: [              // ★保留每个来源,可逐一追溯原文
     { source_id, trend_id, original_url, title, hot_score }
   ]
-  source_count: int       // 跨源命中数(= sources 长度)
+  source_count: int       // 跨源命中数 = distinct source_id 数量(≠ sources 长度；同来源多条转载保留每条 original_url,但只计一次)
   hot_score: number       // 事件热度 = 成员聚合(见第 8 节评分)
   published_at: datetime  // 最早成员时间
   updated_at: datetime    // 最新成员时间

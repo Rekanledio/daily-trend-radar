@@ -2,7 +2,8 @@
 
 These enforce PROJECT_RULES production red lines that go *beyond* schema typing:
 - production Trend must have ``is_mock=false``, ``original_url`` present, ``status=published``
-- Event.source_count must equal len(sources) and trend_ids must match
+- Event.source_count must equal the count of DISTINCT source_id in
+  sources (NOT len(sources)); trend_ids must match
 - PublishedData category counts must equal their items length (and never exceed 20)
 
 This is NOT the business pipeline; it is a thin guard used by tests and (later) the
@@ -29,9 +30,11 @@ def validate_production_trend(trend: Trend) -> list[str]:
 def validate_event(event: Event) -> list[str]:
     """Return a list of violation messages; empty list means OK."""
     errors: list[str] = []
-    if event.source_count != len(event.sources):
+    distinct_sources = {s.source_id for s in event.sources}
+    if event.source_count != len(distinct_sources):
         errors.append(
-            f"event.source_count ({event.source_count}) != len(sources) ({len(event.sources)})"
+            f"event.source_count ({event.source_count}) != distinct source_id "
+            f"count ({len(distinct_sources)})"
         )
     if set(event.trend_ids) != {s.trend_id for s in event.sources}:
         errors.append("event.trend_ids must match sources[].trend_id set")

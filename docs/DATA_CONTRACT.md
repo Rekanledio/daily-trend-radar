@@ -77,7 +77,7 @@
 | `summary` | string\|null | ✅ | ✅ | 事件摘要（基于成员真实内容；无则 null） |
 | `category` | string | ✅ | ❌ | 分类 id |
 | `sources` | EventSourceRef[] | ✅ | ❌ | 每个来源的追溯引用（见下） |
-| `source_count` | int | ✅ | ❌ | 跨源命中数，**必须等于 `len(sources)`** |
+| `source_count` | int | ✅ | ❌ | 跨源命中数 = **`distinct source_id` 数量**，**不等于 `len(sources)`**（同一来源多条转载/更新：每条 `original_url` 仍保留为来源证据，但 `source_count` 只计一次） |
 | `trend_ids` | string[] | ✅ | ❌ | 关联 Trend id，**必须等于 `sources[].trend_id` 集合** |
 | `hot_score` | number 0–100 | ✅ | ❌ | 事件热度（成员聚合） |
 | `score_breakdown` | object | ✅ | ❌ | 事件五维分量 |
@@ -97,6 +97,16 @@ Event (event_id)  ──1──┐
 每个 Trend 通过 event_id 反向指向 Event。
 ```
 UI 折叠为一个事件卡（标注"N 个来源在报道"），展开可见全部来源原文。
+
+---
+
+## 2.1 `source_count` 语义（已落地 · Stage 1-2.2）
+
+> 原 PENDING 冲突已于 Stage 1-2.2 落地：用户确认采用 **`source_count = distinct source_id 数量`**。正式契约以 §2 上表为准。
+
+- **正式契约**：`source_count == len({s.source_id for s in sources})`（去重 source_id 计数），**不等于 `len(sources)`**。
+- **`sources[]` 保留全部来源证据**：即便多个 `EventSourceRef` 的 `source_id` 相同（同一媒体发多篇转载/更新），每条 `original_url` 仍逐一保留，绝不因 `source_id` 相同而删除来源证据。
+- **已同步改动（Stage 1-2.2）**：① §2 上表定义改写；② `validation.py:validate_event` 由 `source_count != len(sources)` 改为 `source_count != len(去重 source_id)`；③ `stages.py:build_event` 的 `source_count` 改为去重计数；④ `event.schema.json` 的 `source_count` 描述同步；⑤ `types.ts` 注释同步；⑥ `ARCHITECTURE_REVIEW_v2.md` § 对应行同步。详见 `docs/PIPELINE_DESIGN.md` §8 / §17 Q4。
 
 ---
 
@@ -271,3 +281,6 @@ class DataRepository(Protocol):
 - **测试夹具隔离规则**：`frontend/lib/repositories/__fixtures__/` 仅用于单元测试；它**不会被** Python Pipeline 读取、**不会**发布到 `data/`、**不会**被 GitHub Actions 当作生产数据。即使其中存在 `is_mock=false` 的「合法样本」，它也只是测试夹具，不代表任何真实热点数据。
 - 未做（按 PROJECT_RULES 限制）：数据源 Adapter、真实采集、AI、GitHub Actions 定时/部署、Vercel 部署、Mock 生产数据。
 - 下一步（待指令）：实现各数据源 Adapter（ArXiv / GitHub / AI 官方 / 科技 RSS）+ 完整 Pipeline（采集→标准化→校验→去重→聚合→评分→排序→截断→发布）。
+- **阶段 1-2（架构与接口设计，本轮）**：新增**接口层**（未实现真实 Adapter / 未连网络 / 未采真实数据 / 未造 Mock 生产数据）。新增 `pipeline/src/pipeline/raw.py`（`RawItem`+`NormalizedItem` 内部模型）、`pipeline/src/pipeline/adapters/base.py`（`SourceAdapter` Protocol + `safe_fetch`/`run_sources` 错误隔离纯函数）、`pipeline/src/pipeline/stages.py`（各 Stage Protocol + 纯边界函数 `canonicalize_url`/`validate_pipeline_item`/`combine_hot_score`/`canonical_id`/`cap_items`/`build_trend`/`build_event`）、`pipeline/src/pipeline/ai.py`（`AIProcessor` Protocol + `NullAIProcessor` 纯透传）、`pipeline/tests/test_pipeline_design.py`（33 项契约测试，全绿）。**未改动** `schemas/*.json` / `models.py` / `repository.py` / `validation.py`（生产契约单一事实来源保持不变）；`RawItem`/`NormalizedItem` 经 `build_trend`/`build_event` 显式衔接到 `Trend`/`Event`。详细设计见 `docs/PIPELINE_DESIGN.md`。对 `PROJECT_RULES` 第 5 节 / `PROJECT_PLAN` 第 12 节中 `BaseAdapter` 职责的措辞做了**澄清**（Adapter 只负责 `fetch`+源特定 `parse`→`RawItem`，通用 `normalize`/`validate` 属共享 Pipeline Stage），与 v2 第 2.2 节步骤 [1]「各 Adapter 拉原始数据 → RawItem[]」一致，属对齐非冲突，故**不改动** v2 / PROJECT_PLAN。
+- **阶段 1-2.1（架构审查澄清，本轮）**：审查并澄清 5 个架构问题（Q1 `NormalizedItem` 中间态语义 / Q2 `allowed_domains` 集合 / Q3 `Trend`↔`Event` HotScore 时机 / Q4 `Event.source_count` 语义 / Q5 Event 聚合保守 MVP 规则）。**代码改动（纯函数、无网络/无 AI）**：`stages.py` 新增 `host_of` / `verify_original_url`（Q2，替代单一 `declared_domain` 校验）、`finalize_event`（Q3，HotScore 之后回填 `Event.hot_score`/`score_breakdown`）、`MergeContext` / `decide_event_merge`（Q5，保守合并判定）；`SourceVerifyStage.verify` 签名改为接收 `allowed_domains: list[str]`。**契约测试新增 14 项**（全仓 73 项全绿）。**未改 Schema / `models.py` / `repository.py` / `validation.py` / `build_event`**（当时 Q4 为真实冲突，按红线先报告、不悄悄改，记录于 §2.1 PENDING 与 `docs/PIPELINE_DESIGN.md` §17 Q4，待用户拍板）。
+- **阶段 1-2.2（Q4 契约冲突落地，本轮）**：用户确认采用 **`source_count = distinct source_id 数量`**（`≠ len(sources)`）。已落地：① §2 正式契约改写（`source_count` = 去重 source_id 数量，≠ `len(sources)`），§2.1 PENDING 转为「已落地」；② `validation.py:validate_event` 改断言 `source_count != len(去重 source_id)`（`trend_ids` 仍 = 全成员 trend_id 集合，保持成立）；③ `stages.py:build_event` 的 `source_count` 改为去重计数；④ `event.schema.json` 的 `source_count` 描述同步；⑤ `types.ts` 注释同步；⑥ `ARCHITECTURE_REVIEW_v2.md` 对应行同步。⑦ **新增契约测试 7 项**（单源=1 / 双异源=2 / 双同源=1 / A+A+B=2 / 错误 source_count 校验失败 / sources[] 不因同 source_id 被错误去重 / HotScore 回归：A+A+B→source_count=2，`MultiSourceScore` 按 2 计）。**未改** `models.py` / `repository.py` / `Trend`（`Event`/`EventSourceRef` 字段已够用）。
