@@ -90,6 +90,7 @@ export interface SourceConfig {
   endpoint?: string | null;
   query?: string | null;
   fallback?: string | null;
+  allowedDomains?: string[] | null; // SET of official domains this source may publish original_url on (suffix-forgery defense)
   notes?: string | null;
 }
 

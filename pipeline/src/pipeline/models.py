@@ -170,6 +170,15 @@ class SourceConfig(BaseModel):
     query: Optional[str] = None
     fallback: Optional[str] = None
     notes: Optional[str] = None
+    # Domains this source is ALLOWED to publish ``original_url`` on.
+    # Consumed by the SourceVerify stage (``verify_original_url``). A SET
+    # (not a single domain) because a real source may serve from several
+    # official hosts. ``None`` => no per-source domain check (not
+    # recommended for a real source). Added when the first real source
+    # (ArXiv, Stage 1-3A) was connected -- see PIPELINE_DESIGN.md
+    # section 17 Q2 (the schema change was deliberately deferred there
+    # until a real source needed it).
+    allowed_domains: Optional[list[str]] = None
 
 
 class SourcesConfig(BaseModel):

@@ -21,8 +21,32 @@ defaults:
   rate_limit: "1/5s" # 访问频率（每 5 秒 1 次）
   max_items: 20      # 单源最大条目数（上限 20，与每板块 ≤20 红线一致）
 
-# 数据源列表（当前为空；结构示例如注释所示，未启用任何真实源）
-sources: []
+# 数据源列表
+# -----------------------------------------------------------------------------
+# 接入规则（PROJECT_RULES 第十七部分）：只有通过合规评估、legal_status 合法的
+# 数据源才开发 Adapter。现已评估并通过：ArXiv（官方 Atom API，遵守 3s 间隔）。
+# 其余源（GitHub / AI 官方 RSS / 科技 RSS）尚未实现 Adapter，保持关闭/未配置。
+sources:
+  # —— 首个真实源（Stage 1-3A）——
+  # 评估：官方 API（Atom），legal_status=official_api；遵守 robots/ToU；
+  # 频率 1/3s（ArXiv 要求 ≥3s 间隔）；original_url 真实可追溯。
+  - id: arxiv
+    name: "arXiv"
+    category: ai_research          # 见 v2 第 5 节（PROJECT_PLAN 旧写 ai，以 v2 的 ai_research 为准）
+    type: api                     # 官方接口
+    enabled: true
+    priority: 1                   # 数字越小越权威
+    max_items: 20                 # ≤20，与每板块红线一致
+    timeout: 20                   # 覆盖 defaults.timeout
+    retry_count: 2
+    rate_limit: "1/3s"           # 遵守 ArXiv 3 秒间隔
+    legal_status: official_api
+    terms_url: "https://arxiv.org/help/api/tou"
+    endpoint: "http://export.arxiv.org/api/query"
+    query: "cat:cs.AI OR cat:cs.CL OR cat:cs.LG"   # MVP 最小可维护分类集（见 v2 第 5/12 节）
+    allowed_domains:              # original_url 仅允许落在 arxiv.org（含 export.arxiv.org）
+      - "arxiv.org"
+    notes: "官方 Atom API；按 submittedDate 倒序取最新；分页 max_results=20/页。"
 #
 # 单个数据源字段说明（示例，非真实配置，仅用于说明结构）：
 #   - id: example-source            # 唯一标识（字母/数字/下划线）

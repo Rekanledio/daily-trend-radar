@@ -158,7 +158,7 @@ Pipeline 内部红线性检查（上游于 `validation.py` 的生产契约）。
 - 校验：URL 主机必须落在**该来源的「允许官方域名集合」`allowed_domains`** 之内；不在集合内 → 丢弃。
   - **为什么用「集合」而非单个 `declared_domain`（Stage 1-2.1 Q2）**：真实来源常从多个官方主机出稿（如 GitHub 同时有 `github.com` / `gist.github.com` / `api.github.com`），若强制「域名必须 == 单一声明域」会**误杀**合法条目；过严等于制造漏报。因此改为「允许域名集合」，匹配规则安全：`host == 允许域` 或 `host.endswith("." + 允许域)`（可抗 `github.com.evil.net`、`notgithub.com` 这类后缀伪造）。
   - 纯函数 `verify_original_url(url, allowed_domains, require_https=True) -> bool` 已实现并契约测试；`SourceVerifyStage.verify(item, allowed_domains)` 同步改为接收**集合**。
-  - **Schema 改动（本轮延期）**：`SourceConfig`（含 `source.schema.json` / `models.py` / `types.ts`）需新增 `allowed_domains: list[str]` 字段；按本轮红线「不悄悄改 Schema」**延期到接入真实源时再补**，并在 `pyproject`/CI 字段对拍测试中覆盖，详见 §17 Q2。
+  - **Schema 改动（已落地 · Stage 1-3A）**：首个真实源 ArXiv 接入时，已为 `SourceConfig` 新增 `allowed_domains: list[str] | null`（同步 `source.schema.json` / `models.py` / `types.ts` / `DATA_CONTRACT.md` §3.1）。`verify_original_url` 的防御逻辑（抗 `arxiv.org.evil.com` 后缀伪造）现在能被真实源配置驱动；ArXiv 配置填 `["arxiv.org"]`。详见 §17 Q2 与最终汇报。
 - 无法验证来源的条目**不得进入 published**。
 - 异常处理（属 §13 错误隔离范畴）：
   - 来源访问失败 / HTTP 状态码异常 / 超时 → 该次采集标记失败，不抛到主流程
@@ -352,7 +352,7 @@ hot_score = 100 * clamp01(
 - 旧约「URL 域名必须 == 声明 source 的单一域」**过严**：真实源（如 GitHub）会从多个官方主机出稿，强制单域会误杀合法条目。
 - 改为 **`allowed_domains: set[str]`（允许官方域名集合）**，纯函数 `verify_original_url(url, allowed_domains, require_https=True) -> bool` 已实现：匹配 `host == 域` 或 `host.endswith("." + 域)`（抗 `github.com.evil.net`、`notgithub.com` 后缀伪造）；`require_https` 默认开启。
 - `SourceVerifyStage.verify(item, allowed_domains)` 签名同步改为接收**集合**。
-- **Schema 改动延期**：`SourceConfig`（含 `source.schema.json` / `models.py` / `types.ts`）需新增 `allowed_domains: list[str]`。按本轮红线「不悄悄改 Schema」**延期到接入真实源时再补**，届时同步四处 + CI 字段对拍。本轮仅在契约层落地函数与测试。
+- **Schema 改动（已落地 · Stage 1-3A）**：首个真实源 ArXiv 接入时，已为 `SourceConfig` 新增 `allowed_domains: list[str] | null`，并同步四处（`source.schema.json` / `models.py` / `types.ts` / `DATA_CONTRACT.md` §3.1）+ 字段对拍测试。此 Schema 改动在 1-2.1 按红线「不悄悄改 Schema」**延期到接入真实源时再补**，现于 Stage 1-3A 补上。
 
 ### Q3 · `Trend.hot_score` 与 `Event.hot_score` 时机一致性（已改代码 + Doc）
 - 逻辑自洽，结论：

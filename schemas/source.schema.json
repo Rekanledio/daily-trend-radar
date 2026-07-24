@@ -79,6 +79,11 @@
           "type": ["string", "null"],
           "description": "降级方案标识（如 official_api 近似）"
         },
+        "allowed_domains": {
+          "type": ["array", "null"],
+          "items": { "type": "string", "minLength": 1 },
+          "description": "该源被允许发布 original_url 的官方域名集合（SET，非单域名）。SourceVerify 据此校验 host 是否落在其内，防御 arxiv.org.evil.com 类后缀伪造。null 表示不校验（真实源不推荐）。Stage 1-3A（接入首个真实源 ArXiv）时新增，详见 PIPELINE_DESIGN.md §17 Q2（该 Schema 改动曾在 1-2.1 延期至此）。"
+        },
         "notes": { "type": ["string", "null"] }
       }
     }

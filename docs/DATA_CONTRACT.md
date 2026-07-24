@@ -130,6 +130,7 @@ UI 折叠为一个事件卡（标注"N 个来源在报道"），展开可见全�
 | `legal_status` | enum | ✅ | `official_api`/`official_rss`/`public_page`/`third_party_legal`/`manual` |
 | `terms_url` | string\|null(uri) | ❌ | 条款链接 |
 | `endpoint`/`query`/`fallback`/`notes` | — | ❌ | 可选扩展 |
+| `allowed_domains` | `string[]`\|null | ❌ | **Stage 1-3A 新增**：该源被允许发布 `original_url` 的官方域名**集合**（SET，非单域名）；`SourceVerify` 据此校验 host 是否落在其内，防御 `arxiv.org.evil.com` 类后缀伪造。真实源应填（如 ArXiv=`["arxiv.org"]`）；`null` 表示不校验（不推荐） |
 
 整文件为 `SourcesConfig`：`{ version, defaults?, sources[] }`。
 
