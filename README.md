@@ -25,13 +25,9 @@
 
 ## Screenshot
 
-> 截图待补充。运行以下命令可在本地查看完整 UI：
->
-> ```bash
-> cd frontend && npm run dev
-> ```
->
-> 然后浏览器访问 `http://localhost:3000`。
+### Dashboard Overview
+
+![Daily Trend Radar Dashboard](docs/screenshots/home.png)
 
 ---
 
