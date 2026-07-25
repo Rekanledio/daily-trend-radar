@@ -1,198 +1,11 @@
 // Daily Trend Radar — 首页
-// 显示 AI 研究（arXiv）与开源项目（GitHub）每日热点数据
-// Server Component：直接通过 DataRepository 读取 data/ JSON，无需后端 API
+// Server Component：读取 data/ JSON 并传递给 Client Component 实现交互
+// 搜索/筛选/排序逻辑在 TrendExplorer 中处理
 
 import { createRepository } from "../lib/repositories/json-file-repository";
-import type { Trend } from "../lib/types";
+import TrendExplorer from "./components/TrendExplorer";
 
 export const revalidate = 86400; // 24h ISR
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-function formatTime(iso: string | null): string {
-  if (!iso) return "—";
-  try {
-    const d = new Date(iso);
-    if (isNaN(d.getTime())) return iso;
-    const y = d.getUTCFullYear();
-    const mo = String(d.getUTCMonth() + 1).padStart(2, "0");
-    const dd = String(d.getUTCDate()).padStart(2, "0");
-    const h = String(d.getUTCHours()).padStart(2, "0");
-    const mi = String(d.getUTCMinutes()).padStart(2, "0");
-    return `${y}-${mo}-${dd} ${h}:${mi}`;
-  } catch {
-    return iso || "—";
-  }
-}
-
-function safeStr(v: unknown): string {
-  if (v === null || v === undefined) return "—";
-  return String(v);
-}
-
-function safeArr(v: unknown): unknown[] {
-  if (Array.isArray(v)) return v;
-  return [];
-}
-
-// ---------------------------------------------------------------------------
-// TrendCard
-// ---------------------------------------------------------------------------
-
-function TrendCard({ trend }: { trend: Trend }) {
-  const { source_id, metadata } = trend;
-  const md = metadata ?? {};
-
-  // GitHub metadata helpers
-  const stars = md["stars"];
-  const forks = md["forks"];
-  const language = md["language"];
-  const hasGithubMeta = source_id === "github";
-
-  // arXiv metadata helpers
-  const authors = source_id === "arxiv" ? safeArr(md["authors"]) : [];
-  const categories = source_id === "arxiv" ? safeArr(md["categories"]) : [];
-  const displayAuthors = authors.slice(0, 3);
-  const extraAuthorCount = authors.length - 3;
-
-  // Hot score display
-  const hs = trend.hot_score;
-  const hsValid = typeof hs === "number" && !isNaN(hs);
-
-  return (
-    <div className="glass-card rounded-xl p-5 flex flex-col gap-3">
-      {/* Title + source badge row */}
-      <div className="flex items-start justify-between gap-3">
-        <a
-          href={trend.original_url || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-base font-semibold leading-snug link-hover text-gray-900 dark:text-gray-100 no-underline flex-1 min-w-0"
-        >
-          {trend.title || "—"}
-        </a>
-        <span
-          className={`source-badge shrink-0 ${
-            source_id === "arxiv"
-              ? "bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300"
-              : "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300"
-          }`}
-        >
-          {source_id === "arxiv" ? "arXiv" : "GitHub"}
-        </span>
-      </div>
-
-      {/* Summary */}
-      {trend.summary && (
-        <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 line-clamp-3">
-          {trend.summary.length > 300
-            ? trend.summary.slice(0, 300) + "…"
-            : trend.summary}
-        </p>
-      )}
-
-      {/* Metadata row */}
-      <div className="flex flex-wrap gap-2 items-center">
-        {/* GitHub metadata */}
-        {hasGithubMeta && (
-          <>
-            <span className="meta-tag">
-              ⭐ {stars !== null && stars !== undefined ? safeStr(stars) : "—"}
-            </span>
-            <span className="meta-tag">
-              🍴 {forks !== null && forks !== undefined ? safeStr(forks) : "—"}
-            </span>
-            <span className="meta-tag">
-              {language !== null && language !== undefined
-                ? safeStr(language)
-                : "—"}
-            </span>
-          </>
-        )}
-
-        {/* arXiv metadata */}
-        {source_id === "arxiv" && (
-          <>
-            {displayAuthors.length > 0 && (
-              <span className="meta-tag max-w-[200px] truncate" title={authors.join(", ")}>
-                {displayAuthors.join(", ")}
-                {extraAuthorCount > 0 ? ` +${extraAuthorCount}` : ""}
-              </span>
-            )}
-            {categories.length > 0 && (
-              <span className="meta-tag">
-                {String(categories[0])}
-                {categories.length > 1 ? ` +${categories.length - 1}` : ""}
-              </span>
-            )}
-          </>
-        )}
-
-        {/* Published time */}
-        <span className="meta-tag ml-auto">{formatTime(trend.published_at)}</span>
-      </div>
-
-      {/* Hot score bar */}
-      <div className="flex items-center gap-3">
-        <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 shrink-0">
-          {hsValid ? `热度 ${hs.toFixed(1)}` : "热度 —"}
-        </span>
-        <div className="flex-1 h-1.5 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
-          {hsValid && (
-            <div
-              className="hot-bar"
-              style={{ width: `${Math.max(1, hs)}%` }}
-            />
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Section
-// ---------------------------------------------------------------------------
-
-function TrendSection({
-  title,
-  icon,
-  trends,
-  emptyMsg,
-}: {
-  title: string;
-  icon: string;
-  trends: Trend[];
-  emptyMsg: string;
-}) {
-  return (
-    <section>
-      <div className="flex items-center gap-3 mb-5">
-        <span className="text-2xl">{icon}</span>
-        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-          {title}
-        </h2>
-        <span className="text-sm text-gray-500 dark:text-gray-400 ml-auto">
-          {trends.length > 0 ? `${trends.length} 条热点` : ""}
-        </span>
-      </div>
-
-      {trends.length === 0 ? (
-        <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-12 text-center text-gray-500 dark:text-gray-400">
-          {emptyMsg}
-        </div>
-      ) : (
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {trends.map((t) => (
-            <TrendCard key={t.id} trend={t} />
-          ))}
-        </div>
-      )}
-    </section>
-  );
-}
 
 // ---------------------------------------------------------------------------
 // Page
@@ -207,10 +20,14 @@ export default async function Home() {
 
   const dateStr = latest?.date ?? null;
 
-  // Extract trends by category
-  const aiTrends = latest?.categories?.["ai_research"]?.items ?? [];
-  const githubTrends = latest?.categories?.["opensource"]?.items ?? [];
-  const totalItems = aiTrends.length + githubTrends.length;
+  // Merge all trends into a single array for client-side exploration
+  const allTrends: import("../lib/types").Trend[] = [];
+  if (latest) {
+    for (const block of Object.values(latest.categories)) {
+      allTrends.push(...block.items);
+    }
+  }
+  const totalItems = allTrends.length;
 
   // Source health
   const arxivHealth = health.sources.find((s) => s.source_id === "arxiv");
@@ -230,14 +47,11 @@ export default async function Home() {
             </p>
           </div>
           <div className="flex items-center gap-4 text-xs sm:text-sm">
-            {/* Date */}
             {dateStr && (
               <span className="text-gray-500 dark:text-gray-400 hidden sm:inline">
                 📅 {dateStr}
               </span>
             )}
-
-            {/* Source status */}
             <div className="flex items-center gap-3">
               <span
                 className={`inline-flex items-center gap-1 ${
@@ -272,8 +86,6 @@ export default async function Home() {
                 GitHub
               </span>
             </div>
-
-            {/* Total */}
             <span className="text-gray-400 dark:text-gray-500 hidden sm:inline">
               {totalItems > 0 ? `共 ${totalItems} 条` : ""}
             </span>
@@ -293,20 +105,7 @@ export default async function Home() {
             </p>
           </div>
         ) : (
-          <>
-            <TrendSection
-              title="AI 研究热点"
-              icon="🧪"
-              trends={aiTrends}
-              emptyMsg="暂无 AI 研究热点数据"
-            />
-            <TrendSection
-              title="开源项目热点"
-              icon="💻"
-              trends={githubTrends}
-              emptyMsg="暂无开源项目热点数据"
-            />
-          </>
+          <TrendExplorer trends={allTrends} />
         )}
       </main>
 

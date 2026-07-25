@@ -22,10 +22,13 @@ const FIX = path.join(__dirname, "..", "__fixtures__");
 
 // --- Real project data/ (no production data yet) -------------------------
 
-test("getLatest returns null when index has no latest_date", async () => {
+test("getLatest returns production data when index has latest_date", async () => {
   const repo = new JsonFileRepository(); // default -> project data/
   const data = await repo.getLatest();
-  assert.equal(data, null);
+  // Now that production data exists (Phase 1), getLatest returns real data.
+  assert.ok(data !== null, "expected real production data");
+  assert.ok(typeof data!.date === "string" && data!.date.length === 10);
+  assert.ok(data!.trends.length > 0);
 });
 
 test("getByDate returns null for a valid date with no file", async () => {
@@ -38,14 +41,17 @@ test("getHistoryIndex reads the committed index.json", async () => {
   const repo = new JsonFileRepository();
   const idx = await repo.getHistoryIndex();
   assert.ok(Array.isArray(idx.available_dates));
-  assert.equal(idx.latest_date, null);
+  // Production data exists: latest_date is a YYYY-MM-DD string, not null.
+  assert.ok(typeof idx.latest_date === "string" && idx.latest_date.length === 10);
 });
 
-test("getHealth reads health.json (overall may be null)", async () => {
+test("getHealth reads health.json (overall reflects pipeline state)", async () => {
   const repo = new JsonFileRepository();
   const h = await repo.getHealth();
   assert.ok("overall" in h);
-  assert.equal(h.overall, null);
+  // Production data exists: overall is a valid health status string.
+  assert.ok(h.overall === null || ["healthy", "degraded", "failed", "disabled"].includes(h.overall));
+  assert.ok(Array.isArray(h.sources));
 });
 
 test("getSourcesState reads sources_state.json", async () => {
