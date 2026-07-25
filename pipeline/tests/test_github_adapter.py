@@ -872,3 +872,74 @@ def test_no_production_data_written(tmp_path, monkeypatch):
     # Adapter must not have created any production data under its cwd.
     assert not (tmp_path / "data" / "2026").exists()
     assert not (tmp_path / "data").exists()
+
+
+# ---------------------------------------------------------------------------
+# 24. Boundary hardening (Stage 1-17B)
+#     Lock current behavior for null numeric metrics, over-long description,
+#     and the hardcoded ``lang="en"``. These are PURE parse tests -- no
+#     network, no API, no production data. They only assert the adapter's
+#     EXISTING behavior; none of them changes production logic.
+# ---------------------------------------------------------------------------
+
+# A description deliberately far longer than any "normal" summary (10k chars).
+_LONG_DESCRIPTION = "A" * 10000
+
+
+def test_parse_stars_none_preserved():
+    """Stage 1-17B (audit gap 1): ``stargazers_count: null`` must NOT
+    raise, must NOT be skipped, and must surface as ``metadata["stars"] is None``
+    (no fabricated 0 / no coerced value)."""
+    cfg = _github_config()
+    items = parse_github_response(
+        _resp(_repo(stargazers_count=None)), cfg, _FIXED_NOW
+    )
+    assert len(items) == 1  # not skipped
+    assert items[0].metadata["stars"] is None
+
+
+def test_parse_forks_none_preserved():
+    """Stage 1-17B (audit gap 2): ``forks_count: null`` must NOT raise,
+    must NOT be skipped, and must surface as ``metadata["forks"] is None``."""
+    cfg = _github_config()
+    items = parse_github_response(
+        _resp(_repo(forks_count=None)), cfg, _FIXED_NOW
+    )
+    assert len(items) == 1  # not skipped
+    assert items[0].metadata["forks"] is None
+
+
+def test_parse_very_long_description_not_truncated():
+    """Stage 1-17B (audit gap 3): an over-long ``description`` must NOT raise,
+    must NOT be skipped, and ``summary`` must keep the FULL original content
+    (no unexpected truncation). No length cap is added here -- we only lock
+    the current pass-through behavior."""
+    cfg = _github_config()
+    items = parse_github_response(
+        _resp(_repo(description=_LONG_DESCRIPTION)), cfg, _FIXED_NOW
+    )
+    assert len(items) == 1  # not skipped
+    summary = items[0].summary
+    assert summary is not None
+    assert len(summary) == len(_LONG_DESCRIPTION)  # nothing truncated
+    assert summary == _LONG_DESCRIPTION  # full, unchanged content retained
+
+
+def test_parse_lang_hardcoded_en():
+    """Stage 1-17B (audit gap 4): lock the current ``lang="en"`` behavior.
+
+    The adapter sets ``RawItem.lang`` to the literal ``"en"`` regardless of the
+    repo's real GitHub ``language`` field. This is distinct from
+    ``metadata["language"]``, which faithfully carries the raw API value
+    (``"Python"`` in this fixture) -- it is NOT coerced to ``"en"``.
+
+    This test pins the *current* behavior only. Do NOT change production code
+    to make ``metadata["language"]`` equal ``"en"``; that is a separate
+    (deliberately deferred) design decision, not part of Stage 1-17B.
+    """
+    cfg = _github_config()
+    items = parse_github_response(_resp(_repo()), cfg, _FIXED_NOW)
+    it = items[0]
+    assert it.lang == "en"  # hardcoded, language-agnostic
+    # Raw API language is preserved separately, NOT forced to "en":
+    assert it.metadata["language"] == "Python"
