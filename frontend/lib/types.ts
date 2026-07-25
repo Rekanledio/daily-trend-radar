@@ -49,6 +49,7 @@ export interface Trend {
   status: TrendStatus;
   lang: string;
   is_mock: boolean; // production MUST be false
+  metadata?: Record<string, unknown> | null; // source-specific snapshot (stars/forks/authors etc.)
 }
 
 export interface EventSourceRef {

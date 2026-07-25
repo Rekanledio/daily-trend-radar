@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Daily Trend Radar",
+  title: "每日热点雷达 | Daily Trend Radar",
   description:
-    "每日热点雷达 — 真实、可追溯的每日互联网热点聚合平台（工程骨架搭建中）",
+    "AI 研究与开源项目每日热点 — 真实、可追溯的每日热点聚合平台",
 };
 
 export default function RootLayout({
