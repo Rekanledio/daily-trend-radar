@@ -10,31 +10,36 @@ body {
   margin: 0;
 }
 
-/* Premium glass morphism card */
+/* Premium glass morphism card — enhanced */
 .glass-card {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
 }
 
 .glass-card:hover {
   transform: translateY(-4px) scale(1.01);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.05);
+  border-color: rgba(102, 126, 234, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
   .glass-card {
     background: rgba(30, 30, 40, 0.75);
     border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   .glass-card:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: rgba(129, 140, 248, 0.15);
   }
 }
 
-/* Gradient header text */
+/* Gradient header text — hero style */
 .gradient-text {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -42,7 +47,15 @@ body {
   background-clip: text;
 }
 
-/* Hot score bar */
+/* Subtitle gradient (lighter variant) */
+.gradient-sub {
+  background: linear-gradient(135deg, #8b9cf7 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hot score bar — keeps existing gradient, enhanced visual */
 .hot-bar {
   height: 6px;
   border-radius: 3px;
@@ -62,6 +75,26 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* External link button in card */
+.ext-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(128, 128, 128, 0.08);
+  color: inherit;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+.ext-link:hover {
+  opacity: 1;
+  background: rgba(102, 126, 234, 0.15);
+  transform: scale(1.1);
+}
+
 /* Metadata tag */
 .meta-tag {
   display: inline-flex;
@@ -73,6 +106,15 @@ body {
   background: rgba(128, 128, 128, 0.1);
   color: inherit;
   opacity: 0.7;
+}
+
+/* Health status card */
+.health-card {
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.8125rem;
+  border-left: 3px solid transparent;
+  transition: background 0.2s ease;
 }
 
 /* Link hover */
