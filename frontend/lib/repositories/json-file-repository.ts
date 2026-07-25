@@ -79,7 +79,11 @@ export class JsonFileRepository implements DataRepository {
   /** Resolve the repo-root `data/` dir regardless of cwd (dev / test / Vercel). */
   private static defaultDataDir(): string {
     const cwd = process.cwd();
-    const candidates = [path.join(cwd, "data"), path.join(cwd, "..", "data")];
+    const candidates = [
+      path.join(cwd, "public", "data"), // Vercel / static deploy
+      path.join(cwd, "data"),           // frontend-local data
+      path.join(cwd, "..", "data"),     // project-root data (local dev)
+    ];
     for (const c of candidates) {
       try {
         if (existsSync(c) && statSync(c).isDirectory()) return c;
