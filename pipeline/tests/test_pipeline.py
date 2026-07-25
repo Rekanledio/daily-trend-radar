@@ -27,6 +27,7 @@ import pytest
 from pipeline import publish_all, run_pipeline, validate_published_data_schema
 from pipeline.adapters.arxiv import ArxivAdapter, _Response
 from pipeline.adapters.base import AdapterResult, run_sources
+from pipeline.adapters.github import GitHubAdapter
 from pipeline.adapters.registry import build_adapter, build_registry
 from pipeline.core.config import default_config_path, load_categories, load_sources_config
 from pipeline.models import (
@@ -125,9 +126,10 @@ def test_load_categories_includes_ai_research():
 def test_registry_only_registers_enabled_sources():
     cfg = load_sources_config(default_config_path())
     reg = build_registry(cfg.sources)
-    # Only 'arxiv' is enabled in the real config.
-    assert set(reg.keys()) == {"arxiv"}
+    # arxiv + github are enabled in the real config.
+    assert set(reg.keys()) == {"arxiv", "github"}
     assert isinstance(reg["arxiv"], ArxivAdapter)
+    assert isinstance(reg["github"], GitHubAdapter)
 
 
 def test_registry_unknown_source_raises():
