@@ -57,7 +57,7 @@ sources:
     name: "GitHub"
     category: opensource            # 见 sources.yaml 示例结构（opensource 等）
     type: api                       # 官方接口
-    enabled: false                  # 默认关闭，待人工审查后开启
+    enabled: true                   # Stage 1-20: 正式启用，GitHub 双源生产运行
     priority: 2                     # 次于 arXiv 官方研究源
     max_items: 20                   # ≤20，与每板块红线一致
     timeout: 15
