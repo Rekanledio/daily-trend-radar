@@ -1,29 +1,54 @@
 // Daily Trend Radar — 首页
 // Server Component：读取 data/ JSON 并传递给 Client Component 实现交互
+// 支持 URL 参数 ?date=YYYY-MM-DD 浏览历史日期
 // 搜索/筛选/排序逻辑在 TrendExplorer 中处理
 
 import { createRepository } from "../lib/repositories/json-file-repository";
 import TrendExplorer from "./components/TrendExplorer";
 
 export const revalidate = 86400; // 24h ISR
+export const dynamic = "force-dynamic"; // force dynamic so searchParams works
 
 // ---------------------------------------------------------------------------
 // Page
 // ---------------------------------------------------------------------------
 
-export default async function Home() {
+export default async function Home(props: {
+  searchParams: Promise<{ date?: string }>;
+}) {
+  const params = await props.searchParams;
+  const dateParam = params.date;
+
   const repo = createRepository();
-  const [latest, health] = await Promise.all([
-    repo.getLatest(),
+
+  // Read both index (for available dates) and data in parallel
+  const [index, health] = await Promise.all([
+    repo.getHistoryIndex(),
     repo.getHealth(),
   ]);
 
-  const dateStr = latest?.date ?? null;
+  const availableDates = index.available_dates ?? [];
+  const latestDate = index.latest_date ?? null;
+
+  // Determine which data to load
+  let targetDate = dateParam ?? null;
+  let publishedData = null;
+
+  if (targetDate && availableDates.includes(targetDate)) {
+    publishedData = await repo.getByDate(targetDate);
+  }
+  // Fallback: invalid / missing date → use latest
+  if (!publishedData) {
+    targetDate = null;
+    publishedData = await repo.getLatest();
+  }
+
+  const dateStr = publishedData?.date ?? latestDate ?? null;
 
   // Merge all trends into a single array for client-side exploration
   const allTrends: import("../lib/types").Trend[] = [];
-  if (latest) {
-    for (const block of Object.values(latest.categories)) {
+  if (publishedData) {
+    for (const block of Object.values(publishedData.categories)) {
       allTrends.push(...block.items);
     }
   }
@@ -105,7 +130,13 @@ export default async function Home() {
             </p>
           </div>
         ) : (
-          <TrendExplorer trends={allTrends} />
+          <TrendExplorer
+            trends={allTrends}
+            currentDate={dateStr}
+            availableDates={availableDates}
+            latestDate={latestDate}
+            health={health}
+          />
         )}
       </main>
 
