@@ -109,6 +109,11 @@
       "type": "boolean",
       "default": false,
       "description": "是否为测试 Mock 数据；生产必须为 false"
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "来源原始字段快照（如 GitHub 的 stars/forks/language/pushed_at/created_at 等，或 arXiv 的 authors/categories 等），仅存不改；无则为 null"
     }
   },
   "$defs": {

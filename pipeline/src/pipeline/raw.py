@@ -77,6 +77,7 @@ class RawItem(BaseModel):
             updated_at=self.fetched_at,
             lang=self.lang,
             summary=self.summary,
+            metadata=self.metadata,
         )
 
 
@@ -118,3 +119,6 @@ class NormalizedItem(BaseModel):
     is_mock: bool = False
     event_id: Optional[str] = None  # assigned later by Cluster stage
     status: TrendStatus = TrendStatus.DRAFT
+    # Source-specific key/values (stars, language, api_url...). Carried
+    # as-is from ``RawItem.metadata``; never reinterpreted as fact.
+    metadata: Optional[dict[str, Any]] = None

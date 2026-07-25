@@ -151,10 +151,14 @@ def _parse_repo(
         description if isinstance(description, str) and description.strip() else None
     )
 
-    # published_at: created_at (the repo's publish time). Skip if invalid.
+    # published_at: prefer pushed_at (the active/hot-signal time for a
+    # "trending" radar), fall back to created_at. Skip only when BOTH
+    # are missing/unparseable -- never fabricate a time.
+    pushed_at = _parse_iso(item.get("pushed_at"))
     created_at = _parse_iso(item.get("created_at"))
-    if created_at is None:
-        raise _SkipItem("missing/invalid created_at")
+    published_at = pushed_at or created_at
+    if published_at is None:
+        raise _SkipItem("missing/invalid pushed_at and created_at")
 
     owner = item.get("owner")
     owner_login = (
@@ -172,6 +176,7 @@ def _parse_repo(
         "open_issues": item.get("open_issues_count"),
         "language": item.get("language"),
         "pushed_at": item.get("pushed_at"),
+        "created_at": item.get("created_at"),
         "updated_at": item.get("updated_at"),
     }
 
@@ -180,12 +185,12 @@ def _parse_repo(
         source_name=config.name,
         original_url=html_url,
         title=full_name,
-        published_at=created_at,
         source_item_id=source_item_id,
         fetched_at=fetched_at,
         lang="en",
         summary=summary,
         metadata=metadata,
+        published_at=published_at,
     )
 
 

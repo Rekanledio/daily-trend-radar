@@ -32,8 +32,8 @@ from pipeline.adapters.github import (
     parse_rate_limit,
 )
 from pipeline.adapters.registry import _ADAPTER_REGISTRY, build_registry
-from pipeline.models import LegalStatus, SourceConfig, SourceType
-from pipeline.stages import verify_original_url
+from pipeline.models import LegalStatus, SourceConfig, SourceType, TrendStatus, ScoreBreakdown
+from pipeline.stages import verify_original_url, build_trend
 
 # ---------------------------------------------------------------------------
 # Helpers / fixtures
@@ -176,7 +176,8 @@ def test_parse_happy_path_fields():
     assert it.title == "octo/cat"
     assert it.summary == "A cool repo"
     assert it.original_url == "https://github.com/octo/cat"
-    assert it.published_at == datetime(2026, 1, 1, 0, 0, 0, tzinfo=timezone.utc)
+    # published_at now prefers pushed_at (2026-06-01) over created_at (2026-01-01).
+    assert it.published_at == datetime(2026, 6, 1, 0, 0, 0, tzinfo=timezone.utc)
     assert it.fetched_at == _FIXED_NOW
     assert it.lang == "en"
 
@@ -711,19 +712,55 @@ def test_source_item_id_stability():
 
 
 # ---------------------------------------------------------------------------
-# 17. published_at vs pushed_at
+# 17. published_at semantics: pushed_at preferred, created_at fallback
+#     Stage 1-19A: published_at now uses pushed_at (hot/active signal)
+#     instead of created_at (repo birth time).
 # ---------------------------------------------------------------------------
 
 
-def test_published_at_from_created_not_pushed():
+def test_published_at_prefers_pushed_at():
+    """When pushed_at is present and valid, published_at MUST equal pushed_at
+    (not created_at). The default fixture has pushed_at=2026-06-01 and
+    created_at=2026-01-01."""
+    cfg = _github_config()
+    items = parse_github_response(_resp(_repo()), cfg, _FIXED_NOW)
+    it = items[0]
+    assert it.published_at == datetime(2026, 6, 1, 0, 0, 0, tzinfo=timezone.utc)
+    assert it.published_at != datetime(2026, 1, 1, 0, 0, 0, tzinfo=timezone.utc)
+    # metadata still carries BOTH raw timestamps untouched:
+    assert it.metadata["pushed_at"] == "2026-06-01T00:00:00Z"
+    assert it.metadata["created_at"] == "2026-01-01T00:00:00Z"
+
+
+def test_published_at_falls_back_to_created_when_no_pushed_at():
+    """When pushed_at is missing (None), published_at falls back to created_at."""
     cfg = _github_config()
     items = parse_github_response(
-        _resp(_repo(created_at="2026-01-01T00:00:00Z")), cfg, _FIXED_NOW
+        _resp(_repo(pushed_at=None)), cfg, _FIXED_NOW
     )
     it = items[0]
     assert it.published_at == datetime(2026, 1, 1, 0, 0, 0, tzinfo=timezone.utc)
-    assert it.metadata["pushed_at"] == "2026-06-01T00:00:00Z"
-    assert it.published_at != it.metadata["pushed_at"]
+    assert it.metadata["pushed_at"] is None
+
+
+def test_published_at_falls_back_to_created_when_pushed_at_invalid():
+    """When pushed_at is present but unparseable, fall back to created_at."""
+    cfg = _github_config()
+    items = parse_github_response(
+        _resp(_repo(pushed_at="not-a-real-date")), cfg, _FIXED_NOW
+    )
+    it = items[0]
+    assert it.published_at == datetime(2026, 1, 1, 0, 0, 0, tzinfo=timezone.utc)
+
+
+def test_published_at_skip_when_both_invalid():
+    """When BOTH pushed_at and created_at are missing/unparseable, the item
+    is safely skipped (never fabricates a time)."""
+    cfg = _github_config()
+    items = parse_github_response(
+        _resp(_repo(pushed_at=None, created_at="garbage")), cfg, _FIXED_NOW
+    )
+    assert items == []
 
 
 # ---------------------------------------------------------------------------
@@ -943,3 +980,66 @@ def test_parse_lang_hardcoded_en():
     assert it.lang == "en"  # hardcoded, language-agnostic
     # Raw API language is preserved separately, NOT forced to "en":
     assert it.metadata["language"] == "Python"
+
+
+# ---------------------------------------------------------------------------
+# 25. Publish-layer metadata passthrough (Stage 1-19A)
+#     Verify that GitHub adapter metadata survives the full
+#     RawItem -> NormalizedItem -> Trend chain and reaches the published
+#     Trend model.  Pure offline: no API, no Pipeline, no data written.
+# ---------------------------------------------------------------------------
+
+_SB = ScoreBreakdown(
+    authority=50, heat=50, freshness=50, multi_source=50, platform=50
+)
+
+
+def _github_trend(repo=None):
+    """Parse a GitHub repo fixture -> RawItem -> NormalizedItem -> Trend.
+    Returns the Trend so tests can assert its published metadata."""
+    cfg = _github_config()
+    raw_items = parse_github_response(_resp(repo or _repo()), cfg, _FIXED_NOW)
+    assert raw_items, "fixture must produce at least one item"
+    raw = raw_items[0]
+    norm = raw.as_normalized("opensource")
+    norm.canonical_url = norm.original_url  # simulate Normalize URL canon
+    return build_trend(norm, hot_score=50.0, breakdown=_SB)
+
+
+def test_publish_metadata_reaches_trend():
+    """GitHub metadata (stars/forks/language/pushed_at/api_url/name/owner)
+    must survive RawItem -> NormalizedItem -> Trend and appear on the
+    published Trend model."""
+    t = _github_trend()
+    md = t.metadata
+    assert md is not None
+    assert md["stars"] == 100
+    assert md["forks"] == 10
+    assert md["language"] == "Python"
+    assert md["pushed_at"] == "2026-06-01T00:00:00Z"
+    assert md["created_at"] == "2026-01-01T00:00:00Z"
+    assert md["updated_at"] == "2026-06-02T00:00:00Z"
+    assert md["api_url"] == "https://api.github.com/repos/octo/cat"
+    assert md["name"] == "cat"
+    assert md["owner"] == "octo"
+
+
+def test_publish_metadata_stars_none_preserved():
+    """stars=None must survive the publish chain as None (no 0 fabrication)."""
+    t = _github_trend(_repo(stargazers_count=None))
+    assert t.metadata is not None
+    assert t.metadata["stars"] is None
+
+
+def test_publish_metadata_forks_none_preserved():
+    """forks=None must survive the publish chain as None."""
+    t = _github_trend(_repo(forks_count=None))
+    assert t.metadata is not None
+    assert t.metadata["forks"] is None
+
+
+def test_publish_metadata_language_none_preserved():
+    """language=None must survive the publish chain as None."""
+    t = _github_trend(_repo(language=None))
+    assert t.metadata is not None
+    assert t.metadata["language"] is None

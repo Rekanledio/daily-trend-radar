@@ -267,6 +267,7 @@ def build_trend(
         status=status,
         lang=item.lang,
         is_mock=False,
+        metadata=item.metadata,
     )
 
 

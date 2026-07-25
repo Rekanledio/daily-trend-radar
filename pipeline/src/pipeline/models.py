@@ -107,6 +107,10 @@ class Trend(BaseModel):
     status: TrendStatus
     lang: str = "en"
     is_mock: bool = False
+    # Source-specific key/values (stars, language, api_url...) preserved
+    # in the published JSON. Optional -> old/missing-metadata data still
+    # validates (backward compatible).
+    metadata: Optional[dict[str, Any]] = None
 
 
 # ---------------------------------------------------------------------------
