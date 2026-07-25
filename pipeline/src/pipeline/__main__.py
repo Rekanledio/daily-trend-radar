@@ -1,16 +1,20 @@
 """CLI entry point: ``python -m pipeline``.
 
-Runs the full ArXiv single-source pipeline end-to-end and writes the
-production shard + index/health/sources_state. This is a LOCAL runner
-only:
+Runs the LOCAL, config-driven multi-source pipeline end-to-end and
+writes the production shard + index/health/sources_state. This is a
+LOCAL runner only:
 
     - NO scheduler, NO GitHub Actions, NO Cron, NO deploy.
     - AI is DISABLED this round (``ai_enabled=False``); the
       ``NullAIProcessor`` passthrough is used.
+    - ONLY sources with ``enabled: true`` in ``config/sources.yaml``
+      are run. ``github`` / ``openai_blog`` stay disabled by default.
 
-Usage (from the ``pipeline/`` package root, where ``src/`` sits)::
+Usage (from the ``pipeline/`` directory, where ``src/`` sits)::
 
     PYTHONPATH=src python -m pipeline
+    PYTHONPATH=src python -m pipeline --source arxiv
+    PYTHONPATH=src python -m pipeline --source arxiv --dry-run
     PYTHONPATH=src python -m pipeline --date 2026-07-24
     PYTHONPATH=src python -m pipeline --config /path/sources.yaml --data-dir /path/data
     PYTHONPATH=src python -m pipeline --no-write     # dry-run, no files
@@ -38,7 +42,7 @@ def _project_root() -> pathlib.Path:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="pipeline",
-        description="Daily Trend Radar -- ArXiv single-source pipeline runner",
+        description="Daily Trend Radar -- local pipeline runner (config-driven, multi-source)",
     )
     parser.add_argument("--config", type=str, default=None, help="path to config/sources.yaml")
     parser.add_argument("--data-dir", type=str, default=None, help="path to the data/ directory")
@@ -48,6 +52,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--no-write", action="store_true", help="run pipeline without writing files (dry-run)"
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="alias for --no-write: run the pipeline but write no files",
+    )
+    parser.add_argument(
+        "--source",
+        type=str,
+        default=None,
+        help="run ONLY this source_id (must be enabled); e.g. --source arxiv",
+    )
     args = parser.parse_args(argv)
 
     root = _project_root()
@@ -56,6 +71,17 @@ def main(argv: list[str] | None = None) -> int:
 
     config = load_sources_config(config_path)
     registry = build_registry(config.sources)
+
+    # Optional single-source restriction (safety: scope a run to one source).
+    if args.source:
+        if args.source not in registry:
+            print(
+                f"[ERROR] source '{args.source}' is not enabled or not registered. "
+                "Check config/sources.yaml (enabled: true) and the adapter registry.",
+                file=sys.stderr,
+            )
+            return 3
+        registry = {args.source: registry[args.source]}
 
     now = datetime.now(timezone.utc)
     batch_date = args.date or now.strftime("%Y-%m-%d")
@@ -80,9 +106,11 @@ def main(argv: list[str] | None = None) -> int:
         print("Refusing to publish: local contract validation failed.", file=sys.stderr)
         return 2
 
-    if args.no_write:
+    no_write = args.no_write or args.dry_run
+    if no_write:
         print(
-            f"[dry-run] batch={batch_date} trends={len(data.trends)} "
+            f"[dry-run] batch={batch_date} sources={len(registry)} "
+            f"trends={len(data.trends)} "
             f"events={len(data.events)} ok={summary.sources_ok} "
             f"failed={summary.sources_failed} dropped={summary.total_dropped}"
         )

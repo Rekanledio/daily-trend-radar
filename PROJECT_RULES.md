@@ -13,6 +13,24 @@
 
 ---
 
+## 零、运行架构红线（Local-first / Self-hosted）
+
+> 本项目采用 **Local-first / Self-hosted（本地运行 / 自托管）** 架构。
+
+**红线（不可妥协）**：
+
+1. **不得引入中心化后端**作为项目正常运行的强制依赖；Pipeline 与前端均可在用户本机独立运行。
+2. **不得引入云数据库**（Supabase / PostgreSQL 等）作为项目正常运行的强制依赖；数据默认存于用户本机 `data/`。
+3. **不得引入用户登录、多用户账户或中心化用户系统**作为项目正常运行的强制依赖。
+4. 用户应能够在**自己的电脑上独立运行 Pipeline 和前端**：本机发起采集请求、本机处理、本机生成 `data/YYYY/...`、本机通过 `localhost` 访问前端。
+5. 公网部署（如 Vercel）**仅可作为可选的个人演示 / 高级用法**，不得作为默认运行路径，也不得成为普通用户体验项目的先决条件。
+6. 若未来确实需要数据库（如搜索 / 历史规模），只允许规划为**可选的本地 SQLite**，不得引入云数据库。
+7. 若未来实现「收藏」等个人偏好，仅考虑浏览器 `localStorage` 等**本地**方式，不落地服务端账户。
+
+> 本红线优先级等同「真实性红线」；与本文其他章节冲突时，以本节为准进行收敛。
+
+---
+
 ## 一、项目基本信息
 
 - **项目名称**：Daily Trend Radar
@@ -20,25 +38,24 @@
 - **项目定位**：真实、可追溯、合法合规的每日互联网热点与前沿资讯聚合平台。
 - **核心目标**：聚合真实互联网热点、AI 前沿资讯、科技资讯、开源动态，以及未来扩展的主流平台热点。
 
-**架构基调（确认保留，详见 v2 第 1 节）**：
+**架构基调（确认保留，详见 v2 第 1 节；运行模型以「零、Local-first 红线」为准）**：
+
+> **默认运行模型为 Local-first**：用户在本机运行 Python Pipeline（本机直接访问公开数据源）→ 本机生成 `data/YYYY/...` → 本机运行 Next.js → 浏览器 `localhost` 访问。下图中的 GitHub Actions / Vercel 仅作**可选**的公网部署形态，不是默认路径。
 
 ```
-Python 数据采集与处理
+用户电脑（本机）
+    ↓ 本地运行 Python Pipeline，直接访问公开数据源（arXiv / GitHub / 官方 RSS 等）
+生成按日期分片的 JSON 数据（+ index.json + health.json，存于本机 data/）
     ↓
-GitHub Actions（定时 cron + 手动 workflow_dispatch）
+本机运行 Next.js（npm run dev / npm run start）
     ↓
-生成按日期分片的 JSON 数据（+ index.json + health.json）
-    ↓
-GitHub Repository 保存与版本化（git 历史 = 历史热点）
-    ↓
-Next.js App Router + TypeScript + Tailwind
-    ↓
-Vercel 部署展示（ISR 增量再生成）
+浏览器通过 localhost 访问本地 Web UI
 ```
+> （可选公网演示形态：GitHub Actions 定时采集 + commit 数据 + Vercel 部署；非默认，详见 v2。）
 
 **MVP 阶段明确不引入**：独立后端服务器、PostgreSQL、Redis、Kafka、Docker、Kubernetes。
 
-**演进能力保留**：所有数据读取必须经过 `DataRepository` 抽象接口，前端/API 只依赖接口，不感知底层存储。MVP 默认 `JsonFileRepository`（读 `data/**/*.json`），未来可切换 `SupabaseRepository`（PostgreSQL / Supabase），切换仅改工厂函数一处，UI 与业务逻辑零改动。
+**演进能力保留**：所有数据读取必须经过 `DataRepository` 抽象接口，前端/API 只依赖接口，不感知底层存储。MVP 默认 `JsonFileRepository`（读本机 `data/**/*.json`）；未来若确有需要，可切换为**可选的本地 SQLite Repository**，切换仅改工厂函数一处，UI 与业务逻辑零改动。**不规划云数据库（Supabase / PostgreSQL）实现**（见「零、运行架构红线」）。
 
 ---
 

@@ -48,6 +48,51 @@ sources:
       - "arxiv.org"
     notes: "官方 Atom API；按 submittedDate 倒序取最新；分页 max_results=20/页。"
 #
+# —— 第二个真实源（Stage 1-3B，Adapter 已实现，默认关闭）——
+# 评估：GitHub 官方 Search Repositories API（official_api），遵守速率限制；
+#   未认证 10 次/分钟，带 GITHUB_TOKEN 30 次/分钟；original_url 真实可追溯。
+#   默认 enabled: false —— 本阶段只实现 Adapter，不接入生产数据。
+#   Adapter 内部追加 sort=stars&order=desc；allowed_domains 仅 github.com。
+  - id: github
+    name: "GitHub"
+    category: opensource            # 见 sources.yaml 示例结构（opensource 等）
+    type: api                       # 官方接口
+    enabled: false                  # 默认关闭，待人工审查后开启
+    priority: 2                     # 次于 arXiv 官方研究源
+    max_items: 20                   # ≤20，与每板块红线一致
+    timeout: 15
+    retry_count: 2
+    rate_limit: "1/6s"             # 未认证 10 次/分钟（60/10=6s），保守合规
+    legal_status: official_api
+    terms_url: "https://docs.github.com/en/site-policy/github-acceptable-use-policies/github-api-terms-of-service"
+    endpoint: "https://api.github.com/search/repositories"
+    query: "stars:>1000 pushed:>2026-06-24"   # 近 30 天、按 stars 降序（sort/order 由 Adapter 追加）
+    allowed_domains:
+      - "github.com"                # html_url 恒为 github.com；api.github.com 仅作 endpoint，不入 allowed
+#
+# —— 第三个真实源（Stage 1-3C，通用 RSSAdapter，默认关闭）——
+# 评估：OpenAI 官方博客 RSS（official_rss），公开、无需鉴权、零反爬风险。
+#   endpoint 引自 ARCHITECTURE_REVIEW_v2.md:232 的规划配置（项目内权威来源）。
+#   默认 enabled: false —— 本阶段只实现 Adapter，不接入生产数据；
+#   真实 RSS 冒烟与启用需待人工确认 URL 可用后再行。
+#   allowed_domains 仅 openai.com（endpoint host 即 openai.com，无需额外放宽）。
+#   科技媒体 RSS 源未添加：项目文档/配置中无其权威 Feed URL（PROJECT_RULES 红线
+#   禁止伪造/猜测 URL），待人工确认后仅需在此追加一段 SourceConfig。
+  - id: openai_blog
+    name: "OpenAI Blog"
+    category: ai_official          # 见 sources.yaml 示例结构（ai_official 等）
+    type: rss                      # 官方 RSS
+    enabled: false                 # 默认关闭，待真实冒烟与人工审查后开启
+    priority: 2                     # 次于 arXiv 官方研究源
+    max_items: 20                   # ≤20，与每板块红线一致
+    timeout: 15
+    retry_count: 2
+    rate_limit: "1/5s"            # 保守合规，单源低频
+    legal_status: official_rss
+    endpoint: "https://openai.com/blog/rss.xml"   # 引自 ARCHITECTURE_REVIEW_v2.md:232
+    allowed_domains:
+      - "openai.com"              # 真实文章页恒为 openai.com
+#
 # 单个数据源字段说明（示例，非真实配置，仅用于说明结构）：
 #   - id: example-source            # 唯一标识（字母/数字/下划线）
 #     name: "示例源"                # 展示名

@@ -116,13 +116,13 @@ def _valid_event(trend: Trend) -> Event:
 
 
 def _load_schema(name: str) -> dict:
-    return json.loads((SCHEMA_DIR / name).read_text())
+    return json.loads((SCHEMA_DIR / name).read_text(encoding="utf-8"))
 
 
 def _registry() -> Registry:
     resources = {}
     for f in SCHEMA_DIR.glob("*.schema.json"):
-        s = json.loads(f.read_text())
+        s = json.loads(f.read_text(encoding="utf-8"))
         resources[s["$id"]] = Resource.from_contents(s)
     return Registry().with_resources(resources.items())
 

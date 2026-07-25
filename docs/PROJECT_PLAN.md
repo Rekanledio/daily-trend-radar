@@ -11,6 +11,33 @@
 
 ---
 
+## 项目运行模型:Local-first / Self-hosted(最高优先级定位)
+
+> **本项目最终定位为本地运行 / Self-hosted / Local-first 应用。** 任何用户下载并安装项目后,都应能够在**自己的电脑上独立运行**完整 Pipeline,并在本机生成数据与运行前端 UI;**不依赖**中心化后端服务器、云数据库、公共 API 服务或用户登录系统。
+
+**默认运行链路(用户本机):**
+```
+用户电脑
+  → 本地运行 Python Pipeline(python -m pipeline)
+  → 由本机直接访问公开互联网数据源(ArXiv / GitHub / 官方 RSS 等)
+  → 本机处理(标准化/去重/评分/...)
+  → 本机生成 data/YYYY-MM-DD/*.json + health.json
+  → 本机运行 Next.js(npm run dev / npm run start)
+  → 浏览器通过 localhost 访问本地 Web UI
+```
+
+**关键原则:**
+1. 数据采集请求由**用户本机直接发起**,不经由任何中心化中转服务。
+2. 数据保存在**用户自己的 `data/` 目录**,不强制上传云端或中心化数据库。
+3. **不引入**用户登录、多用户账户、中心化用户系统作为运行必要条件。
+4. 公网部署(Vercel 等)仅作为**可选**的个人演示 / 高级用法,**不是默认运行路径**,也不得成为普通用户体验项目的先决条件。
+5. 若未来确实需要数据库(如搜索/历史规模),只允许规划为**可选的本地 SQLite**,不得引入云数据库(Supabase/PostgreSQL 等)作为强依赖。
+6. 若未来实现"收藏"等个人偏好,仅考虑浏览器 `localStorage` 等**本地**方式,不落地服务端账户。
+
+> 本文件其余章节中与上述定位冲突的表述(如将 Vercel 作为默认部署、将 Supabase/PostgreSQL 作为未来主数据层、将 GitHub Actions 作为普通用户运行必需),一律**以本节为准**进行收敛。
+
+---
+
 ## 核心红线(贯穿全项目,不可妥协)
 
 1. **真实性第一**:所有热点必须真实存在,严禁虚构标题、来源、热度、时间。
@@ -46,7 +73,7 @@
 ## 1.3 关键约束与风险
 - **反爬与合规**:抖音/微博等平台反爬强、合规风险高 → 必须有降级方案。
 - **数据源易变**:非官方接口随时可能失效 → Adapter 隔离 + 健康监控 + 快速替换。
-- **成本约束**:个人项目 → 优先 GitHub Actions(免费额度)+ Vercel 免费层 + 静态数据优先。
+- **成本约束**:个人项目 → 默认本机运行(零托管成本);可选 GitHub Actions(免费额度)做维护者 CI、可选 Vercel 免费层做公网演示;静态数据优先,数据存本地。
 - **AI 成本与幻觉**:AI 调用要可控、可关闭、可降级,输出必须绑定真实来源。
 
 ---
@@ -82,16 +109,16 @@
 - **数据链路**:Python 采集 → 标准化 → 真实性校验 → 去重 → 基础评分 → 输出结构化 JSON。
 - **展示**:综合 / AI 前沿 / 科技三个板块,卡片式列表,每板块≤20 条,含原文链接、来源、时间。
 - **能力**:关键词搜索、按日期查看、深色模式、响应式。
-- **工程**:GitHub Actions 定时采集 + Vercel 部署 + README。
+- **工程**:本机一键运行 Pipeline + 本地前端(README 说明);可选 GitHub Actions(维护者 CI)/ 可选 Vercel(公网演示)。
 
 ## 3.3 MVP 不做什么(明确排除)
 - 不做抖音/微博/小黑盒/酷安(反爬强,放到 P1/P2 逐步攻坚)。
 - 不做 AI 摘要/聚合(先用规则,AI 放 P1)。
-- 不做用户系统、评论、收藏、订阅推送。
+- 不引入用户系统 / 登录 / 多用户账户 / 评论 / 订阅推送;收藏(如确有需求)仅限浏览器 localStorage。
 - 不上 PostgreSQL(MVP 用 JSON/SQLite)。
 
 ## 3.4 MVP 成功标准
-连续 7 天每天自动产出真实、可追溯、去重后的三板块数据,线上可访问,零虚构数据。
+连续 7 天每天产出真实、可追溯、去重后的三板块数据(本机可访问,零虚构数据)。
 
 ---
 
@@ -109,7 +136,7 @@
 - [ ] 板块:综合 / AI 前沿 / 科技互联网
 - [ ] 原文跳转、来源标识、时间显示
 - [ ] 关键词搜索 + 日期筛选
-- [ ] 自动更新(GitHub Actions 定时)
+- [ ] 自动更新(可选:GitHub Actions 定时;非普通用户运行必需)
 - [ ] 手动更新(手动触发采集)
 - [ ] CI(lint/typecheck/build)+ 部署 + 完整 README
 
@@ -122,7 +149,7 @@
 - [ ] 历史热点归档 + 趋势回看
 - [ ] 数据源健康监控面板 + README 状态徽章
 - [ ] 数据审核流程(人工复核队列)
-- [ ] 迁移到数据库(Supabase/Postgres),支撑搜索与历史规模
+- [ ] 可选本地 SQLite(仅当用户确有搜索/历史规模需求时),不得引入云数据库
 
 ## P2 — 长期扩展
 - [ ] 抖音等强反爬平台(仅在合法可持续前提下)
@@ -131,7 +158,7 @@
 - [ ] 语义搜索(embedding 检索)
 - [ ] 多语言 i18n
 - [ ] 数据开放 API / 公共数据集
-- [ ] 用户系统与收藏(如确有需求)
+- [ ] 收藏(如确有需求,仅限浏览器 localStorage;不引入用户系统/登录/多用户账户)
 
 ---
 
@@ -150,33 +177,35 @@
 │         │                    产出标准化数据                        │
 └─────────┼──────────────────────────┬───────────────────────────┘
           │                          │
-   数据源(RSS/API/官方)         写入数据层(JSON 文件 / SQLite / Supabase)
+   数据源(RSS/API/官方)         写入数据层(JSON 文件 / 可选本地 SQLite)
                                      │
                                      ▼
 ┌──────────────────────────────────────────────────────────────┐
-│              Next.js (App Router, TS, Tailwind) @ Vercel        │
+│      Next.js (App Router, TS, Tailwind) — 本机 localhost 运行(可选 Vercel)  │
 │   读取数据层 → ISR/SSG 渲染 → 板块/搜索/日期/详情/健康页          │
 │   前端展示 + 少量 API Routes(搜索/健康/手动触发代理)             │
 └──────────────────────────────────────────────────────────────┘
 ```
 
+> 注:上图展示的是"维护者可选的公网部署"形态之一。本项目**默认 Local-first**(用户本机运行 Pipeline + Next.js,数据存本地 `data/`,localhost 访问),不依赖 GitHub Actions 或 Vercel。下方"静态数据优先"优势在本地模式下同样成立。
+
 ## 5.2 为什么是"静态数据优先"
-- **最低成本**:采集在 GitHub Actions(免费额度)完成,产出 JSON 提交回仓库或写入 Supabase;前端 Vercel 免费层静态托管。
+- **最低成本**:默认本机运行零托管成本;产出 JSON 存本地 `data/`。可选 GitHub Actions(免费额度)做维护者 CI、可选 Vercel 免费层做公网演示。
 - **天然可追溯 + 版本化**:数据以 git 提交存档,历史热点 = git 历史,零额外成本。
 - **单源失败不影响全站**:数据是预生成的快照,前端永远有可用数据。
-- **演进路径清晰**:数据规模变大后,把"JSON 文件"替换为"Supabase 表",前端读取层做适配即可,UI 不改。
+- **演进路径清晰**:数据规模变大后,若确有需要,可把"JSON 文件"替换为"可选的本地 SQLite",前端读取层(Repository)做适配即可,UI 不改;**不引入云数据库**。
 
 ## 5.3 技术选型清单(克制,不堆技术)
 
 | 层 | 选型 | 理由 |
 |---|---|---|
-| 前端框架 | **Next.js (App Router) + TypeScript** | SSG/ISR、生态成熟、Vercel 一键部署 |
+| 前端框架 | **Next.js (App Router) + TypeScript** | 本机 `npm run dev`/`npm run start` 即可运行;SSG/ISR、生态成熟;Vercel 仅为可选公网部署 |
 | 样式 | **Tailwind CSS + shadcn/ui** | 快速构建现代 UI、深色模式内建、可维护 |
 | 采集语言 | **Python 3.12+** | 采集/解析生态最强(feedparser/httpx/lxml) |
 | 数据层(MVP) | **JSON 文件(按日期分片)+ 可选 SQLite** | 零运维、可追溯、版本化 |
-| 数据层(演进) | **Supabase (PostgreSQL)** | 免费层够用、带全文搜索、托管省心 |
+| 数据层(演进,可选) | **本地 SQLite** | 仅当用户确有搜索/历史规模需求;零运维、不依赖云端 |
 | 定时/自动化 | **GitHub Actions** | 免费 cron + 手动触发,与仓库一体 |
-| 部署 | **Vercel(前端)** | 免费层、与 Next.js 完美集成 |
+| 部署(默认) | **本机运行(Next.js + localhost)** | 用户电脑直接跑,无需公网 |
 | AI(P1) | **可插拔 LLM(OpenAI 兼容接口)** | 可开关、可降级到规则,成本可控 |
 
 > **明确不引入**(避免过度工程):Kafka、Redis、Docker 编排、微服务、K8s、独立后端服务器(MVP 阶段)。个人项目用不上,徒增维护成本。
@@ -208,7 +237,7 @@ Next.js(App Router)+ TypeScript + Tailwind + shadcn/ui + lucide 图标;状态用
 
 ## 6.4 渲染策略
 - 首页与板块页:**ISR**(增量静态再生成),按采集频率设定 revalidate。
-- 搜索:走 API Route 或客户端过滤(数据量小)/ Supabase 全文检索(演进期)。
+- 搜索:走客户端过滤(数据量小)或本地 SQLite 全文检索(可选演进期);不依赖云端检索。
 - 深色模式:`next-themes`,`prefers-color-scheme` + 手动切换,持久化到 localStorage。
 
 ## 6.5 UI/UX 原则
@@ -223,14 +252,14 @@ Next.js(App Router)+ TypeScript + Tailwind + shadcn/ui + lucide 图标;状态用
 
 ## 7.1 后端形态(MVP:轻后端)
 MVP **不部署独立后端服务器**。后端职责由两部分承担:
-1. **离线管道(Python,跑在 GitHub Actions)**:采集 + 处理 + 产出数据。这是"真正的后端"。
+1. **离线管道(Python,默认跑在用户本机;可选 GitHub Actions)**:采集 + 处理 + 产出数据。这是"真正的后端"。
 2. **Next.js API Routes(轻量在线接口)**:仅处理需要运行时的少量请求:
-   - `GET /api/search` — 搜索(数据量大时代理 Supabase)。
+   - `GET /api/search` — 搜索(数据量大时走本地 SQLite 全文检索,可选)。
    - `GET /api/health` — 返回数据源健康快照。
    - `POST /api/refresh` — 手动触发(通过 `workflow_dispatch` 调 GitHub API,需鉴权)。
 
 ## 7.2 数据读取抽象层(关键设计)
-定义 `DataRepository` 接口,前端只依赖接口,不关心底层是 JSON 还是 Postgres:
+定义 `DataRepository` 接口,前端只依赖接口,不关心底层是 JSON 还是可选本地 SQLite:
 ```
 interface DataRepository {
   getTrends(category, date, limit): Trend[]
@@ -241,7 +270,7 @@ interface DataRepository {
 }
 ```
 - MVP 实现:`JsonFileRepository`(读 `/data/*.json`)。
-- 演进实现:`SupabaseRepository`。
+- 演进实现(可选):本地 SQLite Repository;**不规划**云数据库实现。
 - 切换只改工厂函数,UI 与业务逻辑零改动。
 
 ## 7.3 鉴权与安全
@@ -270,7 +299,7 @@ pipeline/
 │   ├── weibo.py             # P1
 │   └── ...                  # 逐源扩展
 ├── stages/                 # 见第九部分 (normalize/validate/dedup/cluster/score/enrich)
-└── run.py                   # 编排入口(被 Actions 调用)
+└── run.py                   # 编排入口(用户本机或 Actions 调用)
 ```
 
 ## 8.2 采集通用原则
@@ -317,7 +346,7 @@ sources:
         ↓
 [8] Cap & Rank   每板块按分排序,截断 ≤20,不足不补
         ↓
-[9] Persist      写数据层(JSON/SQLite/Supabase)+ 健康快照
+[9] Persist      写数据层(JSON/可选本地 SQLite)+ 健康快照
         ↓
 [10] Publish     触发前端 ISR / 提交数据 / 部署
 ```
@@ -356,7 +385,7 @@ AI **只加工不创作**:输入必须是已采集的真实条目,输出必须�
 
 # 第十一部分:数据库模型设计
 
-> MVP 用 JSON 表达同一模型;演进期直接映射为 Postgres 表。以下为逻辑模型。
+> MVP 用 JSON 表达同一模型;如需数据库,演进期映射为**可选的本地 SQLite** 表(非云)。以下为逻辑模型。
 
 ## 11.1 核心实体
 
@@ -413,7 +442,7 @@ AI **只加工不创作**:输入必须是已采集的真实条目,输出必须�
 | error | text? | 错误 |
 | latency_ms | int | 耗时 |
 
-## 11.2 索引与检索(演进期 Postgres)
+## 11.2 索引与检索(可选本地 SQLite 演进期)
 - `trends(category, published_at)`、`trends(collected_at)`、全文索引 `to_tsvector(title||summary)`。
 - 唯一约束:`trends(id)`;去重依赖 canonical_url 哈希。
 
@@ -456,7 +485,7 @@ class BaseAdapter:
 |---|---|---|---|---|---|
 | **AI 官方来源**(OpenAI/Anthropic/Google/Meta AI 博客) | 易 | 高 | 高 | 官方 **RSS/Atom**;无 RSS 则解析官方博客公开页 | **P0** |
 | **科技媒体**(TechCrunch/The Verge/36氪/少数派等) | 易 | 高 | 高 | 官方 **RSS**(绝大多数提供) | **P0** |
-| **RSS(通用)** | 易 | 高 | 高 | `feedparser` 通用适配器,配置化订阅源 | **P0** |
+| **RSS(通用)** | 易 | 高 | 高 | 标准库 `xml.etree` 通用 RSS/Atom 适配器,配置化订阅源(零新增依赖) | **P0** |
 | **GitHub** | 易 | 高 | 高 | **官方 REST/GraphQL API**(带 token);Trending 无官方 API,用公开页解析或成熟第三方,做降级 | **P0** |
 | **Hugging Face** | 易 | 高 | 高 | **官方 API**(models/datasets/papers 端点) | P0/P1 |
 | **ArXiv** | 易 | 高 | 高 | **官方 API**(Atom),遵守 3s 间隔;最合规稳定的源之一 | **P0** |
@@ -486,7 +515,7 @@ class BaseAdapter:
 ```
 cron 触发 → checkout → 装 Python 依赖 → run.py(采集+处理)
 → 产出 data/YYYY-MM-DD/*.json + health.json
-→ 提交回仓库(或写 Supabase)→ 触发 Vercel 重新部署/ISR revalidate
+→ 本机写入 `data/YYYY-MM-DD/`(默认);可选提交回仓库 / 可选 Vercel 公网演示重新部署
 ```
 
 ## 14.3 关键保障
@@ -654,8 +683,9 @@ heat_score = 100 * ( w1 * RankScore
 - 分支保护:PR 必须过 CI 才能合并。
 
 ## 22.3 CD(部署)
-- 前端:Vercel Git 集成,main 分支自动部署;PR 生成 Preview。
-- 数据:collect.yml 提交数据后触发 ISR revalidate / 重新部署。
+> 本项目默认 **Local-first**,用户在本机运行,无需部署。以下公网部署仅作**可选**个人演示。
+- 前端(可选公网):Vercel Git 集成,main 分支自动部署;PR 生成 Preview。**非默认路径**。
+- 数据:默认本机写入 `data/`;若启用公网演示,collect.yml 提交数据后可触发 ISR revalidate / 重新部署。
 - Secrets:所有密钥走 GitHub Secrets + Vercel 环境变量,零硬编码。
 
 ---
@@ -676,7 +706,7 @@ daily-trend-radar/
 │   ├── app/                      # 路由(/、category、date、search、event、health、about)
 │   ├── components/               # UI 组件(TrendCard/SearchBar/ThemeToggle...)
 │   ├── lib/
-│   │   ├── repository/           # DataRepository 抽象 + JSON/Supabase 实现
+│   │   ├── repository/           # DataRepository 抽象 + JSON/可选本地 SQLite 实现
 │   │   └── types.ts              # 共享类型(与采集端 Schema 对齐)
 │   ├── public/
 │   └── package.json
@@ -713,8 +743,8 @@ daily-trend-radar/
 ## 阶段 2 — MVP 前端与上线(P0)
 - Next.js:首页三板块 + 卡片 + 深色模式 + 响应式。
 - 搜索 + 日期筛选 + 原文跳转。
-- Vercel 部署 + README 完整化。
-- **里程碑:线上可访问,连续 7 天真实数据。**
+- 本机运行说明 + README 完整化(默认 Local-first,公网部署列为可选)。
+- **里程碑:本机 localhost 可访问,连续 7 天真实数据。**
 
 ## 阶段 3 — 社交/游戏源与健康监控(P1)
 - 新增 B站、微博(带降级);再评估小黑盒/酷安。
@@ -727,7 +757,7 @@ daily-trend-radar/
 - 进阶去重(SimHash)。
 
 ## 阶段 5 — 数据规模化(P1→P2)
-- 迁移 Supabase(Postgres)+ 全文/语义搜索。
+- 可选本地 SQLite + 全文/语义搜索(仅当用户确有规模需求;不引入云数据库)。
 - 历史归档与趋势回看。
 - 数据审核流程。
 
@@ -743,10 +773,10 @@ daily-trend-radar/
 |---|---|
 | **阶段 0** | 仓库结构完整;CI 绿灯;README 骨架与 .env.example 存在;Schema 与 Repository 接口评审通过 |
 | **阶段 1** | 4 个源可离线单测通过;运行 run.py 产出真实 JSON;每条含 original_url;每板块≤20 且不足不凑;无 is_mock 数据;去重生效 |
-| **阶段 2** | 线上可访问;三板块正确渲染;深色/响应式/PC+移动正常;搜索与日期筛选可用;原文可跳转;**连续 7 天自动产出真实数据零虚构** |
+| **阶段 2** | 本机 localhost 可访问;三板块正确渲染;深色/响应式/PC+移动正常;搜索与日期筛选可用;原文可跳转;**连续 7 天产出真实数据零虚构** |
 | **阶段 3** | 至少新增 2 个社交/游戏源且均有降级;单源失败不影响全站;健康页与徽章反映真实状态;失败自动告警;手动更新可用且鉴权 |
 | **阶段 4** | AI 摘要/分类/标签可用且可一键关闭并正确降级;AI 输出全部绑定真实来源、无幻觉抽检通过;事件聚合准确率人工抽检达标;近似去重生效 |
-| **阶段 5** | 数据迁移 Supabase 无丢失;搜索/历史在规模数据下性能达标;审核流程可运转 |
+| **阶段 5** | (可选)本地 SQLite 迁移无丢失;搜索/历史在规模数据下性能达标;审核流程可运转 |
 | **阶段 6** | 新增源均合法合规且稳定;扩展功能(日报/API 等)按需交付且不破坏核心红线 |
 
 ## 全局验收红线(任何阶段都不得违反)
@@ -755,7 +785,7 @@ daily-trend-radar/
 ---
 
 ## 附:关键决策摘要(给未来的自己)
-1. **架构基调**:静态数据优先(Actions 采集→JSON→Vercel 前端),用 Repository 抽象预留 Postgres 演进,避免过度工程。
+1. **架构基调**:Local-first / Self-hosted(用户本机运行 Pipeline + Next.js,数据存本地 `data/`,localhost 访问);用 Repository 抽象预留**可选本地 SQLite** 演进,避免过度工程与云依赖。
 2. **数据源节奏**:官方 API/RSS 先行(P0),社交平台谨慎跟进(P1),抖音等强反爬单列(P2)。
 3. **真实性是产品灵魂**:校验、去重、评分、聚合、AI 全部围绕"真实可追溯"设计,宁缺毋滥。
 4. **可观测与降级**:每源自带多级降级 + 健康监控,单源失效不拖垮全站,永不用假数据填充。

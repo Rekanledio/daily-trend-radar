@@ -51,3 +51,16 @@ logs/
 
 # ---- Agent internal state (not project source, do not publish) ----
 .workbuddy/
+
+# ---- Local runtime data (Local-first / Self-hosted) ----
+# Pipeline writes dynamic run artifacts here and the frontend reads them
+# from localhost. These are USER-LOCAL generated data and must NOT enter
+# the Git repository (repo publishes code + config only). Covers:
+#   data/YYYY/...      daily shards (e.g. data/2026/07/2026-07-25.json)
+#   data/index.json     run index
+#   data/health.json   run health
+#   data/sources_state.json  per-source run state
+# NOTE: files already tracked before this rule was added remain tracked;
+# to untrack them without deleting locally, use `git rm --cached`
+# (requires explicit human approval — not done automatically).
+/data/

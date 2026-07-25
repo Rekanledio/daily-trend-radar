@@ -29,18 +29,29 @@
 # 1. 最终架构(确认 + 强化)
 
 ## 1.1 确认保留的基调
+
+> **运行模型（v2.1 收敛）**：本项目定位为 **Local-first / Self-hosted**。默认运行模型是用户在本机完成一切（见下方「默认运行链路」）；GitHub Actions / Vercel 仅为**可选**的公网部署形态，不是默认路径，也不构成普通用户运行项目的先决条件。
+
+**默认运行链路（用户本机）**：
 ```
-Python 采集与处理
+用户电脑
+  → 本地运行 Python Pipeline（本机直接访问公开数据源：arXiv / GitHub / 官方 RSS 等）
+  → 本机生成 data/YYYY/MM/*.json（+ index.json + health.json）
+  → 本机运行 Next.js（npm run dev / npm run start）
+  → 浏览器通过 localhost 访问本地 Web UI
+```
+
+**可选公网部署形态（非默认）**：
+```
+Python 采集与处理（可选 GitHub Actions 定时/手动）
     ↓
-GitHub Actions(定时 cron + 手动 workflow_dispatch)
+生成按日期分片的 JSON 数据（+ index.json + health.json）
     ↓
-生成按日期分片的 JSON 数据(+ index.json + health.json)
-    ↓
-GitHub Repository 保存与版本化(git 历史 = 历史热点)
+（可选）GitHub Repository 保存与版本化
     ↓
 Next.js App Router + TypeScript + Tailwind
     ↓
-Vercel 部署展示(ISR 增量再生成)
+（可选）Vercel 部署展示（ISR 增量再生成）
 ```
 
 ## 1.2 MVP 明确不引入
@@ -51,18 +62,18 @@ Vercel 部署展示(ISR 增量再生成)
 所有数据读取经过 **`DataRepository` 抽象接口**,前端/API 只依赖接口,不感知底层存储:
 ```
 DataRepository (interface)
-├── JsonFileRepository   ← MVP 默认(读 data/**/*.json)
-└── SupabaseRepository   ← 未来演进(读 PostgreSQL / Supabase)
+├── JsonFileRepository   ← 默认(读本机 data/**/*.json)
+└── (可选) 本地 SQLite Repository   ← 仅当用户确有搜索/历史规模需求时,不引入云数据库
 ```
-切换仅改工厂函数一处,UI 与业务逻辑零改动。**这是为未来迁移预留的唯一、且足够的扩展点。**
+切换仅改工厂函数一处,UI 与业务逻辑零改动。**这是为(可选)本地演进预留的唯一、且足够的扩展点;不规划云数据库（Supabase / PostgreSQL）实现。**
 
 ## 1.4 分层职责(强化)
-| 层 | 运行位置 | 职责 | 失败影响 |
+| 层 | 默认运行位置 | 职责 | 失败影响 |
 |---|---|---|---|
-| 采集+处理(Python) | GitHub Actions | 生产真实数据快照 | 仅影响当次快照,前端仍有历史数据 |
-| 数据层(JSON/git) | GitHub Repo | 存储+版本化+追溯 | git 高可用,几乎不失败 |
-| 读取抽象(TS) | Vercel(构建/运行时) | 屏蔽存储差异 | 接口稳定 |
-| 展示(Next.js) | Vercel | UI/搜索/筛选/健康页 | 静态优先,永远有可用页面 |
+| 采集+处理(Python) | **用户本机**(可选 GitHub Actions) | 生产真实数据快照 | 仅影响当次快照,前端仍有历史数据 |
+| 数据层(JSON/本地) | **用户本机 data/** | 存储+版本化+追溯 | 本地文件,几乎不失败 |
+| 读取抽象(TS) | 本机 Next.js(构建/运行时) | 屏蔽存储差异 | 接口稳定 |
+| 展示(Next.js) | **本机 localhost**(可选 Vercel) | UI/搜索/筛选/健康页 | 本地优先,永远有可用页面 |
 
 ---
 
@@ -483,7 +494,7 @@ MVP 保留 4 大类,全部走**官方 API / 官方 RSS / 官方公开页 / 合�
 - 配置中心:`config/sources.yaml`。
 - 状态:Trend draft/verified/published/rejected(字段+自动流转)。
 - 前端:综合/AI/科技板块 + 卡片 + 深色 + 响应式 + 搜索 + 日期筛选 + `/health` 页。
-- 工程:GitHub Actions(cron+手动)+ Vercel + CI + README。
+- 工程:本机一键运行 Pipeline + 本地前端(README 说明);可选 GitHub Actions(维护者 CI)/ 可选 Vercel(公网演示)。
 
 ## 14.2 P1 范围
 - 社交/游戏源:B站、微博、酷安、小黑盒(各带三级降级)。
@@ -496,7 +507,7 @@ MVP 保留 4 大类,全部走**官方 API / 官方 RSS / 官方公开页 / 合�
 
 ## 14.3 P2 范围
 - 抖音(仅合法可持续时)。
-- 迁移 Supabase/PostgreSQL(启用 SupabaseRepository)+ 全文/语义搜索。
+- (可选)本地 SQLite + 全文/语义搜索(仅当用户确有规模需求;不引入云数据库)。
 - 更多源(Hacker News、Product Hunt、知乎、掘金等)。
 - 邮件日报 / RSS 输出 / 开放 API / i18n / 语义检索。
 
@@ -505,10 +516,10 @@ MVP 保留 4 大类,全部走**官方 API / 官方 RSS / 官方公开页 / 合�
 |---|---|---|
 | **阶段 0 地基** | 工程骨架 | 目录/License/README 骨架/CI 空跑绿灯;定义 Trend/Event Schema + DataRepository 接口 + sources.yaml 结构 |
 | **阶段 1 数据闭环** | 采集→发布跑通 | 4 源 Adapter(离线 fixture 单测)+ 完整 Pipeline(至截断≤20)+ 产出 data/**/*.json + index/health |
-| **阶段 2 前端上线** | 可访问 | 三板块 UI + 深色/响应式 + 搜索 + 日期筛选 + /health + Vercel 部署 + README 完整 |
+| **阶段 2 前端上线** | 本机 localhost 可访问 | 三板块 UI + 深色/响应式 + 搜索 + 日期筛选 + /health + (可选 Vercel 部署) + README 完整(默认 Local-first) |
 | **阶段 3 社交/监控** | 扩源+可观测 | B站/微博/酷安/小黑盒(带降级)+ 健康告警 + 手动更新入口(鉴权) |
 | **阶段 4 数据智能** | AI+聚合 | AI 摘要/分类/标签(可开关+一致性检查)+ 事件聚合 + 事件页 + 进阶去重 |
-| **阶段 5 规模化** | 演进存储 | 迁移 Supabase + 全文/语义搜索 + 历史归档 + 审核流程 |
+| **阶段 5 规模化** | (可选)演进存储 | (可选)本地 SQLite + 全文/语义搜索 + 历史归档 + 审核流程 |
 | **阶段 6 长期扩展** | 更多能力 | 抖音(合规时)+ 更多源 + 日报/API/i18n |
 
 ---
@@ -519,10 +530,10 @@ MVP 保留 4 大类,全部走**官方 API / 官方 RSS / 官方公开页 / 合�
 |---|---|
 | **阶段 0** | 目录/CI 就绪且 CI 绿灯;Trend/Event Schema、DataRepository 接口、sources.yaml 结构评审通过;README 骨架 + .env.example 存在 |
 | **阶段 1** | 4 源可离线单测通过(用 fixture,不打真实 API);run 产出真实 `data/YYYY/MM/*.json` + index/health;每条含 original_url;每板块≤20 且不足不凑;无 is_mock;去重生效;单源失败不中断整体 |
-| **阶段 2** | 线上可访问;三板块正确渲染;深色/响应式/PC+移动正常;搜索+日期筛选可用;/health 正确反映状态;原文可跳转;**连续 7 天自动产出真实数据零虚构** |
+| **阶段 2** | 本机 localhost 可访问;三板块正确渲染;深色/响应式/PC+移动正常;搜索+日期筛选可用;/health 正确反映状态;原文可跳转;**连续 7 天产出真实数据零虚构** |
 | **阶段 3** | ≥2 个社交/游戏源接入且各有三级降级;单源 failed 时该板块降级、整站正常;健康告警可触发;手动更新可用且鉴权 |
 | **阶段 4** | AI 可一键关闭并正确降级;AI 一致性检查生效(幻觉抽检通过、summary_origin 标注正确);事件聚合准确率人工抽检达标;进阶去重生效 |
-| **阶段 5** | 切换 SupabaseRepository 后 UI 零改动;数据迁移无丢失;规模数据下搜索/历史性能达标 |
+| **阶段 5** | (可选)切换本地 SQLite Repository 后 UI 零改动;数据迁移无丢失;规模数据下搜索/历史性能达标 |
 | **阶段 6** | 新增源均合法合规稳定;抖音仅在满足合法可持续前提下上线;扩展功能不破坏任何核心红线 |
 
 ## 全局验收红线(任何阶段不可违反)

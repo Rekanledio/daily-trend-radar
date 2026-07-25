@@ -21,6 +21,18 @@ Daily Trend Radar（每日热点雷达）致力于每天聚合并展示真实存
 > 当前仓库仅包含工程脚手架与开发规范，**尚未接入任何真实生产数据**，也未实现任何业务功能。
 > 请勿将未实现的能力误认为已完成功能。
 
+## 项目运行模型（Local-first / Self-hosted）
+
+> **本项目为本地运行 / Self-hosted 应用。** 你下载并安装项目后，可在**自己的电脑上独立运行**完整 Pipeline 与前端，无需任何中心化后端、云数据库或用户登录。
+
+- **默认运行方式**：本机运行 Python Pipeline（直接访问公开互联网数据源）→ 本机生成 `data/` → 本机运行 Next.js → 浏览器 `localhost` 访问。
+- **不依赖云端后端**：无中心化服务器、无云数据库、无公共 API 服务的强制依赖。
+- **不需要登录**：不引入用户系统、多用户账户或中心化用户服务。
+- **数据在你自己手里**：产出数据保存在你本机的 `data/` 目录，不强制上传。
+- **公网部署为可选**：Vercel 等公网部署仅作个人演示 / 高级用法，不是默认路径。
+
+> 当前项目仍处于开发阶段（阶段 0 骨架），完整 Pipeline 运行属后续阶段实现，请勿将未实现的能力误认为已完成。
+
 ## 核心目标
 
 - 聚合真实互联网热点、AI 前沿资讯、科技资讯、开源动态。
@@ -32,31 +44,31 @@ Daily Trend Radar（每日热点雷达）致力于每天聚合并展示真实存
 
 | 层 | 选型 | 说明 |
 |---|---|---|
-| 前端 | Next.js (App Router) + TypeScript + Tailwind CSS | 静态优先，Vercel 部署 |
-| 采集 / 处理 | Python (≥3.12) | 跑在 GitHub Actions，产出按日期分片的 JSON |
-| 数据层 (MVP) | JSON 文件（按日期分片） | 零运维、git 版本化、可追溯 |
-| 定时 / 自动化 | GitHub Actions | cron + 手动触发 |
-| 部署 | Vercel | 前端静态托管 |
+| 前端 | Next.js (App Router) + TypeScript + Tailwind CSS | 本机 `npm run dev` / `npm run start` 即可运行；Vercel 仅为可选公网部署 |
+| 采集 / 处理 | Python (≥3.12) | 本机直接运行（可选 GitHub Actions），产出按日期分片的 JSON |
+| 数据层 (MVP) | JSON 文件（按日期分片） | 零运维、git 版本化、可追溯、存于本机 |
+| 定时 / 自动化（可选） | GitHub Actions | 维护者可选 CI；非普通用户运行必需 |
+| 部署（默认本机） | 本机运行（Next.js + localhost） | 用户电脑直接跑，无需公网 |
 
-**MVP 阶段明确不引入**：独立后端服务器、PostgreSQL、Redis、Kafka、Docker、Kubernetes。
+**MVP 阶段明确不引入**：独立后端服务器、PostgreSQL、Redis、Kafka、Docker、Kubernetes、云数据库、用户登录系统。
 
 ## 当前架构
 
+> **默认运行模型为 Local-first**：用户在本机运行 Pipeline 与 Next.js，数据存本地 `data/`，通过 `localhost` 访问（见上方「项目运行模型」一节）。下图为公网部署形态之一（可选，非默认）。
+
 ```
-Python 数据采集与处理
+用户电脑（本机）
+    ↓ 本地运行 Python Pipeline，直接访问公开数据源（arXiv / GitHub / 官方 RSS 等）
+生成按日期分片的 JSON 数据（+ index.json + health.json，存于本机 data/）
     ↓
-GitHub Actions（定时 cron + 手动 workflow_dispatch）
+本机运行 Next.js（npm run dev / npm run start）
     ↓
-生成按日期分片的 JSON 数据（+ index.json + health.json）
-    ↓
-GitHub Repository 保存与版本化（git 历史 = 历史热点）
-    ↓
-Next.js App Router + TypeScript + Tailwind
-    ↓
-Vercel 部署展示（ISR 增量再生成）
+浏览器通过 localhost 访问本地 Web UI
 ```
 
-所有数据读取经过 `DataRepository` 抽象接口，未来可平滑切换至 Supabase / PostgreSQL，UI 零改动。
+（可选公网演示形态：GitHub Actions 定时采集 + commit 数据 + Vercel 部署。）
+
+所有数据读取经过 `DataRepository` 抽象接口，默认读本机 JSON；未来若确有需要，可平滑切换至**可选的本地 SQLite**，UI 零改动。不规划云数据库（Supabase / PostgreSQL）实现。
 
 ## 项目目录
 
@@ -88,7 +100,7 @@ daily-trend-radar/
 | 阶段 2 — 前端上线 | 三板块 UI + 深色/响应式 + 搜索 + 日期筛选 + /health | ⬜ 未开始 |
 | 阶段 3 — 社交/监控 | B站/微博/酷安/小黑盒（带降级）+ 健康告警 | ⬜ 未开始 |
 | 阶段 4 — 数据智能 | AI 摘要/分类/标签 + 事件聚合 + 进阶去重 | ⬜ 未开始 |
-| 阶段 5 — 规模化 | 迁移 Supabase + 全文/语义搜索 | ⬜ 未开始 |
+| 阶段 5 — 规模化 | （可选）本地 SQLite + 全文/语义搜索 | ⬜ 未开始 |
 | 阶段 6 — 长期扩展 | 抖音（合规时）+ 更多源 + 日报/API | ⬜ 未开始 |
 
 ## 本地开发说明

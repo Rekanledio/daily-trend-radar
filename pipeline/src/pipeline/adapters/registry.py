@@ -14,12 +14,19 @@ from typing import Dict, Type
 from ..models import SourceConfig
 from .arxiv import ArxivAdapter
 from .base import SourceAdapter
+from .github import GitHubAdapter
+from .rss import RSSAdapter
 
 # source_id -> adapter class. Only arXiv is a real, evaluated source today
 # (Stage 1-3A). Future sources are added here, NOT via branching in the
 # orchestrator.
 _ADAPTER_REGISTRY: Dict[str, Type[SourceAdapter]] = {
     "arxiv": ArxivAdapter,
+    "github": GitHubAdapter,
+    # Generic RSS/Atom adapter (Stage 1-3C). One class serves every
+    # RSS source (AI official blogs, tech-media outlets, ...); the source
+    # id just selects the right SourceConfig.
+    "openai_blog": RSSAdapter,
 }
 
 
