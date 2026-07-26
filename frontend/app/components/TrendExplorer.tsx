@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import type { Trend, HealthSnapshot, Event } from "@/lib/types";
 import {
   buildHistoryMap,
+  buildRankMap,
   getTrendHistory,
   renderSparkline,
 } from "@/lib/trend-utils";
@@ -101,21 +102,23 @@ type SortMode = "hot" | "latest";
 function TrendCard({
   trend,
   historyMap,
+  rankMap,
   allDates,
   currentDate,
 }: {
   trend: Trend;
   historyMap: Map<string, Map<string, number | null>>;
+  rankMap: Map<string, Map<string, number>>;
   allDates: string[];
   currentDate: string | null;
 }) {
   const { source_id, metadata } = trend;
   const md = metadata ?? {};
 
-  // Compute historical trend data
+  // Compute historical trend data with rank intelligence
   const trendHistory = useMemo(
-    () => getTrendHistory(trend.id, historyMap, allDates, currentDate),
-    [trend.id, historyMap, allDates, currentDate]
+    () => getTrendHistory(trend.id, historyMap, rankMap, allDates, currentDate),
+    [trend.id, historyMap, rankMap, allDates, currentDate]
   );
   const validScores = trendHistory.points
     .filter((p) => p.score !== null && p.score !== undefined)
@@ -123,6 +126,8 @@ function TrendCard({
 
   const direction = trendHistory.direction;
   const change = trendHistory.change;
+  const rankChange = trendHistory.rankChange;
+  const daysPresent = trendHistory.daysPresent;
   const sparklineHtml = useMemo(
     () => renderSparkline(validScores, 48, 16),
     [validScores]
@@ -351,31 +356,34 @@ function TrendCard({
                  direction === "stable" ? "稳定" : ""}
               </span>
             </div>
-            {sparklineHtml && (
-              <div
-                className="shrink-0"
-                dangerouslySetInnerHTML={{ __html: sparklineHtml }}
-              />
+            <div className="flex items-center gap-2">
+              {/* Rank change */}
+              {rankChange != null && rankChange !== 0 && (
+                <span className={`text-[11px] font-medium ${
+                  rankChange > 0 ? "text-green-600 dark:text-green-400" : "text-red-500 dark:text-red-400"
+                }`}>
+                  {rankChange > 0 ? `��${rankChange}` : `↓${Math.abs(rankChange)}`}
+                </span>
+              )}
+              {sparklineHtml && (
+                <div
+                  className="shrink-0"
+                  dangerouslySetInnerHTML={{ __html: sparklineHtml }}
+                />
+              )}
+            </div>
+          </div>
+          <div className="flex items-center gap-2 mt-1.5">
+            {validScores.length >= 2 && (
+              <span className="text-[10px] text-gray-400 dark:text-gray-500">近 {validScores.length} 天</span>
+            )}
+            {/* Multi-day hotspot badge */}
+            {daysPresent >= 3 && (
+              <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-medium bg-orange-50 text-orange-600 dark:bg-orange-900/20 dark:text-orange-400">
+                🔥 多日热点 · {daysPresent} 天
+              </span>
             )}
           </div>
-          {validScores.length >= 2 && (
-            <div className="flex items-center gap-1 mt-1.5">
-              <span className="text-[10px] text-gray-400 dark:text-gray-500">近 {validScores.length} 天</span>
-              <div className="flex items-center gap-0.5 ml-auto">
-                {validScores.map((s, i) => {
-                  const barH = Math.max(3, (s / 100) * 10);
-                  return (
-                    <div
-                      key={i}
-                      className="w-1.5 rounded-full bg-gray-300 dark:bg-gray-600"
-                      style={{ height: `${barH}px` }}
-                      title={`${trendHistory.points[i]?.date ?? "?"}: ${s.toFixed(1)}`}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </div>
       )}
     </div>
@@ -448,6 +456,11 @@ export default function TrendExplorer({
   // Build history map for cross-date trend matching
   const historyMap = useMemo(() => {
     return buildHistoryMap(historicalDataByDate);
+  }, [historicalDataByDate]);
+
+  // Build rank map for cross-date rank tracking
+  const rankMap = useMemo(() => {
+    return buildRankMap(historicalDataByDate);
   }, [historicalDataByDate]);
 
   // Filter + sort (unchanged)
@@ -690,6 +703,7 @@ export default function TrendExplorer({
               key={t.id}
               trend={t}
               historyMap={historyMap}
+              rankMap={rankMap}
               allDates={sortedDates}
               currentDate={currentDate}
             />
