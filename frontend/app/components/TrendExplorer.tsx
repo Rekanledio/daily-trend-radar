@@ -2,6 +2,11 @@
 
 import { useState, useMemo } from "react";
 import type { Trend, HealthSnapshot } from "@/lib/types";
+import {
+  buildHistoryMap,
+  getTrendHistory,
+  renderSparkline,
+} from "@/lib/trend-utils";
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -93,9 +98,41 @@ type SortMode = "hot" | "latest";
 // TrendCard
 // ---------------------------------------------------------------------------
 
-function TrendCard({ trend }: { trend: Trend }) {
+function TrendCard({
+  trend,
+  historyMap,
+  allDates,
+  currentDate,
+}: {
+  trend: Trend;
+  historyMap: Map<string, Map<string, number | null>>;
+  allDates: string[];
+  currentDate: string | null;
+}) {
   const { source_id, metadata } = trend;
   const md = metadata ?? {};
+
+  // Compute historical trend data
+  const trendHistory = useMemo(
+    () => getTrendHistory(trend.id, historyMap, allDates, currentDate),
+    [trend.id, historyMap, allDates, currentDate]
+  );
+  const validScores = trendHistory.points
+    .filter((p) => p.score !== null && p.score !== undefined)
+    .map((p) => p.score!);
+
+  const direction = trendHistory.direction;
+  const change = trendHistory.change;
+  const sparklineHtml = useMemo(
+    () => renderSparkline(validScores, 48, 16),
+    [validScores]
+  );
+
+  const directionEmoji =
+    direction === "up" ? "📈" :
+    direction === "down" ? "📉" :
+    direction === "stable" ? "➡️" :
+    null;
 
   const stars = md["stars"];
   const forks = md["forks"];
@@ -295,6 +332,50 @@ function TrendCard({ trend }: { trend: Trend }) {
           )}
         </div>
       )}
+
+      {/* Historical Trend */}
+      {direction !== "insufficient_data" && (
+        <div className="mt-1 pt-3 border-t border-gray-100 dark:border-gray-800">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-xs">
+              {directionEmoji && <span>{directionEmoji}</span>}
+              <span className={`text-xs font-medium ${
+                direction === "up" ? "text-green-600 dark:text-green-400" :
+                direction === "down" ? "text-red-500 dark:text-red-400" :
+                "text-gray-500 dark:text-gray-400"
+              }`}>
+                {direction === "up" ? `上升 +${change}` :
+                 direction === "down" ? `下降 ${change}` :
+                 direction === "stable" ? "稳定" : ""}
+              </span>
+            </div>
+            {sparklineHtml && (
+              <div
+                className="shrink-0"
+                dangerouslySetInnerHTML={{ __html: sparklineHtml }}
+              />
+            )}
+          </div>
+          {validScores.length >= 2 && (
+            <div className="flex items-center gap-1 mt-1.5">
+              <span className="text-[10px] text-gray-400 dark:text-gray-500">近 {validScores.length} 天</span>
+              <div className="flex items-center gap-0.5 ml-auto">
+                {validScores.map((s, i) => {
+                  const barH = Math.max(3, (s / 100) * 10);
+                  return (
+                    <div
+                      key={i}
+                      className="w-1.5 rounded-full bg-gray-300 dark:bg-gray-600"
+                      style={{ height: `${barH}px` }}
+                      title={`${trendHistory.points[i]?.date ?? "?"}: ${s.toFixed(1)}`}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
@@ -337,12 +418,14 @@ export default function TrendExplorer({
   availableDates,
   latestDate: _latestDate,
   health,
+  historicalDataByDate,
 }: {
   trends: Trend[];
   currentDate: string | null;
   availableDates: string[];
   latestDate: string | null;
   health: HealthSnapshot;
+  historicalDataByDate: Map<string, Trend[]>;
 }) {
   const totalCount = trends.length;
   const [healthOpen, setHealthOpen] = useState(false);
@@ -351,6 +434,11 @@ export default function TrendExplorer({
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("all");
   const [sortBy, setSortBy] = useState<SortMode>("hot");
+
+  // Build history map for cross-date trend matching
+  const historyMap = useMemo(() => {
+    return buildHistoryMap(historicalDataByDate);
+  }, [historicalDataByDate]);
 
   // Filter + sort (unchanged)
   const filteredTrends = useMemo(() => {
@@ -576,7 +664,13 @@ export default function TrendExplorer({
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {filteredTrends.map((t) => (
-            <TrendCard key={t.id} trend={t} />
+            <TrendCard
+              key={t.id}
+              trend={t}
+              historyMap={historyMap}
+              allDates={sortedDates}
+              currentDate={currentDate}
+            />
           ))}
         </div>
       )}

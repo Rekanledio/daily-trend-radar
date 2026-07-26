@@ -1,9 +1,11 @@
 // Daily Trend Radar — 首页
 // Server Component：读取 data/ JSON 并传递给 Client Component 实现交互
 // 支持 URL 参数 ?date=YYYY-MM-DD 浏览历史日期
+// 同时加载所有可用日期的数据，供客户端进行跨日期趋势计算
 
 import { createRepository } from "../lib/repositories/json-file-repository";
 import TrendExplorer from "./components/TrendExplorer";
+import type { Trend } from "../lib/types";
 
 export const revalidate = 86400; // 24h ISR
 export const dynamic = "force-dynamic";
@@ -41,12 +43,32 @@ export default async function Home(props: {
 
   const dateStr = publishedData?.date ?? latestDate ?? null;
 
-  const allTrends: import("../lib/types").Trend[] = [];
+  const allTrends: Trend[] = [];
   if (publishedData) {
     for (const block of Object.values(publishedData.categories)) {
       allTrends.push(...block.items);
     }
   }
+
+  // Load historical data for trend visualization (all available dates)
+  const historicalDataByDate = new Map<string, Trend[]>();
+  if (availableDates.length >= 1) {
+    for (const date of availableDates) {
+      try {
+        const data = await repo.getByDate(date);
+        if (data) {
+          const trends: Trend[] = [];
+          for (const block of Object.values(data.categories)) {
+            trends.push(...block.items);
+          }
+          historicalDataByDate.set(date, trends);
+        }
+      } catch {
+        // Skip dates that fail to load
+      }
+    }
+  }
+
   const totalItems = allTrends.length;
   const sourceCount = Object.keys(publishedData?.categories ?? {}).length;
 
@@ -118,6 +140,7 @@ export default async function Home(props: {
             availableDates={availableDates}
             latestDate={latestDate}
             health={health}
+            historicalDataByDate={historicalDataByDate}
           />
         )}
       </main>
