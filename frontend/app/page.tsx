@@ -101,6 +101,10 @@ export default async function Home(props: {
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500" />
                   GitHub
                 </span>
+                <span className="inline-flex items-center gap-1 text-green-600 dark:text-green-400">
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500" />
+                  OpenAI
+                </span>
               </div>
             </div>
           </div>
@@ -117,7 +121,7 @@ export default async function Home(props: {
               </span>
             )}
             <span className="text-gray-300 dark:text-gray-700">·</span>
-            <span>arXiv API + GitHub API</span>
+            <span>arXiv API + GitHub API + OpenAI RSS</span>
           </div>
         </div>
       </header>
@@ -148,7 +152,7 @@ export default async function Home(props: {
       {/* Footer */}
       <footer className="border-t border-gray-200/60 dark:border-gray-800/60 mt-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-gray-400 dark:text-gray-500">
-          Daily Trend Radar · {dateStr ?? "—"} · 数据来源：arXiv API + GitHub API
+          Daily Trend Radar · {dateStr ?? "—"} · 数据来源：arXiv API + GitHub API + OpenAI RSS
         </div>
       </footer>
     </div>

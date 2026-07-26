@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-26T04:26:46Z",
+  "updated_at": "2026-07-26T04:51:49Z",
   "latest_date": "2026-07-26",
   "available_dates": [
     "2026-07-25",
     "2026-07-26"
   ],
   "categories": [
+    "ai_official",
     "ai_research",
     "opensource"
   ],
@@ -21,10 +22,11 @@
     },
     "2026-07-26": {
       "path": "2026/07/2026-07-26.json",
-      "total_items": 40,
+      "total_items": 60,
       "categories": {
         "ai_research": 20,
-        "opensource": 20
+        "opensource": 20,
+        "ai_official": 20
       }
     }
   }

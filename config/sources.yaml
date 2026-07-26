@@ -82,14 +82,14 @@ sources:
     name: "OpenAI Blog"
     category: ai_official          # 见 sources.yaml 示例结构（ai_official 等）
     type: rss                      # 官方 RSS
-    enabled: false                 # 默认关闭，待真实冒烟与人工审查后开启
+    enabled: true                   # 已启用（阶段 4-6 通过真实冒烟验证）
     priority: 2                     # 次于 arXiv 官方研究源
     max_items: 20                   # ≤20，与每板块红线一致
     timeout: 15
     retry_count: 2
     rate_limit: "1/5s"            # 保守合规，单源低频
     legal_status: official_rss
-    endpoint: "https://openai.com/blog/rss.xml"   # 引自 ARCHITECTURE_REVIEW_v2.md:232
+    endpoint: "https://openai.com/news/rss.xml"   # 原 blog/rss.xml 已 307 到 news/rss.xml（2026-07 确认）
     allowed_domains:
       - "openai.com"              # 真实文章页恒为 openai.com
 #

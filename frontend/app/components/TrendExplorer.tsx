@@ -90,8 +90,8 @@ function fmtCount(n: number | null | undefined): string {
 // Types
 // ---------------------------------------------------------------------------
 
-type SourceFilter = "all" | "arxiv" | "github";
-type CategoryFilter = "all" | "ai_research" | "opensource";
+type SourceFilter = "all" | "arxiv" | "github" | "openai_blog";
+type CategoryFilter = "all" | "ai_research" | "opensource" | "ai_official";
 type SortMode = "hot" | "latest";
 
 // ---------------------------------------------------------------------------
@@ -155,10 +155,12 @@ function TrendCard({
           className={`source-badge ${
             source_id === "arxiv"
               ? "bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300"
+              : source_id === "openai_blog"
+              ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300"
               : "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300"
           }`}
         >
-          {source_id === "arxiv" ? "arXiv" : "GitHub"}
+          {source_id === "arxiv" ? "arXiv" : source_id === "openai_blog" ? "OpenAI" : "GitHub"}
         </span>
         <a
           href={trend.original_url || "#"}
@@ -626,6 +628,7 @@ export default function TrendExplorer({
           <FilterBtn label="全部" active={sourceFilter === "all"} onClick={() => setSourceFilter("all")} />
           <FilterBtn label="arXiv" active={sourceFilter === "arxiv"} onClick={() => setSourceFilter("arxiv")} />
           <FilterBtn label="GitHub" active={sourceFilter === "github"} onClick={() => setSourceFilter("github")} />
+          <FilterBtn label="OpenAI" active={sourceFilter === "openai_blog"} onClick={() => setSourceFilter("openai_blog")} />
         </div>
 
         <div className="flex items-center gap-1.5 flex-wrap">
@@ -633,6 +636,7 @@ export default function TrendExplorer({
           <FilterBtn label="全部" active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} />
           <FilterBtn label="AI 研究" active={categoryFilter === "ai_research"} onClick={() => setCategoryFilter("ai_research")} />
           <FilterBtn label="开源项目" active={categoryFilter === "opensource"} onClick={() => setCategoryFilter("opensource")} />
+          <FilterBtn label="AI 官方" active={categoryFilter === "ai_official"} onClick={() => setCategoryFilter("ai_official")} />
         </div>
 
         <div className="flex items-center gap-1.5 flex-wrap">
