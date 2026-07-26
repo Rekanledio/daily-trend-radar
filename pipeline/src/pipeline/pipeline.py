@@ -37,6 +37,7 @@ from typing import Dict, List, Optional, Tuple
 
 from .adapters.base import AdapterResult
 from .ai import AIProcessor, NullAIProcessor
+from .ai_summary import enrich_trends
 from .models import (
     CategoryBlock,
     Event,
@@ -325,6 +326,9 @@ def run_pipeline(
             enriched.append(e)
         else:
             enriched.append(t)
+
+    # ---- 8b. AI Summary enrichment (top-N hottest) ----
+    enrich_trends(enriched)
 
     # ---- 9. Rank + Cap <=20 (per category, BEFORE any AI effect) ----
     capped = rank_and_cap(enriched, max_per_category=20)

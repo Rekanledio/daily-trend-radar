@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Any, Literal, Optional
+from typing import Any, List, Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -78,6 +78,20 @@ class ScoreBreakdown(BaseModel):
 
 
 # ---------------------------------------------------------------------------
+# AISummary
+# ---------------------------------------------------------------------------
+
+
+class AISummary(BaseModel):
+    """AI-generated summary, significance explanation, and keywords."""
+
+    model_config = ConfigDict(extra="forbid")
+    summary: str
+    why_it_matters: str
+    keywords: list[str]
+
+
+# ---------------------------------------------------------------------------
 # Trend
 # ---------------------------------------------------------------------------
 
@@ -111,6 +125,9 @@ class Trend(BaseModel):
     # in the published JSON. Optional -> old/missing-metadata data still
     # validates (backward compatible).
     metadata: Optional[dict[str, Any]] = None
+    # AI-generated summary enrichment.
+    # Optional -> old data without this field still validates.
+    ai_summary: Optional[AISummary] = None
 
 
 # ---------------------------------------------------------------------------

@@ -50,6 +50,13 @@ export interface Trend {
   lang: string;
   is_mock: boolean; // production MUST be false
   metadata?: Record<string, unknown> | null; // source-specific snapshot (stars/forks/authors etc.)
+  ai_summary?: AISummary | null; // AI-generated summary enrichment
+}
+
+export interface AISummary {
+  summary: string;
+  why_it_matters: string;
+  keywords: string[];
 }
 
 export interface EventSourceRef {

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-26T01:13:43Z",
+  "generated_at": "2026-07-26T02:02:00Z",
   "overall": "healthy",
   "sources": [
     {
@@ -8,8 +8,8 @@
       "name": "arXiv",
       "category": "ai_research",
       "status": "healthy",
-      "last_success": "2026-07-26T01:13:43Z",
-      "last_attempt": "2026-07-26T01:13:43Z",
+      "last_success": "2026-07-26T02:02:00Z",
+      "last_attempt": "2026-07-26T02:02:00Z",
       "last_error": null,
       "item_count": 20,
       "response_time_ms": null,
@@ -21,8 +21,8 @@
       "name": "GitHub",
       "category": "opensource",
       "status": "healthy",
-      "last_success": "2026-07-26T01:13:43Z",
-      "last_attempt": "2026-07-26T01:13:43Z",
+      "last_success": "2026-07-26T02:02:00Z",
+      "last_attempt": "2026-07-26T02:02:00Z",
       "last_error": null,
       "item_count": 20,
       "response_time_ms": null,
