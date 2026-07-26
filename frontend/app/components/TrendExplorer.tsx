@@ -207,6 +207,34 @@ function TrendCard({ trend }: { trend: Trend }) {
         </div>
         <span className="text-[10px] text-gray-400 dark:text-gray-500 shrink-0">热度</span>
       </div>
+
+      {/* AI Summary */}
+      {trend.ai_summary && (
+        <div className="mt-1 pt-3 border-t border-gray-100 dark:border-gray-800 space-y-2">
+          <div className="flex items-center gap-1.5 text-xs font-medium text-indigo-600 dark:text-indigo-400">
+            <span>🤖</span>
+            <span>AI Summary</span>
+          </div>
+          <p className="text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+            {trend.ai_summary.summary}
+          </p>
+          <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400 italic">
+            {trend.ai_summary.why_it_matters}
+          </p>
+          {trend.ai_summary.keywords.length > 0 && (
+            <div className="flex flex-wrap gap-1.5 pt-0.5">
+              {trend.ai_summary.keywords.map((kw) => (
+                <span
+                  key={kw}
+                  className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300"
+                >
+                  {kw}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
