@@ -38,7 +38,6 @@ from typing import Dict, List, Optional, Tuple
 from .adapters.base import AdapterResult
 from .ai import AIProcessor, NullAIProcessor
 from .ai_summary import enrich_trends
-from .scoring import score_trends
 from .models import (
     CategoryBlock,
     Event,
@@ -51,6 +50,7 @@ from .models import (
     TrendStatus,
 )
 from .raw import NormalizedItem, RawItem
+from .scoring import score_trends
 from .stages import (
     MergeContext,
     build_event,

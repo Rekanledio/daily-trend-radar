@@ -93,8 +93,8 @@ def _llm_summary(trend: Trend) -> Optional[AISummary]:
 
 def _openai_summary(trend: Trend, api_key: str) -> Optional[AISummary]:
     """Call the OpenAI Chat Completions API for a single trend."""
-    import urllib.request
     import urllib.error
+    import urllib.request
 
     title = (trend.title or "")[:200]
     source = trend.source_name
@@ -116,7 +116,8 @@ def _openai_summary(trend: Trend, api_key: str) -> Optional[AISummary]:
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a helpful tech trend analyst. Respond with valid JSON only, no markdown.",
+                    "content": "You are a helpful tech trend analyst. "
+                    "Respond with valid JSON only, no markdown.",
                 },
                 {"role": "user", "content": prompt},
             ],

@@ -32,8 +32,8 @@ from pipeline.adapters.github import (
     parse_rate_limit,
 )
 from pipeline.adapters.registry import _ADAPTER_REGISTRY, build_registry
-from pipeline.models import LegalStatus, SourceConfig, SourceType, TrendStatus, ScoreBreakdown
-from pipeline.stages import verify_original_url, build_trend
+from pipeline.models import LegalStatus, ScoreBreakdown, SourceConfig, SourceType
+from pipeline.stages import build_trend, verify_original_url
 
 # ---------------------------------------------------------------------------
 # Helpers / fixtures

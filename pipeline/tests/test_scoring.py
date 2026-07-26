@@ -5,8 +5,15 @@ from __future__ import annotations
 from datetime import datetime, timezone
 
 from pipeline.models import AISummary, ScoreBreakdown, Trend, TrendStatus
-from pipeline.scoring import score_trend, score_trends, _source_score, _hot_score_component, _freshness_score, _ai_relevance_score, _determine_impact_level
-
+from pipeline.scoring import (
+    _ai_relevance_score,
+    _determine_impact_level,
+    _freshness_score,
+    _hot_score_component,
+    _source_score,
+    score_trend,
+    score_trends,
+)
 
 # ---------------------------------------------------------------------------
 # Helpers
