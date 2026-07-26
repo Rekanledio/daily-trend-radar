@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-25",
+  "date": "2026-07-26",
   "schema_version": "1.0",
-  "generated_at": "2026-07-25T08:17:04Z",
+  "generated_at": "2026-07-26T00:41:26Z",
   "pipeline_version": "0.2.0",
   "ai_enabled": false,
   "categories": {
@@ -23,14 +23,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:59:59Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.12,
+          "hot_score": 39.62,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 33.1,
+            "freshness": 20.61,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -73,14 +73,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:57:38Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.11,
+          "hot_score": 39.62,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 33.06,
+            "freshness": 20.58,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -116,14 +116,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:56:30Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.11,
+          "hot_score": 39.61,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 33.04,
+            "freshness": 20.57,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -166,14 +166,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:56:05Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.11,
+          "hot_score": 39.61,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 33.04,
+            "freshness": 20.57,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -212,14 +212,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:55:21Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.1,
+          "hot_score": 39.61,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 33.02,
+            "freshness": 20.56,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -260,14 +260,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:54:37Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.1,
+          "hot_score": 39.61,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 33.01,
+            "freshness": 20.55,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -302,14 +302,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:52:01Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.09,
+          "hot_score": 39.61,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.97,
+            "freshness": 20.53,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -348,14 +348,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:50:28Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.09,
+          "hot_score": 39.6,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.95,
+            "freshness": 20.51,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -401,14 +401,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:42:51Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.07,
+          "hot_score": 39.59,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.83,
+            "freshness": 20.44,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -446,14 +446,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:40:51Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.06,
+          "hot_score": 39.58,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.79,
+            "freshness": 20.42,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -493,14 +493,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:40:07Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.06,
+          "hot_score": 39.58,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.78,
+            "freshness": 20.41,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -536,14 +536,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:38:30Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.05,
+          "hot_score": 39.58,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.76,
+            "freshness": 20.39,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -588,14 +588,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:37:37Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.05,
+          "hot_score": 39.58,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.74,
+            "freshness": 20.39,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -637,14 +637,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:35:56Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.04,
+          "hot_score": 39.57,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.72,
+            "freshness": 20.37,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -683,14 +683,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:35:20Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.04,
+          "hot_score": 39.57,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.71,
+            "freshness": 20.36,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -733,14 +733,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:35:18Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.04,
+          "hot_score": 39.57,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.71,
+            "freshness": 20.36,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -778,14 +778,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:33:43Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.04,
+          "hot_score": 39.57,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.68,
+            "freshness": 20.35,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -827,14 +827,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:27:23Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.02,
+          "hot_score": 39.56,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.58,
+            "freshness": 20.29,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -873,14 +873,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:25:08Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.01,
+          "hot_score": 39.55,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.55,
+            "freshness": 20.26,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -915,14 +915,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:21:44Z",
-          "collected_at": "2026-07-25T08:17:04Z",
-          "updated_at": "2026-07-25T08:17:04Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.0,
+          "hot_score": 39.55,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 32.49,
+            "freshness": 20.23,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -950,50 +950,6 @@
       "count": 20,
       "items": [
         {
-          "id": "b2200a220683fb8e",
-          "event_id": "evt-02af1c6d814c",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "n8n-io/n8n",
-          "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "summary_origin": "original",
-          "original_url": "https://github.com/n8n-io/n8n",
-          "canonical_url": "https://github.com/n8n-io/n8n",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-25T08:16:06Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
-          "heat_raw": null,
-          "hot_score": 51.74,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 99.95,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/n8n-io/n8n",
-            "name": "n8n",
-            "owner": "n8n-io",
-            "stars": 197874,
-            "forks": 59611,
-            "watchers": 197874,
-            "open_issues": 1397,
-            "language": "TypeScript",
-            "pushed_at": "2026-07-25T08:16:06Z",
-            "created_at": "2019-06-22T09:24:21Z",
-            "updated_at": "2026-07-25T08:16:31Z"
-          }
-        },
-        {
           "id": "bb22f6df2b307397",
           "event_id": "evt-8aaa492578d4",
           "source_id": "github",
@@ -1007,15 +963,15 @@
           "author": null,
           "tags": [],
           "tags_origin": "none",
-          "published_at": "2026-07-25T08:13:03Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "published_at": "2026-07-26T00:40:44Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 51.71,
+          "hot_score": 51.74,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 99.81,
+            "freshness": 99.97,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1027,146 +983,14 @@
             "api_url": "https://api.github.com/repos/openclaw/openclaw",
             "name": "openclaw",
             "owner": "openclaw",
-            "stars": 384073,
-            "forks": 80705,
-            "watchers": 384073,
-            "open_issues": 6993,
+            "stars": 384117,
+            "forks": 80712,
+            "watchers": 384117,
+            "open_issues": 7063,
             "language": "TypeScript",
-            "pushed_at": "2026-07-25T08:13:03Z",
+            "pushed_at": "2026-07-26T00:40:44Z",
             "created_at": "2025-11-24T10:16:47Z",
-            "updated_at": "2026-07-25T08:15:57Z"
-          }
-        },
-        {
-          "id": "3191f8d4ba57286c",
-          "event_id": "evt-de61a9638068",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "freeCodeCamp/freeCodeCamp",
-          "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-          "summary_origin": "original",
-          "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
-          "canonical_url": "https://github.com/freeCodeCamp/freeCodeCamp",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-25T07:54:33Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
-          "heat_raw": null,
-          "hot_score": 51.53,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 98.92,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
-            "name": "freeCodeCamp",
-            "owner": "freeCodeCamp",
-            "stars": 452785,
-            "forks": 45657,
-            "watchers": 452785,
-            "open_issues": 229,
-            "language": "TypeScript",
-            "pushed_at": "2026-07-25T07:54:33Z",
-            "created_at": "2014-12-24T17:49:19Z",
-            "updated_at": "2026-07-25T08:02:22Z"
-          }
-        },
-        {
-          "id": "fa583e61d6724b09",
-          "event_id": "evt-2b75dc2c58be",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "tensorflow/tensorflow",
-          "summary": "An Open Source Machine Learning Framework for Everyone",
-          "summary_origin": "original",
-          "original_url": "https://github.com/tensorflow/tensorflow",
-          "canonical_url": "https://github.com/tensorflow/tensorflow",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-25T07:28:10Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
-          "heat_raw": null,
-          "hot_score": 51.28,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 97.67,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
-            "name": "tensorflow",
-            "owner": "tensorflow",
-            "stars": 196517,
-            "forks": 75542,
-            "watchers": 196517,
-            "open_issues": 2808,
-            "language": "C++",
-            "pushed_at": "2026-07-25T07:28:10Z",
-            "created_at": "2015-11-07T01:19:20Z",
-            "updated_at": "2026-07-25T08:07:48Z"
-          }
-        },
-        {
-          "id": "ade16614f36cc3bc",
-          "event_id": "evt-7b365b348f93",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "NousResearch/hermes-agent",
-          "summary": "The agent that grows with you",
-          "summary_origin": "original",
-          "original_url": "https://github.com/NousResearch/hermes-agent",
-          "canonical_url": "https://github.com/NousResearch/hermes-agent",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-25T06:30:24Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
-          "heat_raw": null,
-          "hot_score": 50.75,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 95.0,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
-            "name": "hermes-agent",
-            "owner": "NousResearch",
-            "stars": 220159,
-            "forks": 41870,
-            "watchers": 220159,
-            "open_issues": 25075,
-            "language": "Python",
-            "pushed_at": "2026-07-25T06:30:24Z",
-            "created_at": "2025-07-22T22:22:28Z",
-            "updated_at": "2026-07-25T08:16:26Z"
+            "updated_at": "2026-07-26T00:35:02Z"
           }
         },
         {
@@ -1183,15 +1007,15 @@
           "author": null,
           "tags": [],
           "tags_origin": "none",
-          "published_at": "2026-07-25T05:48:34Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "published_at": "2026-07-26T00:40:43Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 50.37,
+          "hot_score": 51.74,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 93.1,
+            "freshness": 99.96,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1203,14 +1027,190 @@
             "api_url": "https://api.github.com/repos/react/react",
             "name": "react",
             "owner": "react",
-            "stars": 246712,
-            "forks": 51161,
-            "watchers": 246712,
-            "open_issues": 1223,
+            "stars": 246727,
+            "forks": 51164,
+            "watchers": 246727,
+            "open_issues": 1228,
             "language": "JavaScript",
-            "pushed_at": "2026-07-25T05:48:34Z",
+            "pushed_at": "2026-07-26T00:40:43Z",
             "created_at": "2013-05-24T16:15:54Z",
-            "updated_at": "2026-07-25T07:23:40Z"
+            "updated_at": "2026-07-26T00:36:43Z"
+          }
+        },
+        {
+          "id": "fa583e61d6724b09",
+          "event_id": "evt-2b75dc2c58be",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "tensorflow/tensorflow",
+          "summary": "An Open Source Machine Learning Framework for Everyone",
+          "summary_origin": "original",
+          "original_url": "https://github.com/tensorflow/tensorflow",
+          "canonical_url": "https://github.com/tensorflow/tensorflow",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-26T00:36:52Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
+          "heat_raw": null,
+          "hot_score": 51.71,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 99.78,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
+            "name": "tensorflow",
+            "owner": "tensorflow",
+            "stars": 196534,
+            "forks": 75569,
+            "watchers": 196534,
+            "open_issues": 2816,
+            "language": "C++",
+            "pushed_at": "2026-07-26T00:36:52Z",
+            "created_at": "2015-11-07T01:19:20Z",
+            "updated_at": "2026-07-26T00:37:02Z"
+          }
+        },
+        {
+          "id": "ade16614f36cc3bc",
+          "event_id": "evt-7b365b348f93",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "NousResearch/hermes-agent",
+          "summary": "The agent that grows with you",
+          "summary_origin": "original",
+          "original_url": "https://github.com/NousResearch/hermes-agent",
+          "canonical_url": "https://github.com/NousResearch/hermes-agent",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-26T00:26:22Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
+          "heat_raw": null,
+          "hot_score": 51.61,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 99.28,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
+            "name": "hermes-agent",
+            "owner": "NousResearch",
+            "stars": 220454,
+            "forks": 41967,
+            "watchers": 220454,
+            "open_issues": 25331,
+            "language": "Python",
+            "pushed_at": "2026-07-26T00:26:22Z",
+            "created_at": "2025-07-22T22:22:28Z",
+            "updated_at": "2026-07-26T00:39:15Z"
+          }
+        },
+        {
+          "id": "b2200a220683fb8e",
+          "event_id": "evt-02af1c6d814c",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "n8n-io/n8n",
+          "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/n8n-io/n8n",
+          "canonical_url": "https://github.com/n8n-io/n8n",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-26T00:12:55Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
+          "heat_raw": null,
+          "hot_score": 51.48,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 98.64,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/n8n-io/n8n",
+            "name": "n8n",
+            "owner": "n8n-io",
+            "stars": 197994,
+            "forks": 59629,
+            "watchers": 197994,
+            "open_issues": 1404,
+            "language": "TypeScript",
+            "pushed_at": "2026-07-26T00:12:55Z",
+            "created_at": "2019-06-22T09:24:21Z",
+            "updated_at": "2026-07-26T00:38:47Z"
+          }
+        },
+        {
+          "id": "54b5b79f036a3e54",
+          "event_id": "evt-bdc248984999",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "public-apis/public-apis",
+          "summary": "A collective list of free APIs",
+          "summary_origin": "original",
+          "original_url": "https://github.com/public-apis/public-apis",
+          "canonical_url": "https://github.com/public-apis/public-apis",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-25T21:34:33Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
+          "heat_raw": null,
+          "hot_score": 50.03,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 91.4,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/public-apis/public-apis",
+            "name": "public-apis",
+            "owner": "public-apis",
+            "stars": 452537,
+            "forks": 49835,
+            "watchers": 452537,
+            "open_issues": 1581,
+            "language": "Python",
+            "pushed_at": "2026-07-25T21:34:33Z",
+            "created_at": "2016-03-20T23:49:42Z",
+            "updated_at": "2026-07-26T00:24:11Z"
           }
         },
         {
@@ -1227,15 +1227,15 @@
           "author": null,
           "tags": [],
           "tags_origin": "none",
-          "published_at": "2026-07-25T03:11:34Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "published_at": "2026-07-25T17:24:39Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 49.01,
+          "hot_score": 47.96,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 86.32,
+            "freshness": 81.04,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1247,14 +1247,102 @@
             "api_url": "https://api.github.com/repos/torvalds/linux",
             "name": "linux",
             "owner": "torvalds",
-            "stars": 240377,
-            "forks": 63458,
-            "watchers": 240377,
+            "stars": 240473,
+            "forks": 63481,
+            "watchers": 240473,
             "open_issues": 3,
             "language": "C",
-            "pushed_at": "2026-07-25T03:11:34Z",
+            "pushed_at": "2026-07-25T17:24:39Z",
             "created_at": "2011-09-04T22:48:12Z",
-            "updated_at": "2026-07-25T08:12:38Z"
+            "updated_at": "2026-07-26T00:10:49Z"
+          }
+        },
+        {
+          "id": "3191f8d4ba57286c",
+          "event_id": "evt-de61a9638068",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "freeCodeCamp/freeCodeCamp",
+          "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "canonical_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-25T11:35:51Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
+          "heat_raw": null,
+          "hot_score": 45.45,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 68.51,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+            "name": "freeCodeCamp",
+            "owner": "freeCodeCamp",
+            "stars": 452818,
+            "forks": 45674,
+            "watchers": 452818,
+            "open_issues": 225,
+            "language": "TypeScript",
+            "pushed_at": "2026-07-25T11:35:51Z",
+            "created_at": "2014-12-24T17:49:19Z",
+            "updated_at": "2026-07-26T00:32:35Z"
+          }
+        },
+        {
+          "id": "9837b7357388f8f7",
+          "event_id": "evt-e2cb4b1b40c7",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "EbookFoundation/free-programming-books",
+          "summary": ":books: Freely available programming books",
+          "summary_origin": "original",
+          "original_url": "https://github.com/EbookFoundation/free-programming-books",
+          "canonical_url": "https://github.com/EbookFoundation/free-programming-books",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-25T10:02:14Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
+          "heat_raw": null,
+          "hot_score": 44.85,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 65.49,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
+            "name": "free-programming-books",
+            "owner": "EbookFoundation",
+            "stars": 393002,
+            "forks": 66576,
+            "watchers": 393002,
+            "open_issues": 78,
+            "language": "Python",
+            "pushed_at": "2026-07-25T10:02:14Z",
+            "created_at": "2013-10-11T06:50:37Z",
+            "updated_at": "2026-07-26T00:08:47Z"
           }
         },
         {
@@ -1272,14 +1360,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-25T00:58:36Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 47.94,
+          "hot_score": 41.83,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 80.97,
+            "freshness": 50.41,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1291,58 +1379,14 @@
             "api_url": "https://api.github.com/repos/affaan-m/ECC",
             "name": "ECC",
             "owner": "affaan-m",
-            "stars": 233013,
-            "forks": 35517,
-            "watchers": 233013,
-            "open_issues": 99,
+            "stars": 233302,
+            "forks": 35570,
+            "watchers": 233302,
+            "open_issues": 104,
             "language": "JavaScript",
             "pushed_at": "2026-07-25T00:58:36Z",
             "created_at": "2026-01-18T00:51:51Z",
-            "updated_at": "2026-07-25T08:16:57Z"
-          }
-        },
-        {
-          "id": "54b5b79f036a3e54",
-          "event_id": "evt-bdc248984999",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "public-apis/public-apis",
-          "summary": "A collective list of free APIs",
-          "summary_origin": "original",
-          "original_url": "https://github.com/public-apis/public-apis",
-          "canonical_url": "https://github.com/public-apis/public-apis",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-24T21:33:38Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
-          "heat_raw": null,
-          "hot_score": 46.42,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 73.37,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/public-apis/public-apis",
-            "name": "public-apis",
-            "owner": "public-apis",
-            "stars": 452428,
-            "forks": 49816,
-            "watchers": 452428,
-            "open_issues": 1587,
-            "language": "Python",
-            "pushed_at": "2026-07-24T21:33:38Z",
-            "created_at": "2016-03-20T23:49:42Z",
-            "updated_at": "2026-07-25T08:13:25Z"
+            "updated_at": "2026-07-26T00:38:09Z"
           }
         },
         {
@@ -1360,14 +1404,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-24T21:21:36Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 46.34,
+          "hot_score": 40.83,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 72.94,
+            "freshness": 45.41,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1379,14 +1423,14 @@
             "api_url": "https://api.github.com/repos/obra/superpowers",
             "name": "superpowers",
             "owner": "obra",
-            "stars": 260715,
-            "forks": 23260,
-            "watchers": 260715,
-            "open_issues": 319,
+            "stars": 261093,
+            "forks": 23298,
+            "watchers": 261093,
+            "open_issues": 321,
             "language": "Shell",
             "pushed_at": "2026-07-24T21:21:36Z",
             "created_at": "2025-10-09T19:45:18Z",
-            "updated_at": "2026-07-25T08:14:37Z"
+            "updated_at": "2026-07-26T00:41:27Z"
           }
         },
         {
@@ -1404,14 +1448,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-24T11:19:17Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 42.67,
+          "hot_score": 38.55,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 54.58,
+            "freshness": 33.98,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1423,58 +1467,14 @@
             "api_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
             "name": "developer-roadmap",
             "owner": "nilbuild",
-            "stars": 362617,
-            "forks": 44661,
-            "watchers": 362617,
+            "stars": 362684,
+            "forks": 44670,
+            "watchers": 362684,
             "open_issues": 0,
             "language": "TypeScript",
             "pushed_at": "2026-07-24T11:19:17Z",
             "created_at": "2017-03-15T13:45:52Z",
-            "updated_at": "2026-07-25T08:15:35Z"
-          }
-        },
-        {
-          "id": "9837b7357388f8f7",
-          "event_id": "evt-e2cb4b1b40c7",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "EbookFoundation/free-programming-books",
-          "summary": ":books: Freely available programming books",
-          "summary_origin": "original",
-          "original_url": "https://github.com/EbookFoundation/free-programming-books",
-          "canonical_url": "https://github.com/EbookFoundation/free-programming-books",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-23T15:28:53Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
-          "heat_raw": null,
-          "hot_score": 37.91,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 30.78,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
-            "name": "free-programming-books",
-            "owner": "EbookFoundation",
-            "stars": 392962,
-            "forks": 66568,
-            "watchers": 392962,
-            "open_issues": 77,
-            "language": "Python",
-            "pushed_at": "2026-07-23T15:28:53Z",
-            "created_at": "2013-10-11T06:50:37Z",
-            "updated_at": "2026-07-25T08:16:52Z"
+            "updated_at": "2026-07-26T00:41:24Z"
           }
         },
         {
@@ -1492,14 +1492,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T05:04:46Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 36.31,
+          "hot_score": 34.59,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 22.79,
+            "freshness": 14.19,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1511,14 +1511,14 @@
             "api_url": "https://api.github.com/repos/vinta/awesome-python",
             "name": "awesome-python",
             "owner": "vinta",
-            "stars": 310215,
-            "forks": 28369,
-            "watchers": 310215,
-            "open_issues": 19,
+            "stars": 310327,
+            "forks": 28375,
+            "watchers": 310327,
+            "open_issues": 20,
             "language": "Python",
             "pushed_at": "2026-07-23T05:04:46Z",
             "created_at": "2014-06-27T21:00:06Z",
-            "updated_at": "2026-07-25T08:12:38Z"
+            "updated_at": "2026-07-26T00:31:17Z"
           }
         },
         {
@@ -1536,14 +1536,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-21T21:31:29Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 33.58,
+          "hot_score": 32.89,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 9.16,
+            "freshness": 5.7,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1555,14 +1555,14 @@
             "api_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
             "name": "awesome-selfhosted",
             "owner": "awesome-selfhosted",
-            "stars": 308096,
-            "forks": 14447,
-            "watchers": 308096,
+            "stars": 308270,
+            "forks": 14451,
+            "watchers": 308270,
             "open_issues": 0,
             "language": null,
             "pushed_at": "2026-07-21T21:31:29Z",
             "created_at": "2015-06-01T02:33:17Z",
-            "updated_at": "2026-07-25T08:10:57Z"
+            "updated_at": "2026-07-26T00:31:22Z"
           }
         },
         {
@@ -1580,14 +1580,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-21T12:21:20Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 33.16,
+          "hot_score": 32.63,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 7.03,
+            "freshness": 4.38,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1599,14 +1599,14 @@
             "api_url": "https://api.github.com/repos/TheAlgorithms/Python",
             "name": "Python",
             "owner": "TheAlgorithms",
-            "stars": 223127,
-            "forks": 50902,
-            "watchers": 223127,
-            "open_issues": 1025,
+            "stars": 223152,
+            "forks": 50903,
+            "watchers": 223152,
+            "open_issues": 1021,
             "language": "Python",
             "pushed_at": "2026-07-21T12:21:20Z",
             "created_at": "2016-07-16T09:44:01Z",
-            "updated_at": "2026-07-25T07:58:24Z"
+            "updated_at": "2026-07-25T23:41:42Z"
           }
         },
         {
@@ -1624,14 +1624,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-20T07:41:26Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
-          "hot_score": 32.36,
+          "hot_score": 32.13,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 3.07,
+            "freshness": 1.91,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1643,14 +1643,14 @@
             "api_url": "https://api.github.com/repos/practical-tutorials/project-based-learning",
             "name": "project-based-learning",
             "owner": "practical-tutorials",
-            "stars": 275146,
-            "forks": 35460,
-            "watchers": 275146,
+            "stars": 275247,
+            "forks": 35476,
+            "watchers": 275247,
             "open_issues": 290,
             "language": "Python",
             "pushed_at": "2026-07-20T07:41:26Z",
             "created_at": "2017-04-12T05:07:46Z",
-            "updated_at": "2026-07-25T08:13:15Z"
+            "updated_at": "2026-07-26T00:04:29Z"
           }
         },
         {
@@ -1668,14 +1668,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-14T19:25:58Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
           "hot_score": 31.76,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 0.07,
+            "freshness": 0.04,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1687,14 +1687,14 @@
             "api_url": "https://api.github.com/repos/codecrafters-io/build-your-own-x",
             "name": "build-your-own-x",
             "owner": "codecrafters-io",
-            "stars": 531362,
-            "forks": 50255,
-            "watchers": 531362,
+            "stars": 531551,
+            "forks": 50279,
+            "watchers": 531551,
             "open_issues": 617,
             "language": "Markdown",
             "pushed_at": "2026-07-14T19:25:58Z",
             "created_at": "2018-05-09T12:03:18Z",
-            "updated_at": "2026-07-25T08:15:22Z"
+            "updated_at": "2026-07-26T00:34:19Z"
           }
         },
         {
@@ -1712,14 +1712,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-14T05:38:25Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
           "hot_score": 31.76,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 0.05,
+            "freshness": 0.03,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1731,14 +1731,14 @@
             "api_url": "https://api.github.com/repos/ossu/computer-science",
             "name": "computer-science",
             "owner": "ossu",
-            "stars": 207215,
-            "forks": 25688,
-            "watchers": 207215,
+            "stars": 207255,
+            "forks": 25694,
+            "watchers": 207255,
             "open_issues": 23,
             "language": "HTML",
             "pushed_at": "2026-07-14T05:38:25Z",
             "created_at": "2014-05-04T00:18:39Z",
-            "updated_at": "2026-07-25T07:39:51Z"
+            "updated_at": "2026-07-26T00:31:15Z"
           }
         },
         {
@@ -1756,8 +1756,8 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-06-30T18:21:16Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
           "hot_score": 31.75,
           "score_breakdown": {
@@ -1775,14 +1775,14 @@
             "api_url": "https://api.github.com/repos/sindresorhus/awesome",
             "name": "awesome",
             "owner": "sindresorhus",
-            "stars": 488729,
-            "forks": 36044,
-            "watchers": 488729,
+            "stars": 489018,
+            "forks": 36057,
+            "watchers": 489018,
             "open_issues": 97,
             "language": null,
             "pushed_at": "2026-06-30T18:21:16Z",
             "created_at": "2014-07-11T13:42:37Z",
-            "updated_at": "2026-07-25T08:16:48Z"
+            "updated_at": "2026-07-26T00:37:53Z"
           }
         },
         {
@@ -1800,8 +1800,8 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-06-26T22:49:17Z",
-          "collected_at": "2026-07-25T08:17:05Z",
-          "updated_at": "2026-07-25T08:17:05Z",
+          "collected_at": "2026-07-26T00:41:27Z",
+          "updated_at": "2026-07-26T00:41:27Z",
           "heat_raw": null,
           "hot_score": 31.75,
           "score_breakdown": {
@@ -1819,14 +1819,14 @@
             "api_url": "https://api.github.com/repos/trekhleb/javascript-algorithms",
             "name": "javascript-algorithms",
             "owner": "trekhleb",
-            "stars": 196325,
+            "stars": 196331,
             "forks": 31047,
-            "watchers": 196325,
+            "watchers": 196331,
             "open_issues": 403,
             "language": "JavaScript",
             "pushed_at": "2026-06-26T22:49:17Z",
             "created_at": "2018-03-24T07:47:04Z",
-            "updated_at": "2026-07-25T07:38:35Z"
+            "updated_at": "2026-07-25T22:50:46Z"
           }
         }
       ]
@@ -1848,14 +1848,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:59:59Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.12,
+      "hot_score": 39.62,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.1,
+        "freshness": 20.61,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -1898,14 +1898,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:57:38Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.11,
+      "hot_score": 39.62,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.06,
+        "freshness": 20.58,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -1941,14 +1941,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:56:30Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.11,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.04,
+        "freshness": 20.57,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -1991,14 +1991,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:56:05Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.11,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.04,
+        "freshness": 20.57,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2037,14 +2037,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:55:21Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.1,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.02,
+        "freshness": 20.56,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2085,14 +2085,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:54:37Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.1,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.01,
+        "freshness": 20.55,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2127,14 +2127,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:52:01Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.09,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.97,
+        "freshness": 20.53,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2173,14 +2173,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:50:28Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.09,
+      "hot_score": 39.6,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.95,
+        "freshness": 20.51,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2226,14 +2226,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:42:51Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.07,
+      "hot_score": 39.59,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.83,
+        "freshness": 20.44,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2271,14 +2271,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:40:51Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.06,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.79,
+        "freshness": 20.42,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2318,14 +2318,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:40:07Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.06,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.78,
+        "freshness": 20.41,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2361,14 +2361,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:38:30Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.05,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.76,
+        "freshness": 20.39,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2413,14 +2413,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:37:37Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.05,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.74,
+        "freshness": 20.39,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2462,14 +2462,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:35:56Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.72,
+        "freshness": 20.37,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2508,14 +2508,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:35:20Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.71,
+        "freshness": 20.36,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2558,14 +2558,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:35:18Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.71,
+        "freshness": 20.36,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2603,14 +2603,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:33:43Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.68,
+        "freshness": 20.35,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2652,14 +2652,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:27:23Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.02,
+      "hot_score": 39.56,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.58,
+        "freshness": 20.29,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2698,14 +2698,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:25:08Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.01,
+      "hot_score": 39.55,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.55,
+        "freshness": 20.26,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2740,14 +2740,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:21:44Z",
-      "collected_at": "2026-07-25T08:17:04Z",
-      "updated_at": "2026-07-25T08:17:04Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.0,
+      "hot_score": 39.55,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.49,
+        "freshness": 20.23,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2770,50 +2770,6 @@
       }
     },
     {
-      "id": "b2200a220683fb8e",
-      "event_id": "evt-02af1c6d814c",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "n8n-io/n8n",
-      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "summary_origin": "original",
-      "original_url": "https://github.com/n8n-io/n8n",
-      "canonical_url": "https://github.com/n8n-io/n8n",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-25T08:16:06Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
-      "heat_raw": null,
-      "hot_score": 51.74,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 99.95,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/n8n-io/n8n",
-        "name": "n8n",
-        "owner": "n8n-io",
-        "stars": 197874,
-        "forks": 59611,
-        "watchers": 197874,
-        "open_issues": 1397,
-        "language": "TypeScript",
-        "pushed_at": "2026-07-25T08:16:06Z",
-        "created_at": "2019-06-22T09:24:21Z",
-        "updated_at": "2026-07-25T08:16:31Z"
-      }
-    },
-    {
       "id": "bb22f6df2b307397",
       "event_id": "evt-8aaa492578d4",
       "source_id": "github",
@@ -2827,15 +2783,15 @@
       "author": null,
       "tags": [],
       "tags_origin": "none",
-      "published_at": "2026-07-25T08:13:03Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "published_at": "2026-07-26T00:40:44Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 51.71,
+      "hot_score": 51.74,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 99.81,
+        "freshness": 99.97,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2847,146 +2803,14 @@
         "api_url": "https://api.github.com/repos/openclaw/openclaw",
         "name": "openclaw",
         "owner": "openclaw",
-        "stars": 384073,
-        "forks": 80705,
-        "watchers": 384073,
-        "open_issues": 6993,
+        "stars": 384117,
+        "forks": 80712,
+        "watchers": 384117,
+        "open_issues": 7063,
         "language": "TypeScript",
-        "pushed_at": "2026-07-25T08:13:03Z",
+        "pushed_at": "2026-07-26T00:40:44Z",
         "created_at": "2025-11-24T10:16:47Z",
-        "updated_at": "2026-07-25T08:15:57Z"
-      }
-    },
-    {
-      "id": "3191f8d4ba57286c",
-      "event_id": "evt-de61a9638068",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "freeCodeCamp/freeCodeCamp",
-      "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "summary_origin": "original",
-      "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "canonical_url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-25T07:54:33Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
-      "heat_raw": null,
-      "hot_score": 51.53,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 98.92,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
-        "name": "freeCodeCamp",
-        "owner": "freeCodeCamp",
-        "stars": 452785,
-        "forks": 45657,
-        "watchers": 452785,
-        "open_issues": 229,
-        "language": "TypeScript",
-        "pushed_at": "2026-07-25T07:54:33Z",
-        "created_at": "2014-12-24T17:49:19Z",
-        "updated_at": "2026-07-25T08:02:22Z"
-      }
-    },
-    {
-      "id": "fa583e61d6724b09",
-      "event_id": "evt-2b75dc2c58be",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "tensorflow/tensorflow",
-      "summary": "An Open Source Machine Learning Framework for Everyone",
-      "summary_origin": "original",
-      "original_url": "https://github.com/tensorflow/tensorflow",
-      "canonical_url": "https://github.com/tensorflow/tensorflow",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-25T07:28:10Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
-      "heat_raw": null,
-      "hot_score": 51.28,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 97.67,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
-        "name": "tensorflow",
-        "owner": "tensorflow",
-        "stars": 196517,
-        "forks": 75542,
-        "watchers": 196517,
-        "open_issues": 2808,
-        "language": "C++",
-        "pushed_at": "2026-07-25T07:28:10Z",
-        "created_at": "2015-11-07T01:19:20Z",
-        "updated_at": "2026-07-25T08:07:48Z"
-      }
-    },
-    {
-      "id": "ade16614f36cc3bc",
-      "event_id": "evt-7b365b348f93",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "NousResearch/hermes-agent",
-      "summary": "The agent that grows with you",
-      "summary_origin": "original",
-      "original_url": "https://github.com/NousResearch/hermes-agent",
-      "canonical_url": "https://github.com/NousResearch/hermes-agent",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-25T06:30:24Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
-      "heat_raw": null,
-      "hot_score": 50.75,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 95.0,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
-        "name": "hermes-agent",
-        "owner": "NousResearch",
-        "stars": 220159,
-        "forks": 41870,
-        "watchers": 220159,
-        "open_issues": 25075,
-        "language": "Python",
-        "pushed_at": "2026-07-25T06:30:24Z",
-        "created_at": "2025-07-22T22:22:28Z",
-        "updated_at": "2026-07-25T08:16:26Z"
+        "updated_at": "2026-07-26T00:35:02Z"
       }
     },
     {
@@ -3003,15 +2827,15 @@
       "author": null,
       "tags": [],
       "tags_origin": "none",
-      "published_at": "2026-07-25T05:48:34Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "published_at": "2026-07-26T00:40:43Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 50.37,
+      "hot_score": 51.74,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 93.1,
+        "freshness": 99.96,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3023,14 +2847,190 @@
         "api_url": "https://api.github.com/repos/react/react",
         "name": "react",
         "owner": "react",
-        "stars": 246712,
-        "forks": 51161,
-        "watchers": 246712,
-        "open_issues": 1223,
+        "stars": 246727,
+        "forks": 51164,
+        "watchers": 246727,
+        "open_issues": 1228,
         "language": "JavaScript",
-        "pushed_at": "2026-07-25T05:48:34Z",
+        "pushed_at": "2026-07-26T00:40:43Z",
         "created_at": "2013-05-24T16:15:54Z",
-        "updated_at": "2026-07-25T07:23:40Z"
+        "updated_at": "2026-07-26T00:36:43Z"
+      }
+    },
+    {
+      "id": "fa583e61d6724b09",
+      "event_id": "evt-2b75dc2c58be",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "tensorflow/tensorflow",
+      "summary": "An Open Source Machine Learning Framework for Everyone",
+      "summary_origin": "original",
+      "original_url": "https://github.com/tensorflow/tensorflow",
+      "canonical_url": "https://github.com/tensorflow/tensorflow",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-26T00:36:52Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
+      "heat_raw": null,
+      "hot_score": 51.71,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 99.78,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
+        "name": "tensorflow",
+        "owner": "tensorflow",
+        "stars": 196534,
+        "forks": 75569,
+        "watchers": 196534,
+        "open_issues": 2816,
+        "language": "C++",
+        "pushed_at": "2026-07-26T00:36:52Z",
+        "created_at": "2015-11-07T01:19:20Z",
+        "updated_at": "2026-07-26T00:37:02Z"
+      }
+    },
+    {
+      "id": "ade16614f36cc3bc",
+      "event_id": "evt-7b365b348f93",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "NousResearch/hermes-agent",
+      "summary": "The agent that grows with you",
+      "summary_origin": "original",
+      "original_url": "https://github.com/NousResearch/hermes-agent",
+      "canonical_url": "https://github.com/NousResearch/hermes-agent",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-26T00:26:22Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
+      "heat_raw": null,
+      "hot_score": 51.61,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 99.28,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
+        "name": "hermes-agent",
+        "owner": "NousResearch",
+        "stars": 220454,
+        "forks": 41967,
+        "watchers": 220454,
+        "open_issues": 25331,
+        "language": "Python",
+        "pushed_at": "2026-07-26T00:26:22Z",
+        "created_at": "2025-07-22T22:22:28Z",
+        "updated_at": "2026-07-26T00:39:15Z"
+      }
+    },
+    {
+      "id": "b2200a220683fb8e",
+      "event_id": "evt-02af1c6d814c",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "n8n-io/n8n",
+      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/n8n-io/n8n",
+      "canonical_url": "https://github.com/n8n-io/n8n",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-26T00:12:55Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
+      "heat_raw": null,
+      "hot_score": 51.48,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 98.64,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/n8n-io/n8n",
+        "name": "n8n",
+        "owner": "n8n-io",
+        "stars": 197994,
+        "forks": 59629,
+        "watchers": 197994,
+        "open_issues": 1404,
+        "language": "TypeScript",
+        "pushed_at": "2026-07-26T00:12:55Z",
+        "created_at": "2019-06-22T09:24:21Z",
+        "updated_at": "2026-07-26T00:38:47Z"
+      }
+    },
+    {
+      "id": "54b5b79f036a3e54",
+      "event_id": "evt-bdc248984999",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "public-apis/public-apis",
+      "summary": "A collective list of free APIs",
+      "summary_origin": "original",
+      "original_url": "https://github.com/public-apis/public-apis",
+      "canonical_url": "https://github.com/public-apis/public-apis",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-25T21:34:33Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
+      "heat_raw": null,
+      "hot_score": 50.03,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 91.4,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/public-apis/public-apis",
+        "name": "public-apis",
+        "owner": "public-apis",
+        "stars": 452537,
+        "forks": 49835,
+        "watchers": 452537,
+        "open_issues": 1581,
+        "language": "Python",
+        "pushed_at": "2026-07-25T21:34:33Z",
+        "created_at": "2016-03-20T23:49:42Z",
+        "updated_at": "2026-07-26T00:24:11Z"
       }
     },
     {
@@ -3047,15 +3047,15 @@
       "author": null,
       "tags": [],
       "tags_origin": "none",
-      "published_at": "2026-07-25T03:11:34Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "published_at": "2026-07-25T17:24:39Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 49.01,
+      "hot_score": 47.96,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 86.32,
+        "freshness": 81.04,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3067,14 +3067,102 @@
         "api_url": "https://api.github.com/repos/torvalds/linux",
         "name": "linux",
         "owner": "torvalds",
-        "stars": 240377,
-        "forks": 63458,
-        "watchers": 240377,
+        "stars": 240473,
+        "forks": 63481,
+        "watchers": 240473,
         "open_issues": 3,
         "language": "C",
-        "pushed_at": "2026-07-25T03:11:34Z",
+        "pushed_at": "2026-07-25T17:24:39Z",
         "created_at": "2011-09-04T22:48:12Z",
-        "updated_at": "2026-07-25T08:12:38Z"
+        "updated_at": "2026-07-26T00:10:49Z"
+      }
+    },
+    {
+      "id": "3191f8d4ba57286c",
+      "event_id": "evt-de61a9638068",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "freeCodeCamp/freeCodeCamp",
+      "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "canonical_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-25T11:35:51Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
+      "heat_raw": null,
+      "hot_score": 45.45,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 68.51,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+        "name": "freeCodeCamp",
+        "owner": "freeCodeCamp",
+        "stars": 452818,
+        "forks": 45674,
+        "watchers": 452818,
+        "open_issues": 225,
+        "language": "TypeScript",
+        "pushed_at": "2026-07-25T11:35:51Z",
+        "created_at": "2014-12-24T17:49:19Z",
+        "updated_at": "2026-07-26T00:32:35Z"
+      }
+    },
+    {
+      "id": "9837b7357388f8f7",
+      "event_id": "evt-e2cb4b1b40c7",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "EbookFoundation/free-programming-books",
+      "summary": ":books: Freely available programming books",
+      "summary_origin": "original",
+      "original_url": "https://github.com/EbookFoundation/free-programming-books",
+      "canonical_url": "https://github.com/EbookFoundation/free-programming-books",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-25T10:02:14Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
+      "heat_raw": null,
+      "hot_score": 44.85,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 65.49,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
+        "name": "free-programming-books",
+        "owner": "EbookFoundation",
+        "stars": 393002,
+        "forks": 66576,
+        "watchers": 393002,
+        "open_issues": 78,
+        "language": "Python",
+        "pushed_at": "2026-07-25T10:02:14Z",
+        "created_at": "2013-10-11T06:50:37Z",
+        "updated_at": "2026-07-26T00:08:47Z"
       }
     },
     {
@@ -3092,14 +3180,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-25T00:58:36Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 47.94,
+      "hot_score": 41.83,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 80.97,
+        "freshness": 50.41,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3111,58 +3199,14 @@
         "api_url": "https://api.github.com/repos/affaan-m/ECC",
         "name": "ECC",
         "owner": "affaan-m",
-        "stars": 233013,
-        "forks": 35517,
-        "watchers": 233013,
-        "open_issues": 99,
+        "stars": 233302,
+        "forks": 35570,
+        "watchers": 233302,
+        "open_issues": 104,
         "language": "JavaScript",
         "pushed_at": "2026-07-25T00:58:36Z",
         "created_at": "2026-01-18T00:51:51Z",
-        "updated_at": "2026-07-25T08:16:57Z"
-      }
-    },
-    {
-      "id": "54b5b79f036a3e54",
-      "event_id": "evt-bdc248984999",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "public-apis/public-apis",
-      "summary": "A collective list of free APIs",
-      "summary_origin": "original",
-      "original_url": "https://github.com/public-apis/public-apis",
-      "canonical_url": "https://github.com/public-apis/public-apis",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-24T21:33:38Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
-      "heat_raw": null,
-      "hot_score": 46.42,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 73.37,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/public-apis/public-apis",
-        "name": "public-apis",
-        "owner": "public-apis",
-        "stars": 452428,
-        "forks": 49816,
-        "watchers": 452428,
-        "open_issues": 1587,
-        "language": "Python",
-        "pushed_at": "2026-07-24T21:33:38Z",
-        "created_at": "2016-03-20T23:49:42Z",
-        "updated_at": "2026-07-25T08:13:25Z"
+        "updated_at": "2026-07-26T00:38:09Z"
       }
     },
     {
@@ -3180,14 +3224,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-24T21:21:36Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 46.34,
+      "hot_score": 40.83,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 72.94,
+        "freshness": 45.41,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3199,14 +3243,14 @@
         "api_url": "https://api.github.com/repos/obra/superpowers",
         "name": "superpowers",
         "owner": "obra",
-        "stars": 260715,
-        "forks": 23260,
-        "watchers": 260715,
-        "open_issues": 319,
+        "stars": 261093,
+        "forks": 23298,
+        "watchers": 261093,
+        "open_issues": 321,
         "language": "Shell",
         "pushed_at": "2026-07-24T21:21:36Z",
         "created_at": "2025-10-09T19:45:18Z",
-        "updated_at": "2026-07-25T08:14:37Z"
+        "updated_at": "2026-07-26T00:41:27Z"
       }
     },
     {
@@ -3224,14 +3268,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-24T11:19:17Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 42.67,
+      "hot_score": 38.55,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 54.58,
+        "freshness": 33.98,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3243,58 +3287,14 @@
         "api_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
         "name": "developer-roadmap",
         "owner": "nilbuild",
-        "stars": 362617,
-        "forks": 44661,
-        "watchers": 362617,
+        "stars": 362684,
+        "forks": 44670,
+        "watchers": 362684,
         "open_issues": 0,
         "language": "TypeScript",
         "pushed_at": "2026-07-24T11:19:17Z",
         "created_at": "2017-03-15T13:45:52Z",
-        "updated_at": "2026-07-25T08:15:35Z"
-      }
-    },
-    {
-      "id": "9837b7357388f8f7",
-      "event_id": "evt-e2cb4b1b40c7",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "EbookFoundation/free-programming-books",
-      "summary": ":books: Freely available programming books",
-      "summary_origin": "original",
-      "original_url": "https://github.com/EbookFoundation/free-programming-books",
-      "canonical_url": "https://github.com/EbookFoundation/free-programming-books",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-23T15:28:53Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
-      "heat_raw": null,
-      "hot_score": 37.91,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 30.78,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
-        "name": "free-programming-books",
-        "owner": "EbookFoundation",
-        "stars": 392962,
-        "forks": 66568,
-        "watchers": 392962,
-        "open_issues": 77,
-        "language": "Python",
-        "pushed_at": "2026-07-23T15:28:53Z",
-        "created_at": "2013-10-11T06:50:37Z",
-        "updated_at": "2026-07-25T08:16:52Z"
+        "updated_at": "2026-07-26T00:41:24Z"
       }
     },
     {
@@ -3312,14 +3312,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T05:04:46Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 36.31,
+      "hot_score": 34.59,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 22.79,
+        "freshness": 14.19,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3331,14 +3331,14 @@
         "api_url": "https://api.github.com/repos/vinta/awesome-python",
         "name": "awesome-python",
         "owner": "vinta",
-        "stars": 310215,
-        "forks": 28369,
-        "watchers": 310215,
-        "open_issues": 19,
+        "stars": 310327,
+        "forks": 28375,
+        "watchers": 310327,
+        "open_issues": 20,
         "language": "Python",
         "pushed_at": "2026-07-23T05:04:46Z",
         "created_at": "2014-06-27T21:00:06Z",
-        "updated_at": "2026-07-25T08:12:38Z"
+        "updated_at": "2026-07-26T00:31:17Z"
       }
     },
     {
@@ -3356,14 +3356,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-21T21:31:29Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 33.58,
+      "hot_score": 32.89,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 9.16,
+        "freshness": 5.7,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3375,14 +3375,14 @@
         "api_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
         "name": "awesome-selfhosted",
         "owner": "awesome-selfhosted",
-        "stars": 308096,
-        "forks": 14447,
-        "watchers": 308096,
+        "stars": 308270,
+        "forks": 14451,
+        "watchers": 308270,
         "open_issues": 0,
         "language": null,
         "pushed_at": "2026-07-21T21:31:29Z",
         "created_at": "2015-06-01T02:33:17Z",
-        "updated_at": "2026-07-25T08:10:57Z"
+        "updated_at": "2026-07-26T00:31:22Z"
       }
     },
     {
@@ -3400,14 +3400,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-21T12:21:20Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 33.16,
+      "hot_score": 32.63,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 7.03,
+        "freshness": 4.38,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3419,14 +3419,14 @@
         "api_url": "https://api.github.com/repos/TheAlgorithms/Python",
         "name": "Python",
         "owner": "TheAlgorithms",
-        "stars": 223127,
-        "forks": 50902,
-        "watchers": 223127,
-        "open_issues": 1025,
+        "stars": 223152,
+        "forks": 50903,
+        "watchers": 223152,
+        "open_issues": 1021,
         "language": "Python",
         "pushed_at": "2026-07-21T12:21:20Z",
         "created_at": "2016-07-16T09:44:01Z",
-        "updated_at": "2026-07-25T07:58:24Z"
+        "updated_at": "2026-07-25T23:41:42Z"
       }
     },
     {
@@ -3444,14 +3444,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-20T07:41:26Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
-      "hot_score": 32.36,
+      "hot_score": 32.13,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 3.07,
+        "freshness": 1.91,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3463,14 +3463,14 @@
         "api_url": "https://api.github.com/repos/practical-tutorials/project-based-learning",
         "name": "project-based-learning",
         "owner": "practical-tutorials",
-        "stars": 275146,
-        "forks": 35460,
-        "watchers": 275146,
+        "stars": 275247,
+        "forks": 35476,
+        "watchers": 275247,
         "open_issues": 290,
         "language": "Python",
         "pushed_at": "2026-07-20T07:41:26Z",
         "created_at": "2017-04-12T05:07:46Z",
-        "updated_at": "2026-07-25T08:13:15Z"
+        "updated_at": "2026-07-26T00:04:29Z"
       }
     },
     {
@@ -3488,14 +3488,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-14T19:25:58Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
       "hot_score": 31.76,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 0.07,
+        "freshness": 0.04,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3507,14 +3507,14 @@
         "api_url": "https://api.github.com/repos/codecrafters-io/build-your-own-x",
         "name": "build-your-own-x",
         "owner": "codecrafters-io",
-        "stars": 531362,
-        "forks": 50255,
-        "watchers": 531362,
+        "stars": 531551,
+        "forks": 50279,
+        "watchers": 531551,
         "open_issues": 617,
         "language": "Markdown",
         "pushed_at": "2026-07-14T19:25:58Z",
         "created_at": "2018-05-09T12:03:18Z",
-        "updated_at": "2026-07-25T08:15:22Z"
+        "updated_at": "2026-07-26T00:34:19Z"
       }
     },
     {
@@ -3532,14 +3532,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-14T05:38:25Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
       "hot_score": 31.76,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 0.05,
+        "freshness": 0.03,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3551,14 +3551,14 @@
         "api_url": "https://api.github.com/repos/ossu/computer-science",
         "name": "computer-science",
         "owner": "ossu",
-        "stars": 207215,
-        "forks": 25688,
-        "watchers": 207215,
+        "stars": 207255,
+        "forks": 25694,
+        "watchers": 207255,
         "open_issues": 23,
         "language": "HTML",
         "pushed_at": "2026-07-14T05:38:25Z",
         "created_at": "2014-05-04T00:18:39Z",
-        "updated_at": "2026-07-25T07:39:51Z"
+        "updated_at": "2026-07-26T00:31:15Z"
       }
     },
     {
@@ -3576,8 +3576,8 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-06-30T18:21:16Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
       "hot_score": 31.75,
       "score_breakdown": {
@@ -3595,14 +3595,14 @@
         "api_url": "https://api.github.com/repos/sindresorhus/awesome",
         "name": "awesome",
         "owner": "sindresorhus",
-        "stars": 488729,
-        "forks": 36044,
-        "watchers": 488729,
+        "stars": 489018,
+        "forks": 36057,
+        "watchers": 489018,
         "open_issues": 97,
         "language": null,
         "pushed_at": "2026-06-30T18:21:16Z",
         "created_at": "2014-07-11T13:42:37Z",
-        "updated_at": "2026-07-25T08:16:48Z"
+        "updated_at": "2026-07-26T00:37:53Z"
       }
     },
     {
@@ -3620,8 +3620,8 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-06-26T22:49:17Z",
-      "collected_at": "2026-07-25T08:17:05Z",
-      "updated_at": "2026-07-25T08:17:05Z",
+      "collected_at": "2026-07-26T00:41:27Z",
+      "updated_at": "2026-07-26T00:41:27Z",
       "heat_raw": null,
       "hot_score": 31.75,
       "score_breakdown": {
@@ -3639,14 +3639,14 @@
         "api_url": "https://api.github.com/repos/trekhleb/javascript-algorithms",
         "name": "javascript-algorithms",
         "owner": "trekhleb",
-        "stars": 196325,
+        "stars": 196331,
         "forks": 31047,
-        "watchers": 196325,
+        "watchers": 196331,
         "open_issues": 403,
         "language": "JavaScript",
         "pushed_at": "2026-06-26T22:49:17Z",
         "created_at": "2018-03-24T07:47:04Z",
-        "updated_at": "2026-07-25T07:38:35Z"
+        "updated_at": "2026-07-25T22:50:46Z"
       }
     }
   ],
@@ -3670,11 +3670,11 @@
       "trend_ids": [
         "82759af2770e3ddb"
       ],
-      "hot_score": 42.12,
+      "hot_score": 39.62,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.1,
+        "freshness": 20.61,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3700,11 +3700,11 @@
       "trend_ids": [
         "f43e61b923fa3759"
       ],
-      "hot_score": 42.11,
+      "hot_score": 39.62,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.06,
+        "freshness": 20.58,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3730,11 +3730,11 @@
       "trend_ids": [
         "65e5a45ec2c25f86"
       ],
-      "hot_score": 42.11,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.04,
+        "freshness": 20.57,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3760,11 +3760,11 @@
       "trend_ids": [
         "bd877c35643a7d5d"
       ],
-      "hot_score": 42.11,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.04,
+        "freshness": 20.57,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3790,11 +3790,11 @@
       "trend_ids": [
         "d0800828c15d18b1"
       ],
-      "hot_score": 42.1,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.02,
+        "freshness": 20.56,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3820,11 +3820,11 @@
       "trend_ids": [
         "6eb8fc60c8ec72fa"
       ],
-      "hot_score": 42.1,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 33.01,
+        "freshness": 20.55,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3850,11 +3850,11 @@
       "trend_ids": [
         "1c8c999c62e93229"
       ],
-      "hot_score": 42.09,
+      "hot_score": 39.61,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.97,
+        "freshness": 20.53,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3880,11 +3880,11 @@
       "trend_ids": [
         "21d0f878603fd14f"
       ],
-      "hot_score": 42.09,
+      "hot_score": 39.6,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.95,
+        "freshness": 20.51,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3910,11 +3910,11 @@
       "trend_ids": [
         "591639008ae94d61"
       ],
-      "hot_score": 42.07,
+      "hot_score": 39.59,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.83,
+        "freshness": 20.44,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3940,11 +3940,11 @@
       "trend_ids": [
         "4ba8378159042651"
       ],
-      "hot_score": 42.06,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.79,
+        "freshness": 20.42,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3970,11 +3970,11 @@
       "trend_ids": [
         "91e8a6a486af3363"
       ],
-      "hot_score": 42.06,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.78,
+        "freshness": 20.41,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4000,11 +4000,11 @@
       "trend_ids": [
         "c3ca8af3fddde568"
       ],
-      "hot_score": 42.05,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.76,
+        "freshness": 20.39,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4030,11 +4030,11 @@
       "trend_ids": [
         "cd525498f9b74de1"
       ],
-      "hot_score": 42.05,
+      "hot_score": 39.58,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.74,
+        "freshness": 20.39,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4060,11 +4060,11 @@
       "trend_ids": [
         "9f8307801abb53d9"
       ],
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.72,
+        "freshness": 20.37,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4090,11 +4090,11 @@
       "trend_ids": [
         "c7e53c8c9c58b4cc"
       ],
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.71,
+        "freshness": 20.36,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4120,11 +4120,11 @@
       "trend_ids": [
         "9651f9b685b450fc"
       ],
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.71,
+        "freshness": 20.36,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4150,11 +4150,11 @@
       "trend_ids": [
         "52f29fd1e1363875"
       ],
-      "hot_score": 42.04,
+      "hot_score": 39.57,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.68,
+        "freshness": 20.35,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4180,11 +4180,11 @@
       "trend_ids": [
         "3e6aa3dec23127cf"
       ],
-      "hot_score": 42.02,
+      "hot_score": 39.56,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.58,
+        "freshness": 20.29,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4210,11 +4210,11 @@
       "trend_ids": [
         "b8b2e204037e4ec7"
       ],
-      "hot_score": 42.01,
+      "hot_score": 39.55,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.55,
+        "freshness": 20.26,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4240,11 +4240,11 @@
       "trend_ids": [
         "01275321b7ec914a"
       ],
-      "hot_score": 42.0,
+      "hot_score": 39.55,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 32.49,
+        "freshness": 20.23,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4274,7 +4274,7 @@
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 0.07,
+        "freshness": 0.04,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4330,16 +4330,16 @@
       "trend_ids": [
         "3191f8d4ba57286c"
       ],
-      "hot_score": 51.53,
+      "hot_score": 45.45,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 98.92,
+        "freshness": 68.51,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T07:54:33Z",
-      "updated_at": "2026-07-25T07:54:33Z"
+      "published_at": "2026-07-25T11:35:51Z",
+      "updated_at": "2026-07-25T11:35:51Z"
     },
     {
       "event_id": "evt-bdc248984999",
@@ -4360,16 +4360,16 @@
       "trend_ids": [
         "54b5b79f036a3e54"
       ],
-      "hot_score": 46.42,
+      "hot_score": 50.03,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 73.37,
+        "freshness": 91.4,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-24T21:33:38Z",
-      "updated_at": "2026-07-24T21:33:38Z"
+      "published_at": "2026-07-25T21:34:33Z",
+      "updated_at": "2026-07-25T21:34:33Z"
     },
     {
       "event_id": "evt-e2cb4b1b40c7",
@@ -4390,16 +4390,16 @@
       "trend_ids": [
         "9837b7357388f8f7"
       ],
-      "hot_score": 37.91,
+      "hot_score": 44.85,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 30.78,
+        "freshness": 65.49,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-23T15:28:53Z",
-      "updated_at": "2026-07-23T15:28:53Z"
+      "published_at": "2026-07-25T10:02:14Z",
+      "updated_at": "2026-07-25T10:02:14Z"
     },
     {
       "event_id": "evt-8aaa492578d4",
@@ -4420,16 +4420,16 @@
       "trend_ids": [
         "bb22f6df2b307397"
       ],
-      "hot_score": 51.71,
+      "hot_score": 51.74,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 99.81,
+        "freshness": 99.97,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T08:13:03Z",
-      "updated_at": "2026-07-25T08:13:03Z"
+      "published_at": "2026-07-26T00:40:44Z",
+      "updated_at": "2026-07-26T00:40:44Z"
     },
     {
       "event_id": "evt-001647cb34a7",
@@ -4450,11 +4450,11 @@
       "trend_ids": [
         "869b28b8cd70d5b6"
       ],
-      "hot_score": 42.67,
+      "hot_score": 38.55,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 54.58,
+        "freshness": 33.98,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4480,11 +4480,11 @@
       "trend_ids": [
         "3ed57715238258bc"
       ],
-      "hot_score": 36.31,
+      "hot_score": 34.59,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 22.79,
+        "freshness": 14.19,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4510,11 +4510,11 @@
       "trend_ids": [
         "3eb4a1ecf75f6126"
       ],
-      "hot_score": 33.58,
+      "hot_score": 32.89,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 9.16,
+        "freshness": 5.7,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4540,11 +4540,11 @@
       "trend_ids": [
         "e68aa7f48845629f"
       ],
-      "hot_score": 32.36,
+      "hot_score": 32.13,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 3.07,
+        "freshness": 1.91,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4570,11 +4570,11 @@
       "trend_ids": [
         "239bdbda9a37b45b"
       ],
-      "hot_score": 46.34,
+      "hot_score": 40.83,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 72.94,
+        "freshness": 45.41,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4600,16 +4600,16 @@
       "trend_ids": [
         "08d0aff0d7b2adaa"
       ],
-      "hot_score": 50.37,
+      "hot_score": 51.74,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 93.1,
+        "freshness": 99.96,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T05:48:34Z",
-      "updated_at": "2026-07-25T05:48:34Z"
+      "published_at": "2026-07-26T00:40:43Z",
+      "updated_at": "2026-07-26T00:40:43Z"
     },
     {
       "event_id": "evt-7a2a8c4b059b",
@@ -4630,16 +4630,16 @@
       "trend_ids": [
         "83df4bf6d4ca361a"
       ],
-      "hot_score": 49.01,
+      "hot_score": 47.96,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 86.32,
+        "freshness": 81.04,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T03:11:34Z",
-      "updated_at": "2026-07-25T03:11:34Z"
+      "published_at": "2026-07-25T17:24:39Z",
+      "updated_at": "2026-07-25T17:24:39Z"
     },
     {
       "event_id": "evt-e0af993576a0",
@@ -4660,11 +4660,11 @@
       "trend_ids": [
         "ebe5e44a2bb6b040"
       ],
-      "hot_score": 47.94,
+      "hot_score": 41.83,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 80.97,
+        "freshness": 50.41,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4690,11 +4690,11 @@
       "trend_ids": [
         "c33c5f7d57ca1054"
       ],
-      "hot_score": 33.16,
+      "hot_score": 32.63,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 7.03,
+        "freshness": 4.38,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4720,16 +4720,16 @@
       "trend_ids": [
         "ade16614f36cc3bc"
       ],
-      "hot_score": 50.75,
+      "hot_score": 51.61,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 95.0,
+        "freshness": 99.28,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T06:30:24Z",
-      "updated_at": "2026-07-25T06:30:24Z"
+      "published_at": "2026-07-26T00:26:22Z",
+      "updated_at": "2026-07-26T00:26:22Z"
     },
     {
       "event_id": "evt-b339953ea86d",
@@ -4754,7 +4754,7 @@
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 0.05,
+        "freshness": 0.03,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4780,16 +4780,16 @@
       "trend_ids": [
         "b2200a220683fb8e"
       ],
-      "hot_score": 51.74,
+      "hot_score": 51.48,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 99.95,
+        "freshness": 98.64,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T08:16:06Z",
-      "updated_at": "2026-07-25T08:16:06Z"
+      "published_at": "2026-07-26T00:12:55Z",
+      "updated_at": "2026-07-26T00:12:55Z"
     },
     {
       "event_id": "evt-2b75dc2c58be",
@@ -4810,16 +4810,16 @@
       "trend_ids": [
         "fa583e61d6724b09"
       ],
-      "hot_score": 51.28,
+      "hot_score": 51.71,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 97.67,
+        "freshness": 99.78,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-25T07:28:10Z",
-      "updated_at": "2026-07-25T07:28:10Z"
+      "published_at": "2026-07-26T00:36:52Z",
+      "updated_at": "2026-07-26T00:36:52Z"
     },
     {
       "event_id": "evt-48bbf582d2ad",
