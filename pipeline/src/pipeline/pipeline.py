@@ -111,25 +111,98 @@ def freshness_score(ref_time: Optional[datetime], now: datetime) -> float:
 # ---------------------------------------------------------------------------
 
 
+# Stopwords removed from entity extraction (short, common English words
+# that don't help identify a topic).
+_ENTITY_STOPWORDS: frozenset[str] = frozenset({
+    "the", "a", "an", "of", "for", "in", "on", "with", "and", "to",
+    "from", "by", "at", "is", "it", "as", "be", "are", "was", "were",
+    "has", "have", "had", "do", "does", "did", "this", "that", "these",
+    "those", "we", "our", "its", "their", "new", "how", "what", "why",
+    "who", "not", "no", "but", "or", "if", "so", "than", "into",
+})
+
+
+def _normalize_entity_text(text: str) -> str:
+    """Normalize text for entity extraction: lowercase, remove punctuation,
+    keep only alphanumeric and hyphens, collapse whitespace."""
+    text = text.lower()
+    # Keep hyphens (important for terms like "gpt-5"), remove other punctuation
+    text = re.sub(r"[^\w\s-]", " ", text)
+    # Collapse whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def _extract_entity_words(text: str, max_words: int = 5) -> tuple[str, ...]:
+    """Extract up to ``max_words`` significant words from normalized text,
+    excluding stopwords, sorted alphabetically for stability."""
+    normalized = _normalize_entity_text(text)
+    words = [w for w in normalized.split() if w not in _ENTITY_STOPWORDS and len(w) > 1]
+    if not words:
+        return ()
+    # Take first max_words meaningful words (preserving original order for
+    # entity distinctiveness), but sort alphabetically for stability
+    return tuple(sorted(words[:max_words]))
+
+
+def build_event_entity(item: NormalizedItem) -> str:
+    """Build a deterministic semantic entity key from a NormalizedItem.
+
+    Design:
+      - GitHub repos: use the repo name (``owner/name``) extracted from the
+        title. This is a natural unique identifier and should NOT merge with
+        other sources' items about the same topic (a repo IS the entity).
+      - arXiv / OpenAI Blog / other sources: use the top N significant words
+        from the title. Same-topic items across sources should share a
+        similar word signature.
+
+    Falls back to ``canonical_url`` when no title is available (this means
+    cross-source semantic matching won't happen, but the pipeline won't break).
+    """
+    title = (item.title or "").strip()
+    if not title:
+        return item.canonical_url or item.original_url or ""
+
+    # GitHub: repo name is a unique identifier.
+    if item.source_id == "github":
+        # Repo name in title format: "owner/repo description..."
+        m = re.match(r"^([a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)", title)
+        if m:
+            return m.group(1).lower()
+        # Fallback to content-based entity
+        words = _extract_entity_words(title, max_words=5)
+        return " ".join(words) if words else (item.canonical_url or title[:50])
+
+    # arXiv, OpenAI Blog, and others: content-based entity from title.
+    words = _extract_entity_words(title, max_words=5)
+    return " ".join(words) if words else (item.canonical_url or title[:50])
+
+
 def _merge_context(item: NormalizedItem) -> MergeContext:
     """Conservative merge facts for one item.
 
-    ``entity`` is the canonical URL -- the natural artifact key for a
-    URL-based source. Distinct URLs (the normal case for arXiv, one URL
-    per paper) yield distinct entities, so ``decide_event_merge`` keeps
-    them as independent Events. We deliberately prefer UNDER-aggregation.
+    ``entity`` is a semantic key derived from the item's title (or repo
+    name for GitHub), enabling cross-source event aggregation for items
+    about the same topic. See ``build_event_entity`` for details.
+
+    ``keywords`` are light keyword hints from the title; they are consulted
+    as a secondary signal when the entity matches but across different
+    canonical URLs.
+
+    With distinct canonical URLs AND distinct entities, ``decide_event_merge``
+    keeps them as independent Events (preferring UNDER-aggregation).
     """
     canon = item.canonical_url or item.original_url or ""
-    # Light keyword hints from the title; only consulted when entity matches.
     kws = tuple(
         w for w in re.findall(r"[a-z0-9]+", (item.title or "").lower()) if len(w) > 2
     )[:5]
     pub = item.published_at or item.collected_at
     return MergeContext(
         canonical_url=canon,
-        entity=canon,
+        entity=build_event_entity(item),
         keywords=kws,
         title=item.title,
+        source_id=item.source_id,
         published_at=pub,
     )
 
@@ -157,7 +230,22 @@ def cluster_items(items: List[NormalizedItem]) -> List[List[NormalizedItem]]:
 
 
 def _event_id_for(cluster: List[NormalizedItem]) -> str:
-    """Stable event id from the sorted member canonical ids."""
+    """Stable event id derived from the cluster's core entity.
+
+    Uses ``build_event_entity`` on the first member to get a stable
+    semantic key, then hashes it. This guarantees that the same topic
+    (across dates and sources) produces the same event_id, enabling
+    stable cross-date Event tracking.
+
+    Falls back to sorted member ``canonical_id`` collision domain when
+    the entity key is empty (should not happen in practice).
+    """
+    # Try entity-based stable ID first.
+    first_entity = build_event_entity(cluster[0])
+    if first_entity:
+        digest = hashlib.sha256(first_entity.encode("utf-8")).hexdigest()
+        return f"evt-{digest[:12]}"
+    # Fallback: sorted member canonical IDs (original behavior).
     members = sorted(
         canonical_id(c.source_id, c.canonical_url or c.original_url or "")
         for c in cluster

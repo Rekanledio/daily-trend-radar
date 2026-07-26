@@ -126,8 +126,9 @@ def test_load_categories_includes_ai_research():
 def test_registry_only_registers_enabled_sources():
     cfg = load_sources_config(default_config_path())
     reg = build_registry(cfg.sources)
-    # arxiv + github are enabled in the real config.
-    assert set(reg.keys()) == {"arxiv", "github"}
+    # arxiv + github + openai_blog are enabled in the real config.
+    expected = {"arxiv", "github", "openai_blog"}
+    assert set(reg.keys()) == expected
     assert isinstance(reg["arxiv"], ArxivAdapter)
     assert isinstance(reg["github"], GitHubAdapter)
 

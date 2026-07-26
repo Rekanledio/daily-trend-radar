@@ -110,10 +110,8 @@ def test_build_registry_only_instantiates_enabled_sources():
     cfg = load_sources_config(default_config_path(root))
     registry = build_registry(cfg.sources)
 
-    # arxiv + github are enabled=true; openai_blog must be absent.
-    assert set(registry.keys()) == {"arxiv", "github"}
-    for sid in ("openai_blog",):
-        assert sid not in registry
+    # arxiv + github + openai_blog are enabled=true.
+    assert set(registry.keys()) == {"arxiv", "github", "openai_blog"}
 
 
 # ---------------------------------------------------------------------------

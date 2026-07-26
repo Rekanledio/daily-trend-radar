@@ -560,12 +560,14 @@ def _ctx(
     keywords: tuple[str, ...],
     title: str,
     when: Optional[datetime] = None,
+    source_id: str = "test",
 ) -> MergeContext:
     return MergeContext(
         canonical_url=canonicalize_url(url),
         entity=entity,
         keywords=keywords,
         title=title,
+        source_id=source_id,
         published_at=when or _now(),
     )
 
@@ -588,10 +590,12 @@ def test_merge_on_entity_plus_window_plus_keywords():
     a = _ctx(
         "https://news.com/1", "GPT-5", ("llm", "release", "openai"),
         "OpenAI 发布 GPT-5", when,
+        source_id="news_site",
     )
     b = _ctx(
         "https://blog.com/2", "GPT-5", ("llm", "openai", "model"),
         "GPT-5 技术细节", when,
+        source_id="blog_site",
     )
     assert decide_event_merge(a, b) is True
 
@@ -611,6 +615,60 @@ def test_no_merge_outside_time_window():
         "Y", datetime(2026, 7, 1, 9, 0, 0, tzinfo=timezone.utc),
     )
     # entity + keywords match, but 23 days apart (> 48h window)
+    assert decide_event_merge(a, b) is False
+
+
+def test_no_same_source_semantic_merge():
+    """Same source with different URLs and same entity -> do NOT merge."""
+    when = _now()
+    a = _ctx(
+        "https://arxiv.org/abs/2607.001", "gpt 5 vision multimodal",
+        ("gpt", "vision", "multimodal", "model"),
+        "GPT-5 Vision: Multimodal Reasoning", when,
+        source_id="arxiv",
+    )
+    b = _ctx(
+        "https://arxiv.org/abs/2607.002", "gpt 5 vision multimodal",
+        ("gpt", "vision", "transformers", "deep"),
+        "GPT-5 Vision with Transformers", when,
+        source_id="arxiv",
+    )
+    assert decide_event_merge(a, b) is False
+
+
+def test_cross_source_entity_merge():
+    """Different sources, same entity, enough keywords, within window -> merge."""
+    when = _now()
+    a = _ctx(
+        "https://arxiv.org/abs/2607.001", "gpt 5 vision multimodal",
+        ("gpt", "vision", "multimodal"),
+        "GPT-5 Vision: Multimodal Reasoning", when,
+        source_id="arxiv",
+    )
+    b = _ctx(
+        "https://openai.com/index/gpt-5-vision", "gpt 5 vision multimodal",
+        ("gpt", "model", "vision"),
+        "Introducing GPT-5 Vision", when,
+        source_id="openai_blog",
+    )
+    assert decide_event_merge(a, b) is True
+
+
+def test_cross_source_no_entity_match():
+    """Different sources, different entities -> do NOT merge."""
+    when = _now()
+    a = _ctx(
+        "https://arxiv.org/abs/2607.001", "gpt 5 vision",
+        ("gpt", "vision", "model"),
+        "GPT-5 Vision", when,
+        source_id="arxiv",
+    )
+    b = _ctx(
+        "https://openai.com/index/claude", "claude 3 5",
+        ("claude", "model", "anthropic"),
+        "Claude 3.5 Release", when,
+        source_id="openai_blog",
+    )
     assert decide_event_merge(a, b) is False
 
 

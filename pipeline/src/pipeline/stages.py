@@ -363,12 +363,15 @@ class MergeContext:
     One per candidate Trend. Kept tiny and pure (no raw item, no AI).
     ``entity`` is the core entity (e.g. paper id / product name);
     ``keywords`` are the core keywords (lower-cased by the caller).
+    ``source_id`` is the source identifier, used to prevent same-source
+    semantic merges (same-source, different-URL items are distinct).
     """
 
     canonical_url: str
     entity: Optional[str]
     keywords: tuple[str, ...]
     title: str
+    source_id: str
     published_at: datetime
 
 
@@ -383,9 +386,15 @@ def decide_event_merge(
 
     MVP principle: 宁可少聚合，也不要错误聚合 -- prefering
     under-aggregation over a WRONG aggregation. Merge ONLY when one of:
-      (1) canonical URL exactly matches, OR
-      (2) core entity matches AND within the time window AND enough
-          shared core keywords.
+      (1) canonical URL exactly matches (any source), OR
+      (2) cross-source: core entity matches AND within the time window
+          AND enough shared core keywords.
+
+    Rule (2) is deliberately restricted to CROSS-source merges only:
+    same-source, different-URL items are always kept as independent
+    Events (even if they share the same entity/keywords), because
+    same-source content that is similar does not necessarily refer
+    to the same real-world event.
 
     Title similarity is NEVER a sole trigger -- it is deliberately
     excluded from the decisive logic to avoid false merges. When
@@ -395,6 +404,9 @@ def decide_event_merge(
     # (1) Exact canonical-URL match -> same real artifact -> merge.
     if a.canonical_url and b.canonical_url and a.canonical_url == b.canonical_url:
         return True
+    # Same origin source, different URL -> do NOT semantic merge.
+    if a.source_id == b.source_id:
+        return False
     # Time window (applies to the entity/keyword path).
     delta = abs((a.published_at - b.published_at).total_seconds())
     within_window = delta <= window_hours * 3600
