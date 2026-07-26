@@ -19,7 +19,7 @@ from __future__ import annotations
 
 import json
 import pathlib
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, List
 
 from jsonschema import Draft202012Validator
@@ -111,6 +111,12 @@ def update_index(data_home: pathlib.Path, data: PublishedData) -> DateIndex:
     idx.date_index[data.date] = entry
 
     dates = sorted(set(idx.available_dates) | {data.date})
+    # Keep only the last 7 days (today + 6 prior) so the date-picker
+    # in the frontend stays usable.  Older dates remain in date_index
+    # for backward-looking queries, but are removed from the quick-pick list.
+    today = datetime.strptime(data.date, "%Y-%m-%d").date()
+    cutoff = (today - timedelta(days=6)).isoformat()
+    dates = [d for d in dates if d >= cutoff]
     idx.available_dates = dates
     idx.latest_date = dates[-1]
     idx.categories = sorted(set(idx.categories) | set(data.categories.keys()))
