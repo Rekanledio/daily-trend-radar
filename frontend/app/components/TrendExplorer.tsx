@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { Trend, HealthSnapshot } from "@/lib/types";
+import type { Trend, HealthSnapshot, Event } from "@/lib/types";
 import {
   buildHistoryMap,
   getTrendHistory,
@@ -421,6 +421,7 @@ export default function TrendExplorer({
   latestDate: _latestDate,
   health,
   historicalDataByDate,
+  events = [],
 }: {
   trends: Trend[];
   currentDate: string | null;
@@ -428,6 +429,7 @@ export default function TrendExplorer({
   latestDate: string | null;
   health: HealthSnapshot;
   historicalDataByDate: Map<string, Trend[]>;
+  events?: Event[];
 }) {
   const totalCount = trends.length;
   const [healthOpen, setHealthOpen] = useState(false);
@@ -436,6 +438,12 @@ export default function TrendExplorer({
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("all");
   const [sortBy, setSortBy] = useState<SortMode>("hot");
+
+  // Event metrics
+  const multiSourceEventCount = useMemo(
+    () => events.filter((ev) => ev.source_count > 1).length,
+    [events]
+  );
 
   // Build history map for cross-date trend matching
   const historyMap = useMemo(() => {
@@ -532,6 +540,16 @@ export default function TrendExplorer({
             <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 text-xs font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
               {statusLabel(health.overall)}
+            </span>
+          )}
+          {events.length > 0 && (
+            <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:inline">
+              {events.length} 事件
+              {multiSourceEventCount > 0 && (
+                <span className="text-indigo-500 dark:text-indigo-400 font-medium ml-1">
+                  · {multiSourceEventCount} 多源
+                </span>
+              )}
             </span>
           )}
         </div>

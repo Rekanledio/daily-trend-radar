@@ -5,7 +5,7 @@
 
 import { createRepository } from "../lib/repositories/json-file-repository";
 import TrendExplorer from "./components/TrendExplorer";
-import type { Trend } from "../lib/types";
+import type { Trend, Event } from "../lib/types";
 
 export const revalidate = 86400; // 24h ISR
 export const dynamic = "force-dynamic";
@@ -71,6 +71,7 @@ export default async function Home(props: {
 
   const totalItems = allTrends.length;
   const sourceCount = Object.keys(publishedData?.categories ?? {}).length;
+  const eventCount = publishedData?.events?.length ?? 0;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
@@ -120,6 +121,11 @@ export default async function Home(props: {
                 <span className="font-medium text-gray-600 dark:text-gray-300">{sourceCount}</span> 个分类
               </span>
             )}
+            {eventCount > 0 && (
+              <span className="flex items-center gap-1">
+                <span className="font-medium text-gray-600 dark:text-gray-300">{eventCount}</span> 个事件
+              </span>
+            )}
             <span className="text-gray-300 dark:text-gray-700">·</span>
             <span>arXiv API + GitHub API + OpenAI RSS</span>
           </div>
@@ -145,6 +151,7 @@ export default async function Home(props: {
             latestDate={latestDate}
             health={health}
             historicalDataByDate={historicalDataByDate}
+            events={publishedData?.events ?? []}
           />
         )}
       </main>
