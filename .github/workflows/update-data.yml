@@ -1,7 +1,8 @@
 # Daily Trend Radar — Data Pipeline
 #
 # Stage 3-1: 定时 + 手动触发运行 Pipeline，产出真实数据。
-# 后继阶段会逐步添加 data/ → frontend/public/data/ 同步、auto-commit、Vercel 部署。
+# Stage 3-2: 自动同步 data/ → frontend/public/data/（供 Vercel 部署读取）。
+# 后继阶段会逐步添加 auto-commit、Vercel 部署。
 #
 # 触发：
 #   schedule:    每日 02:00 UTC（北京时间 10:00），避开全球凌晨高峰
@@ -81,3 +82,29 @@ jobs:
             fi
           done
           echo "All output files verified."
+
+      - name: Sync generated data to frontend public directory
+        run: |
+          echo "Cleaning old frontend/public/data/..."
+          rm -rf frontend/public/data/
+          mkdir -p frontend/public/data
+          echo "Copying data/* → frontend/public/data/ ..."
+          cp -r data/* frontend/public/data/
+          echo "Sync complete."
+
+      - name: Verify synced data files
+        run: |
+          DATE=$(date -u +"%Y-%m-%d")
+          Y=$(date -u +"%Y")
+          M=$(date -u +"%m")
+          echo "Expected date: $DATE"
+          for f in "frontend/public/data/$Y/$M/$DATE.json" frontend/public/data/index.json frontend/public/data/health.json frontend/public/data/sources_state.json; do
+            if [ -f "$f" ]; then
+              size=$(stat -c%s "$f")
+              echo "  ✅ $f ($size bytes)"
+            else
+              echo "  ❌ MISSING: $f"
+              exit 1
+            fi
+          done
+          echo "All synced data files verified."
