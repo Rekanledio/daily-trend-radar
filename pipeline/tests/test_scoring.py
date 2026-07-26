@@ -220,3 +220,139 @@ class TestScoreTrends:
             assert t.trend_score is not None
             assert t.impact_level is not None
             assert t.score_reason is not None
+
+
+# ---------------------------------------------------------------------------
+# Edge case / boundary tests (Stage 4-4 audit)
+# ---------------------------------------------------------------------------
+
+
+class TestScoreEdgeCases:
+    def test_hot_score_zero_ts_floor(self):
+        """hot_score=0 should still get source+freshness scores."""
+        trend = _make_trend(hot_score=0.0, published_at=_FIXED_NOW)
+        result = score_trend(trend, now=_FIXED_NOW)
+        # Source (28) + Hot (0) + Fresh (20) + AI (0)
+        assert result.trend_score == 48.0  # 28 + 0 + 20 + 0
+        assert result.impact_level == "medium"
+
+    def test_hot_score_100_max_component(self):
+        """hot_score=100 gives Hot component of 30."""
+        trend = _make_trend(
+            source_id="github",
+            hot_score=100.0,
+            published_at=_FIXED_NOW,
+            title="LLM Agent Transformer GPT",
+            ai_summary=AISummary(
+                summary="Advanced AI model",
+                why_it_matters="Major AI breakthrough",
+                keywords=["deep learning", "neural", "llm", "rag", "diffusion", "multimodal"],
+            ),
+        )
+        result = score_trend(trend, now=_FIXED_NOW)
+        # Source (28) + Hot (30) + Fresh (20) + AI (max ~20) = ~98
+        assert result.trend_score > 70.0
+        assert result.trend_score <= 100.0
+        assert result.impact_level in ("critical", "high")
+
+    def test_trend_score_clamped_high(self):
+        """Ensure clamping prevents > 100 even with extreme values."""
+        trend = _make_trend(
+            source_id="github",
+            hot_score=100.0,
+            published_at=_FIXED_NOW,
+            title="LLM Agent Transformer Deep Learning GPT Neural RAG RLHF",
+            ai_summary=AISummary(
+                summary="AI breakthrough with transformers",
+                why_it_matters="Deep learning revolution",
+                keywords=["llm", "agent", "transformer", "deep learning", "neural",
+                          "rag", "reinforcement learning", "multimodal", "gpt", "diffusion"],
+            ),
+        )
+        result = score_trend(trend, now=_FIXED_NOW)
+        # 28 + 30 + 20 + 20 = 98 max, clamped to <=100
+        assert result.trend_score <= 100.0
+        assert result.trend_score > 0.0
+
+    def test_trend_score_minimum_floor(self):
+        """Ensure trend_score >= 0 even with zero values."""
+        trend = _make_trend(
+            source_id="unknown_source",
+            hot_score=0.0,
+            published_at=datetime(2020, 1, 1, tzinfo=timezone.utc),
+            title="My old blog",
+        )
+        result = score_trend(trend, now=_FIXED_NOW)
+        # Source (20) + Hot (0) + Fresh (0) + AI (0) = 20
+        assert result.trend_score >= 0.0
+        assert result.trend_score > 0.0  # source still gives 20
+
+    def test_impact_level_exact_boundary_critical(self):
+        """score=80.0 -> critical."""
+        from pipeline.scoring import _determine_impact_level
+        assert _determine_impact_level(80.0) == "critical"
+        assert _determine_impact_level(79.999) == "high"
+
+    def test_impact_level_exact_boundary_high(self):
+        """score=60.0 -> high."""
+        from pipeline.scoring import _determine_impact_level
+        assert _determine_impact_level(60.0) == "high"
+        assert _determine_impact_level(59.999) == "medium"
+
+    def test_impact_level_exact_boundary_medium(self):
+        """score=40.0 -> medium."""
+        from pipeline.scoring import _determine_impact_level
+        assert _determine_impact_level(40.0) == "medium"
+        assert _determine_impact_level(39.999) == "low"
+
+    def test_impact_level_at_zero(self):
+        """score=0 -> low."""
+        from pipeline.scoring import _determine_impact_level
+        assert _determine_impact_level(0.0) == "low"
+        assert _determine_impact_level(-0.0) == "low"
+
+    def test_ai_relevance_max_keywords(self):
+        """All 20 keywords matched should approach 20/20."""
+        trend = _make_trend(
+            title="AI LLM Agent Transformer Deep Learning Machine Learning "
+                  "GPT Language Model Neural Diffusion Reinforcement Learning "
+                  "RAG Retrieval Augmented Multimodal Foundation Model "
+                  "Open Source LLM Fine Tuning SFT RLHF Chain of Thought",
+        )
+        score, reason = _ai_relevance_score(trend)
+        # With that title all 20 keywords should match
+        assert score >= 19.0  # close to max
+        assert score <= 20.0
+
+    def test_ai_relevance_empty_keywords_list(self):
+        """ai_summary exists but keywords=[], should still match via other fields."""
+        trend = _make_trend(
+            title="LLM agent for coding",
+            ai_summary=AISummary(
+                summary="A coding agent",
+                why_it_matters="Helpful for developers",
+                keywords=[],
+            ),
+        )
+        score, reason = _ai_relevance_score(trend)
+        # 'llm' and 'agent' in title should match
+        assert score > 0.0
+        assert "2 keywords" in reason or "LLM" in reason or "agent" in reason
+
+    def test_ai_summary_null_not_ai_relevance(self):
+        """ai_summary=null: AI relevance should still check title/summary."""
+        trend = _make_trend(
+            title="New LLM framework",
+            ai_summary=None,
+        )
+        score, reason = _ai_relevance_score(trend)
+        assert score > 0.0  # 'llm' in title
+
+    def test_score_reason_four_components(self):
+        """score_reason always has exactly 4 reasons."""
+        trend = _make_trend(hot_score=0.0, published_at=datetime(2020, 1, 1, tzinfo=timezone.utc))
+        result = score_trend(trend, now=_FIXED_NOW)
+        assert len(result.score_reason) == 4
+        # All four should have "/" (component/max)
+        for r in result.score_reason:
+            assert "/" in r
