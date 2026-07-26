@@ -120,6 +120,22 @@
         { "$ref": "#/$defs/AISummary" },
         { "type": "null" }
       ]
+    },
+    "trend_score": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Composite trend score (0-100) from rule-based scoring system (Stage 4-3)"
+    },
+    "impact_level": {
+      "type": ["string", "null"],
+      "enum": ["critical", "high", "medium", "low", null],
+      "description": "Impact level derived from trend_score thresholds"
+    },
+    "score_reason": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Breakdown of scoring components with reasons"
     }
   },
   "$defs": {

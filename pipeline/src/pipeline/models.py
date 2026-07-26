@@ -128,6 +128,12 @@ class Trend(BaseModel):
     # AI-generated summary enrichment.
     # Optional -> old data without this field still validates.
     ai_summary: Optional[AISummary] = None
+    # Composite trend scoring (Stage 4-3).
+    # Rule-based system: Source (30) + Hot (30) + Freshness (20) + AI (20).
+    # Optional -> old data without these fields still validates.
+    trend_score: Optional[float] = Field(default=None, ge=0, le=100)
+    impact_level: Optional[Literal["critical", "high", "medium", "low"]] = None
+    score_reason: Optional[list[str]] = None
 
 
 # ---------------------------------------------------------------------------

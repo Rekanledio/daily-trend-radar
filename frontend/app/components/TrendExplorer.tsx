@@ -235,6 +235,66 @@ function TrendCard({ trend }: { trend: Trend }) {
           )}
         </div>
       )}
+
+      {/* Trend Score */}
+      {trend.trend_score != null && (
+        <div className="mt-1 pt-3 border-t border-gray-100 dark:border-gray-800">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-xs font-medium">
+              <span>🔥</span>
+              <span 
+                className={`px-1.5 py-0.5 rounded text-[11px] font-bold ${
+                  trend.impact_level === "critical" 
+                    ? "bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300"
+                    : trend.impact_level === "high"
+                    ? "bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300"
+                    : trend.impact_level === "medium"
+                    ? "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300"
+                    : "bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400"
+                }`}
+              >
+                {trend.impact_level}
+              </span>
+            </div>
+            <span className="text-xs font-bold text-gray-700 dark:text-gray-300">
+              {trend.trend_score.toFixed(1)} / 100
+            </span>
+          </div>
+          <div className="flex-1 h-1.5 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden mt-1.5">
+            <div
+              className="h-full rounded-full transition-all duration-500"
+              style={{
+                width: `${Math.min(100, Math.max(0, trend.trend_score))}%`,
+                background: `linear-gradient(90deg, ${
+                  trend.trend_score >= 80 ? "#ef4444" :
+                  trend.trend_score >= 60 ? "#f97316" :
+                  trend.trend_score >= 40 ? "#eab308" :
+                  "#6b7280"
+                }, ${
+                  trend.trend_score >= 80 ? "#dc2626" :
+                  trend.trend_score >= 60 ? "#ea580c" :
+                  trend.trend_score >= 40 ? "#ca8a04" :
+                  "#4b5563"
+                })`,
+              }}
+            />
+          </div>
+          {trend.score_reason && trend.score_reason.length > 0 && (
+            <details className="group mt-1.5">
+              <summary className="text-[11px] text-gray-400 dark:text-gray-500 cursor-pointer hover:text-gray-600 dark:hover:text-gray-300 select-none">
+                Details
+              </summary>
+              <ul className="mt-1 space-y-0.5">
+                {trend.score_reason.map((r, i) => (
+                  <li key={i} className="text-[11px] text-gray-400 dark:text-gray-500">
+                    {r}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      )}
     </div>
   );
 }

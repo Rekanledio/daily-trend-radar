@@ -1,7 +1,7 @@
 {
   "date": "2026-07-26",
   "schema_version": "1.0",
-  "generated_at": "2026-07-26T02:02:00Z",
+  "generated_at": "2026-07-26T03:28:11Z",
   "pipeline_version": "0.2.0",
   "ai_enabled": false,
   "categories": {
@@ -23,14 +23,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:59:59Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.46,
+          "hot_score": 39.3,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.82,
+            "freshness": 19.02,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -57,7 +57,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:59:59Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         },
         {
           "id": "f43e61b923fa3759",
@@ -74,14 +82,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:57:38Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.46,
+          "hot_score": 39.3,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.8,
+            "freshness": 19.0,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -101,7 +109,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:57:38Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 48.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "65e5a45ec2c25f86",
@@ -118,14 +134,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:56:30Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.46,
+          "hot_score": 39.3,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.79,
+            "freshness": 18.99,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -152,7 +168,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:56:30Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 48.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "bd877c35643a7d5d",
@@ -169,14 +193,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:56:05Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.46,
+          "hot_score": 39.3,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.79,
+            "freshness": 18.98,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -199,7 +223,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:56:05Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 48.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "d0800828c15d18b1",
@@ -216,14 +248,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:55:21Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.46,
+          "hot_score": 39.3,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.78,
+            "freshness": 18.98,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -248,7 +280,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:55:21Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 54.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (4 keywords): 8.0/20"
+          ]
         },
         {
           "id": "6eb8fc60c8ec72fa",
@@ -265,14 +305,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:54:37Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.45,
+          "hot_score": 39.29,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.77,
+            "freshness": 18.97,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -291,7 +331,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:54:37Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         },
         {
           "id": "1c8c999c62e93229",
@@ -308,14 +356,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:52:01Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.45,
+          "hot_score": 39.29,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.75,
+            "freshness": 18.94,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -338,7 +386,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:52:01Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 48.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "21d0f878603fd14f",
@@ -355,14 +411,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:50:28Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.45,
+          "hot_score": 39.29,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.73,
+            "freshness": 18.93,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -392,7 +448,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:50:28Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 52.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (3 keywords): 6.0/20"
+          ]
         },
         {
           "id": "591639008ae94d61",
@@ -409,14 +473,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:42:51Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.43,
+          "hot_score": 39.27,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.66,
+            "freshness": 18.86,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -438,7 +502,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:42:51Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 52.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (3 keywords): 6.0/20"
+          ]
         },
         {
           "id": "4ba8378159042651",
@@ -455,14 +527,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:40:51Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.43,
+          "hot_score": 39.27,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.64,
+            "freshness": 18.84,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -486,7 +558,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:40:51Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 46.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "91e8a6a486af3363",
@@ -503,14 +583,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:40:07Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.43,
+          "hot_score": 39.27,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.63,
+            "freshness": 18.84,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -530,7 +610,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:40:07Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 52.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (3 keywords): 6.0/20"
+          ]
         },
         {
           "id": "c3ca8af3fddde568",
@@ -547,14 +635,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:38:30Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.42,
+          "hot_score": 39.26,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.62,
+            "freshness": 18.82,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -583,7 +671,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:38:30Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 56.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (5 keywords): 10.0/20"
+          ]
         },
         {
           "id": "cd525498f9b74de1",
@@ -600,14 +696,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:37:37Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.42,
+          "hot_score": 39.26,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.61,
+            "freshness": 18.81,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -633,7 +729,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:37:37Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 46.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "9f8307801abb53d9",
@@ -650,14 +754,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:35:56Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.42,
+          "hot_score": 39.26,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.6,
+            "freshness": 18.8,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -680,7 +784,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:35:56Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 56.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (5 keywords): 10.0/20"
+          ]
         },
         {
           "id": "c7e53c8c9c58b4cc",
@@ -697,14 +809,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:35:20Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.42,
+          "hot_score": 39.26,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.59,
+            "freshness": 18.79,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -731,7 +843,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:35:20Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         },
         {
           "id": "9651f9b685b450fc",
@@ -748,14 +868,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:35:18Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.42,
+          "hot_score": 39.26,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.59,
+            "freshness": 18.79,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -777,7 +897,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:35:18Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         },
         {
           "id": "52f29fd1e1363875",
@@ -794,14 +922,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:33:43Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.41,
+          "hot_score": 39.26,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.57,
+            "freshness": 18.78,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -827,7 +955,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:33:43Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 48.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "3e6aa3dec23127cf",
@@ -844,14 +980,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:27:23Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.4,
+          "hot_score": 39.24,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.51,
+            "freshness": 18.72,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -874,7 +1010,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:27:23Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.7/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         },
         {
           "id": "b8b2e204037e4ec7",
@@ -891,14 +1035,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:25:08Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.4,
+          "hot_score": 39.24,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.49,
+            "freshness": 18.7,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -917,7 +1061,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:25:08Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.4,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.6/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         },
         {
           "id": "01275321b7ec914a",
@@ -934,14 +1086,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T17:21:44Z",
-          "collected_at": "2026-07-26T02:02:00Z",
-          "updated_at": "2026-07-26T02:02:00Z",
+          "collected_at": "2026-07-26T03:28:12Z",
+          "updated_at": "2026-07-26T03:28:12Z",
           "heat_raw": null,
-          "hot_score": 39.39,
+          "hot_score": 39.23,
           "score_breakdown": {
             "authority": 90.0,
             "heat": 0.0,
-            "freshness": 19.46,
+            "freshness": 18.67,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -962,7 +1114,15 @@
             "primary_category": null,
             "updated_at": "2026-07-23T17:21:44Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.4,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (arXiv): 26/30",
+            "Hot score (39): 11.8/30",
+            "Freshness (2.4d ago): 8.6/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
         }
       ]
     },
@@ -983,9 +1143,9 @@
           "author": null,
           "tags": [],
           "tags_origin": "none",
-          "published_at": "2026-07-26T02:01:35Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "published_at": "2026-07-26T03:27:43Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
           "hot_score": 51.75,
           "score_breakdown": {
@@ -1004,13 +1164,13 @@
             "name": "openclaw",
             "owner": "openclaw",
             "stars": 384124,
-            "forks": 80712,
+            "forks": 80715,
             "watchers": 384124,
-            "open_issues": 7066,
+            "open_issues": 7068,
             "language": "TypeScript",
-            "pushed_at": "2026-07-26T02:01:35Z",
+            "pushed_at": "2026-07-26T03:27:43Z",
             "created_at": "2025-11-24T10:16:47Z",
-            "updated_at": "2026-07-26T02:01:47Z"
+            "updated_at": "2026-07-26T03:24:46Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: openclaw/openclaw",
@@ -1018,111 +1178,15 @@
             "keywords": [
               "openclaw"
             ]
-          }
-        },
-        {
-          "id": "08d0aff0d7b2adaa",
-          "event_id": "evt-0453b8fb509e",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "react/react",
-          "summary": "The library for web and native user interfaces.",
-          "summary_origin": "original",
-          "original_url": "https://github.com/react/react",
-          "canonical_url": "https://github.com/react/react",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-26T01:57:34Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
-          "heat_raw": null,
-          "hot_score": 51.71,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 99.79,
-            "multi_source": 33.33,
-            "platform": 80.0
           },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/react/react",
-            "name": "react",
-            "owner": "react",
-            "stars": 246730,
-            "forks": 51164,
-            "watchers": 246730,
-            "open_issues": 1230,
-            "language": "JavaScript",
-            "pushed_at": "2026-07-26T01:57:34Z",
-            "created_at": "2013-05-24T16:15:54Z",
-            "updated_at": "2026-07-26T01:55:21Z"
-          },
-          "ai_summary": {
-            "summary": "AI trend from GitHub: react/react",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
-            "keywords": [
-              "react"
-            ]
-          }
-        },
-        {
-          "id": "ade16614f36cc3bc",
-          "event_id": "evt-7b365b348f93",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "NousResearch/hermes-agent",
-          "summary": "The agent that grows with you",
-          "summary_origin": "original",
-          "original_url": "https://github.com/NousResearch/hermes-agent",
-          "canonical_url": "https://github.com/NousResearch/hermes-agent",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-07-26T01:58:02Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
-          "heat_raw": null,
-          "hot_score": 51.71,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 99.81,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
-            "name": "hermes-agent",
-            "owner": "NousResearch",
-            "stars": 220486,
-            "forks": 41978,
-            "watchers": 220486,
-            "open_issues": 25339,
-            "language": "Python",
-            "pushed_at": "2026-07-26T01:58:02Z",
-            "created_at": "2025-07-22T22:22:28Z",
-            "updated_at": "2026-07-26T02:00:38Z"
-          },
-          "ai_summary": {
-            "summary": "AI trend from GitHub: NousResearch/hermes-agent",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
-            "keywords": [
-              "agent",
-              "hermes",
-              "nousresearch"
-            ]
-          }
+          "trend_score": 65.5,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (52): 15.5/30",
+            "Freshness (0.0d ago): 20.0/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "fa583e61d6724b09",
@@ -1138,15 +1202,15 @@
           "author": null,
           "tags": [],
           "tags_origin": "none",
-          "published_at": "2026-07-26T01:31:15Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "published_at": "2026-07-26T03:22:56Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 51.46,
+          "hot_score": 51.7,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 98.53,
+            "freshness": 99.75,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1158,22 +1222,211 @@
             "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
             "name": "tensorflow",
             "owner": "tensorflow",
-            "stars": 196534,
-            "forks": 75569,
-            "watchers": 196534,
-            "open_issues": 2819,
+            "stars": 196535,
+            "forks": 75570,
+            "watchers": 196535,
+            "open_issues": 2823,
             "language": "C++",
-            "pushed_at": "2026-07-26T01:31:15Z",
+            "pushed_at": "2026-07-26T03:22:56Z",
             "created_at": "2015-11-07T01:19:20Z",
-            "updated_at": "2026-07-26T00:46:37Z"
+            "updated_at": "2026-07-26T02:54:27Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: tensorflow/tensorflow",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.5.",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
             "keywords": [
               "tensorflow"
             ]
-          }
+          },
+          "trend_score": 67.5,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (52): 15.5/30",
+            "Freshness (0.0d ago): 20.0/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "ade16614f36cc3bc",
+          "event_id": "evt-7b365b348f93",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "NousResearch/hermes-agent",
+          "summary": "The agent that grows with you",
+          "summary_origin": "original",
+          "original_url": "https://github.com/NousResearch/hermes-agent",
+          "canonical_url": "https://github.com/NousResearch/hermes-agent",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-26T03:21:34Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
+          "heat_raw": null,
+          "hot_score": 51.69,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 99.68,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
+            "name": "hermes-agent",
+            "owner": "NousResearch",
+            "stars": 220515,
+            "forks": 41976,
+            "watchers": 220515,
+            "open_issues": 25331,
+            "language": "Python",
+            "pushed_at": "2026-07-26T03:21:34Z",
+            "created_at": "2025-07-22T22:22:28Z",
+            "updated_at": "2026-07-26T03:24:55Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: NousResearch/hermes-agent",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
+            "keywords": [
+              "agent",
+              "hermes",
+              "nousresearch"
+            ]
+          },
+          "trend_score": 67.5,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (52): 15.5/30",
+            "Freshness (0.0d ago): 20.0/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "08d0aff0d7b2adaa",
+          "event_id": "evt-0453b8fb509e",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "react/react",
+          "summary": "The library for web and native user interfaces.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/react/react",
+          "canonical_url": "https://github.com/react/react",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-26T03:07:05Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
+          "heat_raw": null,
+          "hot_score": 51.55,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 98.99,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/react/react",
+            "name": "react",
+            "owner": "react",
+            "stars": 246733,
+            "forks": 51163,
+            "watchers": 246733,
+            "open_issues": 1230,
+            "language": "JavaScript",
+            "pushed_at": "2026-07-26T03:07:05Z",
+            "created_at": "2013-05-24T16:15:54Z",
+            "updated_at": "2026-07-26T03:21:11Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: react/react",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.5.",
+            "keywords": [
+              "react"
+            ]
+          },
+          "trend_score": 65.4,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (52): 15.5/30",
+            "Freshness (0.0d ago): 19.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "bef5e2187e2e37cb",
+          "event_id": "evt-48bbf582d2ad",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "trekhleb/javascript-algorithms",
+          "summary": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+          "summary_origin": "original",
+          "original_url": "https://github.com/trekhleb/javascript-algorithms",
+          "canonical_url": "https://github.com/trekhleb/javascript-algorithms",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-26T02:43:08Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
+          "heat_raw": null,
+          "hot_score": 51.32,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 97.85,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/trekhleb/javascript-algorithms",
+            "name": "javascript-algorithms",
+            "owner": "trekhleb",
+            "stars": 196332,
+            "forks": 31047,
+            "watchers": 196332,
+            "open_issues": 403,
+            "language": "JavaScript",
+            "pushed_at": "2026-07-26T02:43:08Z",
+            "created_at": "2018-03-24T07:47:04Z",
+            "updated_at": "2026-07-26T02:43:14Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: trekhleb/javascript-algorithms",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.3.",
+            "keywords": [
+              "algorithms",
+              "javascript",
+              "trekhleb"
+            ]
+          },
+          "trend_score": 65.2,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (51): 15.4/30",
+            "Freshness (0.0d ago): 19.8/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "b2200a220683fb8e",
@@ -1190,14 +1443,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-26T00:12:55Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 50.73,
+          "hot_score": 49.96,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 94.88,
+            "freshness": 91.03,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1209,22 +1462,30 @@
             "api_url": "https://api.github.com/repos/n8n-io/n8n",
             "name": "n8n",
             "owner": "n8n-io",
-            "stars": 198001,
-            "forks": 59629,
-            "watchers": 198001,
+            "stars": 198013,
+            "forks": 59628,
+            "watchers": 198013,
             "open_issues": 1405,
             "language": "TypeScript",
             "pushed_at": "2026-07-26T00:12:55Z",
             "created_at": "2019-06-22T09:24:21Z",
-            "updated_at": "2026-07-26T01:58:55Z"
+            "updated_at": "2026-07-26T03:22:57Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: n8n-io/n8n",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 50.7.",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 50.0.",
             "keywords": [
               "github"
             ]
-          }
+          },
+          "trend_score": 64.1,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (50): 15.0/30",
+            "Freshness (0.1d ago): 19.1/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "54b5b79f036a3e54",
@@ -1241,14 +1502,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-25T21:34:33Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 49.33,
+          "hot_score": 48.62,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 87.92,
+            "freshness": 84.35,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1260,23 +1521,31 @@
             "api_url": "https://api.github.com/repos/public-apis/public-apis",
             "name": "public-apis",
             "owner": "public-apis",
-            "stars": 452539,
-            "forks": 49836,
-            "watchers": 452539,
-            "open_issues": 1581,
+            "stars": 452548,
+            "forks": 49838,
+            "watchers": 452548,
+            "open_issues": 1580,
             "language": "Python",
             "pushed_at": "2026-07-25T21:34:33Z",
             "created_at": "2016-03-20T23:49:42Z",
-            "updated_at": "2026-07-26T01:48:56Z"
+            "updated_at": "2026-07-26T03:24:26Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: public-apis/public-apis",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 49.3.",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 48.6.",
             "keywords": [
               "apis",
               "public"
             ]
-          }
+          },
+          "trend_score": 63.0,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (49): 14.6/30",
+            "Freshness (0.2d ago): 18.4/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "83df4bf6d4ca361a",
@@ -1293,14 +1562,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-25T17:24:39Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 47.34,
+          "hot_score": 46.71,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 77.96,
+            "freshness": 74.79,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1312,23 +1581,31 @@
             "api_url": "https://api.github.com/repos/torvalds/linux",
             "name": "linux",
             "owner": "torvalds",
-            "stars": 240478,
+            "stars": 240489,
             "forks": 63482,
-            "watchers": 240478,
+            "watchers": 240489,
             "open_issues": 3,
             "language": "C",
             "pushed_at": "2026-07-25T17:24:39Z",
             "created_at": "2011-09-04T22:48:12Z",
-            "updated_at": "2026-07-26T01:41:49Z"
+            "updated_at": "2026-07-26T03:26:02Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: torvalds/linux",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 47.3.",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 46.7.",
             "keywords": [
               "linux",
               "torvalds"
             ]
-          }
+          },
+          "trend_score": 61.3,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (47): 14.0/30",
+            "Freshness (0.4d ago): 17.3/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "3191f8d4ba57286c",
@@ -1345,14 +1622,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-25T11:35:51Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 44.93,
+          "hot_score": 44.4,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 65.91,
+            "freshness": 63.23,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1364,22 +1641,30 @@
             "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
             "name": "freeCodeCamp",
             "owner": "freeCodeCamp",
-            "stars": 452820,
+            "stars": 452821,
             "forks": 45674,
-            "watchers": 452820,
+            "watchers": 452821,
             "open_issues": 225,
             "language": "TypeScript",
             "pushed_at": "2026-07-25T11:35:51Z",
             "created_at": "2014-12-24T17:49:19Z",
-            "updated_at": "2026-07-26T01:01:01Z"
+            "updated_at": "2026-07-26T03:05:52Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: freeCodeCamp/freeCodeCamp",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.9.",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.4.",
             "keywords": [
               "freecodecamp"
             ]
-          }
+          },
+          "trend_score": 59.2,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (44): 13.3/30",
+            "Freshness (0.7d ago): 15.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "9837b7357388f8f7",
@@ -1396,14 +1681,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-25T10:02:14Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 44.35,
+          "hot_score": 43.84,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 63.0,
+            "freshness": 60.44,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1415,25 +1700,33 @@
             "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
             "name": "free-programming-books",
             "owner": "EbookFoundation",
-            "stars": 393006,
+            "stars": 393011,
             "forks": 66577,
-            "watchers": 393006,
+            "watchers": 393011,
             "open_issues": 78,
             "language": "Python",
             "pushed_at": "2026-07-25T10:02:14Z",
             "created_at": "2013-10-11T06:50:37Z",
-            "updated_at": "2026-07-26T02:01:32Z"
+            "updated_at": "2026-07-26T03:24:00Z"
           },
           "ai_summary": {
             "summary": "AI trend from GitHub: EbookFoundation/free-programming-books",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.4.",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 43.8.",
             "keywords": [
               "books",
               "ebookfoundation",
               "free",
               "programming"
             ]
-          }
+          },
+          "trend_score": 58.7,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (44): 13.2/30",
+            "Freshness (0.7d ago): 15.5/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "ebe5e44a2bb6b040",
@@ -1450,14 +1743,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-25T00:58:36Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 41.45,
+          "hot_score": 41.06,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 48.5,
+            "freshness": 46.53,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1469,22 +1762,24 @@
             "api_url": "https://api.github.com/repos/affaan-m/ECC",
             "name": "ECC",
             "owner": "affaan-m",
-            "stars": 233328,
-            "forks": 35574,
-            "watchers": 233328,
+            "stars": 233359,
+            "forks": 35580,
+            "watchers": 233359,
             "open_issues": 104,
             "language": "JavaScript",
             "pushed_at": "2026-07-25T00:58:36Z",
             "created_at": "2026-01-18T00:51:51Z",
-            "updated_at": "2026-07-26T02:00:05Z"
+            "updated_at": "2026-07-26T03:25:22Z"
           },
-          "ai_summary": {
-            "summary": "AI trend from GitHub: affaan-m/ECC",
-            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 41.5.",
-            "keywords": [
-              "affaan"
-            ]
-          }
+          "ai_summary": null,
+          "trend_score": 55.9,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (41): 12.3/30",
+            "Freshness (1.1d ago): 13.6/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "239bdbda9a37b45b",
@@ -1501,14 +1796,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-24T21:21:36Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 40.49,
+          "hot_score": 40.13,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 43.69,
+            "freshness": 41.91,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1520,16 +1815,24 @@
             "api_url": "https://api.github.com/repos/obra/superpowers",
             "name": "superpowers",
             "owner": "obra",
-            "stars": 261119,
+            "stars": 261147,
             "forks": 23302,
-            "watchers": 261119,
-            "open_issues": 321,
+            "watchers": 261147,
+            "open_issues": 322,
             "language": "Shell",
             "pushed_at": "2026-07-24T21:21:36Z",
             "created_at": "2025-10-09T19:45:18Z",
-            "updated_at": "2026-07-26T02:00:20Z"
+            "updated_at": "2026-07-26T03:25:04Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 54.9,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (40): 12.0/30",
+            "Freshness (1.3d ago): 12.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
         },
         {
           "id": "869b28b8cd70d5b6",
@@ -1546,14 +1849,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-24T11:19:17Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 38.29,
+          "hot_score": 38.02,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 32.69,
+            "freshness": 31.36,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1565,16 +1868,24 @@
             "api_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
             "name": "developer-roadmap",
             "owner": "nilbuild",
-            "stars": 362691,
-            "forks": 44670,
-            "watchers": 362691,
+            "stars": 362693,
+            "forks": 44671,
+            "watchers": 362693,
             "open_issues": 0,
             "language": "TypeScript",
             "pushed_at": "2026-07-24T11:19:17Z",
             "created_at": "2017-03-15T13:45:52Z",
-            "updated_at": "2026-07-26T01:44:05Z"
+            "updated_at": "2026-07-26T03:26:38Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 50.6,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (38): 11.4/30",
+            "Freshness (1.7d ago): 11.2/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "3ed57715238258bc",
@@ -1591,14 +1902,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-23T05:04:46Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 34.48,
+          "hot_score": 34.37,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 13.65,
+            "freshness": 13.09,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1610,16 +1921,24 @@
             "api_url": "https://api.github.com/repos/vinta/awesome-python",
             "name": "awesome-python",
             "owner": "vinta",
-            "stars": 310335,
+            "stars": 310348,
             "forks": 28375,
-            "watchers": 310335,
+            "watchers": 310348,
             "open_issues": 20,
             "language": "Python",
             "pushed_at": "2026-07-23T05:04:46Z",
             "created_at": "2014-06-27T21:00:06Z",
-            "updated_at": "2026-07-26T01:49:59Z"
+            "updated_at": "2026-07-26T03:28:00Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 45.5,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (34): 10.3/30",
+            "Freshness (2.9d ago): 7.2/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "3eb4a1ecf75f6126",
@@ -1636,14 +1955,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-21T21:31:29Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 32.85,
+          "hot_score": 32.8,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 5.49,
+            "freshness": 5.26,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1655,16 +1974,24 @@
             "api_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
             "name": "awesome-selfhosted",
             "owner": "awesome-selfhosted",
-            "stars": 308284,
+            "stars": 308301,
             "forks": 14451,
-            "watchers": 308284,
+            "watchers": 308301,
             "open_issues": 0,
             "language": null,
             "pushed_at": "2026-07-21T21:31:29Z",
             "created_at": "2015-06-01T02:33:17Z",
-            "updated_at": "2026-07-26T02:00:39Z"
+            "updated_at": "2026-07-26T03:27:57Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 42.4,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (33): 9.8/30",
+            "Freshness (4.2d ago): 4.6/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "c33c5f7d57ca1054",
@@ -1681,14 +2008,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-21T12:21:20Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 32.59,
+          "hot_score": 32.56,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 4.21,
+            "freshness": 4.04,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1700,16 +2027,24 @@
             "api_url": "https://api.github.com/repos/TheAlgorithms/Python",
             "name": "Python",
             "owner": "TheAlgorithms",
-            "stars": 223156,
+            "stars": 223159,
             "forks": 50903,
-            "watchers": 223156,
+            "watchers": 223159,
             "open_issues": 1021,
             "language": "Python",
             "pushed_at": "2026-07-21T12:21:20Z",
             "created_at": "2016-07-16T09:44:01Z",
-            "updated_at": "2026-07-26T01:43:52Z"
+            "updated_at": "2026-07-26T03:06:05Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 41.8,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (33): 9.8/30",
+            "Freshness (4.6d ago): 4.0/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "e68aa7f48845629f",
@@ -1726,14 +2061,14 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-20T07:41:26Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
-          "hot_score": 32.12,
+          "hot_score": 32.1,
           "score_breakdown": {
             "authority": 75.0,
             "heat": 0.0,
-            "freshness": 1.84,
+            "freshness": 1.77,
             "multi_source": 33.33,
             "platform": 80.0
           },
@@ -1745,16 +2080,24 @@
             "api_url": "https://api.github.com/repos/practical-tutorials/project-based-learning",
             "name": "project-based-learning",
             "owner": "practical-tutorials",
-            "stars": 275252,
+            "stars": 275257,
             "forks": 35476,
-            "watchers": 275252,
+            "watchers": 275257,
             "open_issues": 290,
             "language": "Python",
             "pushed_at": "2026-07-20T07:41:26Z",
             "created_at": "2017-04-12T05:07:46Z",
-            "updated_at": "2026-07-26T01:58:35Z"
+            "updated_at": "2026-07-26T03:24:04Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 40.3,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.6/30",
+            "Freshness (5.8d ago): 2.7/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "c3200ef3dc226c14",
@@ -1771,8 +2114,8 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-14T19:25:58Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
           "hot_score": 31.76,
           "score_breakdown": {
@@ -1790,16 +2133,24 @@
             "api_url": "https://api.github.com/repos/codecrafters-io/build-your-own-x",
             "name": "build-your-own-x",
             "owner": "codecrafters-io",
-            "stars": 531568,
-            "forks": 50280,
-            "watchers": 531568,
-            "open_issues": 617,
+            "stars": 531580,
+            "forks": 50285,
+            "watchers": 531580,
+            "open_issues": 618,
             "language": "Markdown",
             "pushed_at": "2026-07-14T19:25:58Z",
             "created_at": "2018-05-09T12:03:18Z",
-            "updated_at": "2026-07-26T01:56:23Z"
+            "updated_at": "2026-07-26T03:23:52Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 37.9,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (11.3d ago): 0.4/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "3dcbffd2a333c3eb",
@@ -1816,8 +2167,8 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-07-14T05:38:25Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
           "hot_score": 31.76,
           "score_breakdown": {
@@ -1835,16 +2186,24 @@
             "api_url": "https://api.github.com/repos/ossu/computer-science",
             "name": "computer-science",
             "owner": "ossu",
-            "stars": 207258,
+            "stars": 207259,
             "forks": 25694,
-            "watchers": 207258,
+            "watchers": 207259,
             "open_issues": 23,
             "language": "HTML",
             "pushed_at": "2026-07-14T05:38:25Z",
             "created_at": "2014-05-04T00:18:39Z",
-            "updated_at": "2026-07-26T01:16:32Z"
+            "updated_at": "2026-07-26T03:26:46Z"
           },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 37.8,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (11.9d ago): 0.3/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         },
         {
           "id": "3aa8876b4c5a6100",
@@ -1861,8 +2220,8 @@
           "tags": [],
           "tags_origin": "none",
           "published_at": "2026-06-30T18:21:16Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
+          "collected_at": "2026-07-26T03:28:13Z",
+          "updated_at": "2026-07-26T03:28:13Z",
           "heat_raw": null,
           "hot_score": 31.75,
           "score_breakdown": {
@@ -1880,61 +2239,24 @@
             "api_url": "https://api.github.com/repos/sindresorhus/awesome",
             "name": "awesome",
             "owner": "sindresorhus",
-            "stars": 489041,
-            "forks": 36059,
-            "watchers": 489041,
+            "stars": 489070,
+            "forks": 36061,
+            "watchers": 489070,
             "open_issues": 97,
             "language": null,
             "pushed_at": "2026-06-30T18:21:16Z",
             "created_at": "2014-07-11T13:42:37Z",
-            "updated_at": "2026-07-26T02:00:43Z"
+            "updated_at": "2026-07-26T03:28:02Z"
           },
-          "ai_summary": null
-        },
-        {
-          "id": "bef5e2187e2e37cb",
-          "event_id": "evt-48bbf582d2ad",
-          "source_id": "github",
-          "source_name": "GitHub",
-          "category": "opensource",
-          "title": "trekhleb/javascript-algorithms",
-          "summary": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
-          "summary_origin": "original",
-          "original_url": "https://github.com/trekhleb/javascript-algorithms",
-          "canonical_url": "https://github.com/trekhleb/javascript-algorithms",
-          "author": null,
-          "tags": [],
-          "tags_origin": "none",
-          "published_at": "2026-06-26T22:49:17Z",
-          "collected_at": "2026-07-26T02:02:01Z",
-          "updated_at": "2026-07-26T02:02:01Z",
-          "heat_raw": null,
-          "hot_score": 31.75,
-          "score_breakdown": {
-            "authority": 75.0,
-            "heat": 0.0,
-            "freshness": 0.0,
-            "multi_source": 33.33,
-            "platform": 80.0
-          },
-          "rank_in_source": null,
-          "status": "published",
-          "lang": "en",
-          "is_mock": false,
-          "metadata": {
-            "api_url": "https://api.github.com/repos/trekhleb/javascript-algorithms",
-            "name": "javascript-algorithms",
-            "owner": "trekhleb",
-            "stars": 196332,
-            "forks": 31047,
-            "watchers": 196332,
-            "open_issues": 403,
-            "language": "JavaScript",
-            "pushed_at": "2026-06-26T22:49:17Z",
-            "created_at": "2018-03-24T07:47:04Z",
-            "updated_at": "2026-07-26T01:08:08Z"
-          },
-          "ai_summary": null
+          "ai_summary": null,
+          "trend_score": 37.5,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (25.4d ago): 0.0/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
         }
       ]
     }
@@ -1955,14 +2277,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:59:59Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.82,
+        "freshness": 19.02,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -1989,7 +2311,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:59:59Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "f43e61b923fa3759",
@@ -2006,14 +2336,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:57:38Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.8,
+        "freshness": 19.0,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2033,7 +2363,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:57:38Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 48.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "65e5a45ec2c25f86",
@@ -2050,14 +2388,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:56:30Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.79,
+        "freshness": 18.99,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2084,7 +2422,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:56:30Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 48.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "bd877c35643a7d5d",
@@ -2101,14 +2447,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:56:05Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.79,
+        "freshness": 18.98,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2131,7 +2477,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:56:05Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 48.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "d0800828c15d18b1",
@@ -2148,14 +2502,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:55:21Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.78,
+        "freshness": 18.98,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2180,7 +2534,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:55:21Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 54.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (4 keywords): 8.0/20"
+      ]
     },
     {
       "id": "6eb8fc60c8ec72fa",
@@ -2197,14 +2559,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:54:37Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.45,
+      "hot_score": 39.29,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.77,
+        "freshness": 18.97,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2223,7 +2585,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:54:37Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "1c8c999c62e93229",
@@ -2240,14 +2610,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:52:01Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.45,
+      "hot_score": 39.29,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.75,
+        "freshness": 18.94,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2270,7 +2640,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:52:01Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 48.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "21d0f878603fd14f",
@@ -2287,14 +2665,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:50:28Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.45,
+      "hot_score": 39.29,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.73,
+        "freshness": 18.93,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2324,7 +2702,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:50:28Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 52.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (3 keywords): 6.0/20"
+      ]
     },
     {
       "id": "591639008ae94d61",
@@ -2341,14 +2727,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:42:51Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.43,
+      "hot_score": 39.27,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.66,
+        "freshness": 18.86,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2370,7 +2756,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:42:51Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 52.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (3 keywords): 6.0/20"
+      ]
     },
     {
       "id": "4ba8378159042651",
@@ -2387,14 +2781,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:40:51Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.43,
+      "hot_score": 39.27,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.64,
+        "freshness": 18.84,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2418,7 +2812,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:40:51Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 46.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "91e8a6a486af3363",
@@ -2435,14 +2837,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:40:07Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.43,
+      "hot_score": 39.27,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.63,
+        "freshness": 18.84,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2462,7 +2864,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:40:07Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 52.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (3 keywords): 6.0/20"
+      ]
     },
     {
       "id": "c3ca8af3fddde568",
@@ -2479,14 +2889,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:38:30Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.62,
+        "freshness": 18.82,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2515,7 +2925,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:38:30Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 56.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (5 keywords): 10.0/20"
+      ]
     },
     {
       "id": "cd525498f9b74de1",
@@ -2532,14 +2950,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:37:37Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.61,
+        "freshness": 18.81,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2565,7 +2983,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:37:37Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 46.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "9f8307801abb53d9",
@@ -2582,14 +3008,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:35:56Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.6,
+        "freshness": 18.8,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2612,7 +3038,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:35:56Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 56.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (5 keywords): 10.0/20"
+      ]
     },
     {
       "id": "c7e53c8c9c58b4cc",
@@ -2629,14 +3063,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:35:20Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.59,
+        "freshness": 18.79,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2663,7 +3097,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:35:20Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "9651f9b685b450fc",
@@ -2680,14 +3122,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:35:18Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.59,
+        "freshness": 18.79,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2709,7 +3151,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:35:18Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "52f29fd1e1363875",
@@ -2726,14 +3176,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:33:43Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.41,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.57,
+        "freshness": 18.78,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2759,7 +3209,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:33:43Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 48.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "3e6aa3dec23127cf",
@@ -2776,14 +3234,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:27:23Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.4,
+      "hot_score": 39.24,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.51,
+        "freshness": 18.72,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2806,7 +3264,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:27:23Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.7/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "b8b2e204037e4ec7",
@@ -2823,14 +3289,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:25:08Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.4,
+      "hot_score": 39.24,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.49,
+        "freshness": 18.7,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2849,7 +3315,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:25:08Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.4,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.6/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "01275321b7ec914a",
@@ -2866,14 +3340,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T17:21:44Z",
-      "collected_at": "2026-07-26T02:02:00Z",
-      "updated_at": "2026-07-26T02:02:00Z",
+      "collected_at": "2026-07-26T03:28:12Z",
+      "updated_at": "2026-07-26T03:28:12Z",
       "heat_raw": null,
-      "hot_score": 39.39,
+      "hot_score": 39.23,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.46,
+        "freshness": 18.67,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -2894,7 +3368,15 @@
         "primary_category": null,
         "updated_at": "2026-07-23T17:21:44Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.4,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (arXiv): 26/30",
+        "Hot score (39): 11.8/30",
+        "Freshness (2.4d ago): 8.6/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
     },
     {
       "id": "bb22f6df2b307397",
@@ -2910,9 +3392,9 @@
       "author": null,
       "tags": [],
       "tags_origin": "none",
-      "published_at": "2026-07-26T02:01:35Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "published_at": "2026-07-26T03:27:43Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
       "hot_score": 51.75,
       "score_breakdown": {
@@ -2931,13 +3413,13 @@
         "name": "openclaw",
         "owner": "openclaw",
         "stars": 384124,
-        "forks": 80712,
+        "forks": 80715,
         "watchers": 384124,
-        "open_issues": 7066,
+        "open_issues": 7068,
         "language": "TypeScript",
-        "pushed_at": "2026-07-26T02:01:35Z",
+        "pushed_at": "2026-07-26T03:27:43Z",
         "created_at": "2025-11-24T10:16:47Z",
-        "updated_at": "2026-07-26T02:01:47Z"
+        "updated_at": "2026-07-26T03:24:46Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: openclaw/openclaw",
@@ -2945,111 +3427,15 @@
         "keywords": [
           "openclaw"
         ]
-      }
-    },
-    {
-      "id": "08d0aff0d7b2adaa",
-      "event_id": "evt-0453b8fb509e",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "react/react",
-      "summary": "The library for web and native user interfaces.",
-      "summary_origin": "original",
-      "original_url": "https://github.com/react/react",
-      "canonical_url": "https://github.com/react/react",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-26T01:57:34Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
-      "heat_raw": null,
-      "hot_score": 51.71,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 99.79,
-        "multi_source": 33.33,
-        "platform": 80.0
       },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/react/react",
-        "name": "react",
-        "owner": "react",
-        "stars": 246730,
-        "forks": 51164,
-        "watchers": 246730,
-        "open_issues": 1230,
-        "language": "JavaScript",
-        "pushed_at": "2026-07-26T01:57:34Z",
-        "created_at": "2013-05-24T16:15:54Z",
-        "updated_at": "2026-07-26T01:55:21Z"
-      },
-      "ai_summary": {
-        "summary": "AI trend from GitHub: react/react",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
-        "keywords": [
-          "react"
-        ]
-      }
-    },
-    {
-      "id": "ade16614f36cc3bc",
-      "event_id": "evt-7b365b348f93",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "NousResearch/hermes-agent",
-      "summary": "The agent that grows with you",
-      "summary_origin": "original",
-      "original_url": "https://github.com/NousResearch/hermes-agent",
-      "canonical_url": "https://github.com/NousResearch/hermes-agent",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-07-26T01:58:02Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
-      "heat_raw": null,
-      "hot_score": 51.71,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 99.81,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
-        "name": "hermes-agent",
-        "owner": "NousResearch",
-        "stars": 220486,
-        "forks": 41978,
-        "watchers": 220486,
-        "open_issues": 25339,
-        "language": "Python",
-        "pushed_at": "2026-07-26T01:58:02Z",
-        "created_at": "2025-07-22T22:22:28Z",
-        "updated_at": "2026-07-26T02:00:38Z"
-      },
-      "ai_summary": {
-        "summary": "AI trend from GitHub: NousResearch/hermes-agent",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
-        "keywords": [
-          "agent",
-          "hermes",
-          "nousresearch"
-        ]
-      }
+      "trend_score": 65.5,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (52): 15.5/30",
+        "Freshness (0.0d ago): 20.0/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "fa583e61d6724b09",
@@ -3065,15 +3451,15 @@
       "author": null,
       "tags": [],
       "tags_origin": "none",
-      "published_at": "2026-07-26T01:31:15Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "published_at": "2026-07-26T03:22:56Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 51.46,
+      "hot_score": 51.7,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 98.53,
+        "freshness": 99.75,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3085,22 +3471,211 @@
         "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
         "name": "tensorflow",
         "owner": "tensorflow",
-        "stars": 196534,
-        "forks": 75569,
-        "watchers": 196534,
-        "open_issues": 2819,
+        "stars": 196535,
+        "forks": 75570,
+        "watchers": 196535,
+        "open_issues": 2823,
         "language": "C++",
-        "pushed_at": "2026-07-26T01:31:15Z",
+        "pushed_at": "2026-07-26T03:22:56Z",
         "created_at": "2015-11-07T01:19:20Z",
-        "updated_at": "2026-07-26T00:46:37Z"
+        "updated_at": "2026-07-26T02:54:27Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: tensorflow/tensorflow",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.5.",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
         "keywords": [
           "tensorflow"
         ]
-      }
+      },
+      "trend_score": 67.5,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (52): 15.5/30",
+        "Freshness (0.0d ago): 20.0/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "ade16614f36cc3bc",
+      "event_id": "evt-7b365b348f93",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "NousResearch/hermes-agent",
+      "summary": "The agent that grows with you",
+      "summary_origin": "original",
+      "original_url": "https://github.com/NousResearch/hermes-agent",
+      "canonical_url": "https://github.com/NousResearch/hermes-agent",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-26T03:21:34Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
+      "heat_raw": null,
+      "hot_score": 51.69,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 99.68,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/NousResearch/hermes-agent",
+        "name": "hermes-agent",
+        "owner": "NousResearch",
+        "stars": 220515,
+        "forks": 41976,
+        "watchers": 220515,
+        "open_issues": 25331,
+        "language": "Python",
+        "pushed_at": "2026-07-26T03:21:34Z",
+        "created_at": "2025-07-22T22:22:28Z",
+        "updated_at": "2026-07-26T03:24:55Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: NousResearch/hermes-agent",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.7.",
+        "keywords": [
+          "agent",
+          "hermes",
+          "nousresearch"
+        ]
+      },
+      "trend_score": 67.5,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (52): 15.5/30",
+        "Freshness (0.0d ago): 20.0/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "08d0aff0d7b2adaa",
+      "event_id": "evt-0453b8fb509e",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "react/react",
+      "summary": "The library for web and native user interfaces.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/react/react",
+      "canonical_url": "https://github.com/react/react",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-26T03:07:05Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
+      "heat_raw": null,
+      "hot_score": 51.55,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 98.99,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/react/react",
+        "name": "react",
+        "owner": "react",
+        "stars": 246733,
+        "forks": 51163,
+        "watchers": 246733,
+        "open_issues": 1230,
+        "language": "JavaScript",
+        "pushed_at": "2026-07-26T03:07:05Z",
+        "created_at": "2013-05-24T16:15:54Z",
+        "updated_at": "2026-07-26T03:21:11Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: react/react",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.5.",
+        "keywords": [
+          "react"
+        ]
+      },
+      "trend_score": 65.4,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (52): 15.5/30",
+        "Freshness (0.0d ago): 19.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "bef5e2187e2e37cb",
+      "event_id": "evt-48bbf582d2ad",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "trekhleb/javascript-algorithms",
+      "summary": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+      "summary_origin": "original",
+      "original_url": "https://github.com/trekhleb/javascript-algorithms",
+      "canonical_url": "https://github.com/trekhleb/javascript-algorithms",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-26T02:43:08Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
+      "heat_raw": null,
+      "hot_score": 51.32,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 97.85,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/trekhleb/javascript-algorithms",
+        "name": "javascript-algorithms",
+        "owner": "trekhleb",
+        "stars": 196332,
+        "forks": 31047,
+        "watchers": 196332,
+        "open_issues": 403,
+        "language": "JavaScript",
+        "pushed_at": "2026-07-26T02:43:08Z",
+        "created_at": "2018-03-24T07:47:04Z",
+        "updated_at": "2026-07-26T02:43:14Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: trekhleb/javascript-algorithms",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.3.",
+        "keywords": [
+          "algorithms",
+          "javascript",
+          "trekhleb"
+        ]
+      },
+      "trend_score": 65.2,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (51): 15.4/30",
+        "Freshness (0.0d ago): 19.8/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "b2200a220683fb8e",
@@ -3117,14 +3692,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-26T00:12:55Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 50.73,
+      "hot_score": 49.96,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 94.88,
+        "freshness": 91.03,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3136,22 +3711,30 @@
         "api_url": "https://api.github.com/repos/n8n-io/n8n",
         "name": "n8n",
         "owner": "n8n-io",
-        "stars": 198001,
-        "forks": 59629,
-        "watchers": 198001,
+        "stars": 198013,
+        "forks": 59628,
+        "watchers": 198013,
         "open_issues": 1405,
         "language": "TypeScript",
         "pushed_at": "2026-07-26T00:12:55Z",
         "created_at": "2019-06-22T09:24:21Z",
-        "updated_at": "2026-07-26T01:58:55Z"
+        "updated_at": "2026-07-26T03:22:57Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: n8n-io/n8n",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 50.7.",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 50.0.",
         "keywords": [
           "github"
         ]
-      }
+      },
+      "trend_score": 64.1,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (50): 15.0/30",
+        "Freshness (0.1d ago): 19.1/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "54b5b79f036a3e54",
@@ -3168,14 +3751,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-25T21:34:33Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 49.33,
+      "hot_score": 48.62,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 87.92,
+        "freshness": 84.35,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3187,23 +3770,31 @@
         "api_url": "https://api.github.com/repos/public-apis/public-apis",
         "name": "public-apis",
         "owner": "public-apis",
-        "stars": 452539,
-        "forks": 49836,
-        "watchers": 452539,
-        "open_issues": 1581,
+        "stars": 452548,
+        "forks": 49838,
+        "watchers": 452548,
+        "open_issues": 1580,
         "language": "Python",
         "pushed_at": "2026-07-25T21:34:33Z",
         "created_at": "2016-03-20T23:49:42Z",
-        "updated_at": "2026-07-26T01:48:56Z"
+        "updated_at": "2026-07-26T03:24:26Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: public-apis/public-apis",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 49.3.",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 48.6.",
         "keywords": [
           "apis",
           "public"
         ]
-      }
+      },
+      "trend_score": 63.0,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (49): 14.6/30",
+        "Freshness (0.2d ago): 18.4/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "83df4bf6d4ca361a",
@@ -3220,14 +3811,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-25T17:24:39Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 47.34,
+      "hot_score": 46.71,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 77.96,
+        "freshness": 74.79,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3239,23 +3830,31 @@
         "api_url": "https://api.github.com/repos/torvalds/linux",
         "name": "linux",
         "owner": "torvalds",
-        "stars": 240478,
+        "stars": 240489,
         "forks": 63482,
-        "watchers": 240478,
+        "watchers": 240489,
         "open_issues": 3,
         "language": "C",
         "pushed_at": "2026-07-25T17:24:39Z",
         "created_at": "2011-09-04T22:48:12Z",
-        "updated_at": "2026-07-26T01:41:49Z"
+        "updated_at": "2026-07-26T03:26:02Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: torvalds/linux",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 47.3.",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 46.7.",
         "keywords": [
           "linux",
           "torvalds"
         ]
-      }
+      },
+      "trend_score": 61.3,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (47): 14.0/30",
+        "Freshness (0.4d ago): 17.3/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "3191f8d4ba57286c",
@@ -3272,14 +3871,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-25T11:35:51Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 44.93,
+      "hot_score": 44.4,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 65.91,
+        "freshness": 63.23,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3291,22 +3890,30 @@
         "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
         "name": "freeCodeCamp",
         "owner": "freeCodeCamp",
-        "stars": 452820,
+        "stars": 452821,
         "forks": 45674,
-        "watchers": 452820,
+        "watchers": 452821,
         "open_issues": 225,
         "language": "TypeScript",
         "pushed_at": "2026-07-25T11:35:51Z",
         "created_at": "2014-12-24T17:49:19Z",
-        "updated_at": "2026-07-26T01:01:01Z"
+        "updated_at": "2026-07-26T03:05:52Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: freeCodeCamp/freeCodeCamp",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.9.",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.4.",
         "keywords": [
           "freecodecamp"
         ]
-      }
+      },
+      "trend_score": 59.2,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (44): 13.3/30",
+        "Freshness (0.7d ago): 15.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "9837b7357388f8f7",
@@ -3323,14 +3930,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-25T10:02:14Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 44.35,
+      "hot_score": 43.84,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 63.0,
+        "freshness": 60.44,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3342,25 +3949,33 @@
         "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
         "name": "free-programming-books",
         "owner": "EbookFoundation",
-        "stars": 393006,
+        "stars": 393011,
         "forks": 66577,
-        "watchers": 393006,
+        "watchers": 393011,
         "open_issues": 78,
         "language": "Python",
         "pushed_at": "2026-07-25T10:02:14Z",
         "created_at": "2013-10-11T06:50:37Z",
-        "updated_at": "2026-07-26T02:01:32Z"
+        "updated_at": "2026-07-26T03:24:00Z"
       },
       "ai_summary": {
         "summary": "AI trend from GitHub: EbookFoundation/free-programming-books",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.4.",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 43.8.",
         "keywords": [
           "books",
           "ebookfoundation",
           "free",
           "programming"
         ]
-      }
+      },
+      "trend_score": 58.7,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (44): 13.2/30",
+        "Freshness (0.7d ago): 15.5/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "ebe5e44a2bb6b040",
@@ -3377,14 +3992,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-25T00:58:36Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 41.45,
+      "hot_score": 41.06,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 48.5,
+        "freshness": 46.53,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3396,22 +4011,24 @@
         "api_url": "https://api.github.com/repos/affaan-m/ECC",
         "name": "ECC",
         "owner": "affaan-m",
-        "stars": 233328,
-        "forks": 35574,
-        "watchers": 233328,
+        "stars": 233359,
+        "forks": 35580,
+        "watchers": 233359,
         "open_issues": 104,
         "language": "JavaScript",
         "pushed_at": "2026-07-25T00:58:36Z",
         "created_at": "2026-01-18T00:51:51Z",
-        "updated_at": "2026-07-26T02:00:05Z"
+        "updated_at": "2026-07-26T03:25:22Z"
       },
-      "ai_summary": {
-        "summary": "AI trend from GitHub: affaan-m/ECC",
-        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 41.5.",
-        "keywords": [
-          "affaan"
-        ]
-      }
+      "ai_summary": null,
+      "trend_score": 55.9,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (41): 12.3/30",
+        "Freshness (1.1d ago): 13.6/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "239bdbda9a37b45b",
@@ -3428,14 +4045,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-24T21:21:36Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 40.49,
+      "hot_score": 40.13,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 43.69,
+        "freshness": 41.91,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3447,16 +4064,24 @@
         "api_url": "https://api.github.com/repos/obra/superpowers",
         "name": "superpowers",
         "owner": "obra",
-        "stars": 261119,
+        "stars": 261147,
         "forks": 23302,
-        "watchers": 261119,
-        "open_issues": 321,
+        "watchers": 261147,
+        "open_issues": 322,
         "language": "Shell",
         "pushed_at": "2026-07-24T21:21:36Z",
         "created_at": "2025-10-09T19:45:18Z",
-        "updated_at": "2026-07-26T02:00:20Z"
+        "updated_at": "2026-07-26T03:25:04Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 54.9,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (40): 12.0/30",
+        "Freshness (1.3d ago): 12.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
     },
     {
       "id": "869b28b8cd70d5b6",
@@ -3473,14 +4098,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-24T11:19:17Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 38.29,
+      "hot_score": 38.02,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 32.69,
+        "freshness": 31.36,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3492,16 +4117,24 @@
         "api_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
         "name": "developer-roadmap",
         "owner": "nilbuild",
-        "stars": 362691,
-        "forks": 44670,
-        "watchers": 362691,
+        "stars": 362693,
+        "forks": 44671,
+        "watchers": 362693,
         "open_issues": 0,
         "language": "TypeScript",
         "pushed_at": "2026-07-24T11:19:17Z",
         "created_at": "2017-03-15T13:45:52Z",
-        "updated_at": "2026-07-26T01:44:05Z"
+        "updated_at": "2026-07-26T03:26:38Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 50.6,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (38): 11.4/30",
+        "Freshness (1.7d ago): 11.2/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "3ed57715238258bc",
@@ -3518,14 +4151,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-23T05:04:46Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 34.48,
+      "hot_score": 34.37,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 13.65,
+        "freshness": 13.09,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3537,16 +4170,24 @@
         "api_url": "https://api.github.com/repos/vinta/awesome-python",
         "name": "awesome-python",
         "owner": "vinta",
-        "stars": 310335,
+        "stars": 310348,
         "forks": 28375,
-        "watchers": 310335,
+        "watchers": 310348,
         "open_issues": 20,
         "language": "Python",
         "pushed_at": "2026-07-23T05:04:46Z",
         "created_at": "2014-06-27T21:00:06Z",
-        "updated_at": "2026-07-26T01:49:59Z"
+        "updated_at": "2026-07-26T03:28:00Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 45.5,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (34): 10.3/30",
+        "Freshness (2.9d ago): 7.2/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "3eb4a1ecf75f6126",
@@ -3563,14 +4204,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-21T21:31:29Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 32.85,
+      "hot_score": 32.8,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 5.49,
+        "freshness": 5.26,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3582,16 +4223,24 @@
         "api_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
         "name": "awesome-selfhosted",
         "owner": "awesome-selfhosted",
-        "stars": 308284,
+        "stars": 308301,
         "forks": 14451,
-        "watchers": 308284,
+        "watchers": 308301,
         "open_issues": 0,
         "language": null,
         "pushed_at": "2026-07-21T21:31:29Z",
         "created_at": "2015-06-01T02:33:17Z",
-        "updated_at": "2026-07-26T02:00:39Z"
+        "updated_at": "2026-07-26T03:27:57Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 42.4,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (33): 9.8/30",
+        "Freshness (4.2d ago): 4.6/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "c33c5f7d57ca1054",
@@ -3608,14 +4257,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-21T12:21:20Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 32.59,
+      "hot_score": 32.56,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 4.21,
+        "freshness": 4.04,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3627,16 +4276,24 @@
         "api_url": "https://api.github.com/repos/TheAlgorithms/Python",
         "name": "Python",
         "owner": "TheAlgorithms",
-        "stars": 223156,
+        "stars": 223159,
         "forks": 50903,
-        "watchers": 223156,
+        "watchers": 223159,
         "open_issues": 1021,
         "language": "Python",
         "pushed_at": "2026-07-21T12:21:20Z",
         "created_at": "2016-07-16T09:44:01Z",
-        "updated_at": "2026-07-26T01:43:52Z"
+        "updated_at": "2026-07-26T03:06:05Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 41.8,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (33): 9.8/30",
+        "Freshness (4.6d ago): 4.0/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "e68aa7f48845629f",
@@ -3653,14 +4310,14 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-20T07:41:26Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
-      "hot_score": 32.12,
+      "hot_score": 32.1,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 1.84,
+        "freshness": 1.77,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3672,16 +4329,24 @@
         "api_url": "https://api.github.com/repos/practical-tutorials/project-based-learning",
         "name": "project-based-learning",
         "owner": "practical-tutorials",
-        "stars": 275252,
+        "stars": 275257,
         "forks": 35476,
-        "watchers": 275252,
+        "watchers": 275257,
         "open_issues": 290,
         "language": "Python",
         "pushed_at": "2026-07-20T07:41:26Z",
         "created_at": "2017-04-12T05:07:46Z",
-        "updated_at": "2026-07-26T01:58:35Z"
+        "updated_at": "2026-07-26T03:24:04Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 40.3,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.6/30",
+        "Freshness (5.8d ago): 2.7/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "c3200ef3dc226c14",
@@ -3698,8 +4363,8 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-14T19:25:58Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
       "hot_score": 31.76,
       "score_breakdown": {
@@ -3717,16 +4382,24 @@
         "api_url": "https://api.github.com/repos/codecrafters-io/build-your-own-x",
         "name": "build-your-own-x",
         "owner": "codecrafters-io",
-        "stars": 531568,
-        "forks": 50280,
-        "watchers": 531568,
-        "open_issues": 617,
+        "stars": 531580,
+        "forks": 50285,
+        "watchers": 531580,
+        "open_issues": 618,
         "language": "Markdown",
         "pushed_at": "2026-07-14T19:25:58Z",
         "created_at": "2018-05-09T12:03:18Z",
-        "updated_at": "2026-07-26T01:56:23Z"
+        "updated_at": "2026-07-26T03:23:52Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 37.9,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (11.3d ago): 0.4/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "3dcbffd2a333c3eb",
@@ -3743,8 +4416,8 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-07-14T05:38:25Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
       "hot_score": 31.76,
       "score_breakdown": {
@@ -3762,16 +4435,24 @@
         "api_url": "https://api.github.com/repos/ossu/computer-science",
         "name": "computer-science",
         "owner": "ossu",
-        "stars": 207258,
+        "stars": 207259,
         "forks": 25694,
-        "watchers": 207258,
+        "watchers": 207259,
         "open_issues": 23,
         "language": "HTML",
         "pushed_at": "2026-07-14T05:38:25Z",
         "created_at": "2014-05-04T00:18:39Z",
-        "updated_at": "2026-07-26T01:16:32Z"
+        "updated_at": "2026-07-26T03:26:46Z"
       },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 37.8,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (11.9d ago): 0.3/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     },
     {
       "id": "3aa8876b4c5a6100",
@@ -3788,8 +4469,8 @@
       "tags": [],
       "tags_origin": "none",
       "published_at": "2026-06-30T18:21:16Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
+      "collected_at": "2026-07-26T03:28:13Z",
+      "updated_at": "2026-07-26T03:28:13Z",
       "heat_raw": null,
       "hot_score": 31.75,
       "score_breakdown": {
@@ -3807,61 +4488,24 @@
         "api_url": "https://api.github.com/repos/sindresorhus/awesome",
         "name": "awesome",
         "owner": "sindresorhus",
-        "stars": 489041,
-        "forks": 36059,
-        "watchers": 489041,
+        "stars": 489070,
+        "forks": 36061,
+        "watchers": 489070,
         "open_issues": 97,
         "language": null,
         "pushed_at": "2026-06-30T18:21:16Z",
         "created_at": "2014-07-11T13:42:37Z",
-        "updated_at": "2026-07-26T02:00:43Z"
+        "updated_at": "2026-07-26T03:28:02Z"
       },
-      "ai_summary": null
-    },
-    {
-      "id": "bef5e2187e2e37cb",
-      "event_id": "evt-48bbf582d2ad",
-      "source_id": "github",
-      "source_name": "GitHub",
-      "category": "opensource",
-      "title": "trekhleb/javascript-algorithms",
-      "summary": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
-      "summary_origin": "original",
-      "original_url": "https://github.com/trekhleb/javascript-algorithms",
-      "canonical_url": "https://github.com/trekhleb/javascript-algorithms",
-      "author": null,
-      "tags": [],
-      "tags_origin": "none",
-      "published_at": "2026-06-26T22:49:17Z",
-      "collected_at": "2026-07-26T02:02:01Z",
-      "updated_at": "2026-07-26T02:02:01Z",
-      "heat_raw": null,
-      "hot_score": 31.75,
-      "score_breakdown": {
-        "authority": 75.0,
-        "heat": 0.0,
-        "freshness": 0.0,
-        "multi_source": 33.33,
-        "platform": 80.0
-      },
-      "rank_in_source": null,
-      "status": "published",
-      "lang": "en",
-      "is_mock": false,
-      "metadata": {
-        "api_url": "https://api.github.com/repos/trekhleb/javascript-algorithms",
-        "name": "javascript-algorithms",
-        "owner": "trekhleb",
-        "stars": 196332,
-        "forks": 31047,
-        "watchers": 196332,
-        "open_issues": 403,
-        "language": "JavaScript",
-        "pushed_at": "2026-06-26T22:49:17Z",
-        "created_at": "2018-03-24T07:47:04Z",
-        "updated_at": "2026-07-26T01:08:08Z"
-      },
-      "ai_summary": null
+      "ai_summary": null,
+      "trend_score": 37.5,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (25.4d ago): 0.0/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
     }
   ],
   "events": [
@@ -3884,11 +4528,11 @@
       "trend_ids": [
         "82759af2770e3ddb"
       ],
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.82,
+        "freshness": 19.02,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3914,11 +4558,11 @@
       "trend_ids": [
         "f43e61b923fa3759"
       ],
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.8,
+        "freshness": 19.0,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3944,11 +4588,11 @@
       "trend_ids": [
         "65e5a45ec2c25f86"
       ],
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.79,
+        "freshness": 18.99,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -3974,11 +4618,11 @@
       "trend_ids": [
         "bd877c35643a7d5d"
       ],
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.79,
+        "freshness": 18.98,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4004,11 +4648,11 @@
       "trend_ids": [
         "d0800828c15d18b1"
       ],
-      "hot_score": 39.46,
+      "hot_score": 39.3,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.78,
+        "freshness": 18.98,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4034,11 +4678,11 @@
       "trend_ids": [
         "6eb8fc60c8ec72fa"
       ],
-      "hot_score": 39.45,
+      "hot_score": 39.29,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.77,
+        "freshness": 18.97,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4064,11 +4708,11 @@
       "trend_ids": [
         "1c8c999c62e93229"
       ],
-      "hot_score": 39.45,
+      "hot_score": 39.29,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.75,
+        "freshness": 18.94,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4094,11 +4738,11 @@
       "trend_ids": [
         "21d0f878603fd14f"
       ],
-      "hot_score": 39.45,
+      "hot_score": 39.29,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.73,
+        "freshness": 18.93,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4124,11 +4768,11 @@
       "trend_ids": [
         "591639008ae94d61"
       ],
-      "hot_score": 39.43,
+      "hot_score": 39.27,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.66,
+        "freshness": 18.86,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4154,11 +4798,11 @@
       "trend_ids": [
         "4ba8378159042651"
       ],
-      "hot_score": 39.43,
+      "hot_score": 39.27,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.64,
+        "freshness": 18.84,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4184,11 +4828,11 @@
       "trend_ids": [
         "91e8a6a486af3363"
       ],
-      "hot_score": 39.43,
+      "hot_score": 39.27,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.63,
+        "freshness": 18.84,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4214,11 +4858,11 @@
       "trend_ids": [
         "c3ca8af3fddde568"
       ],
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.62,
+        "freshness": 18.82,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4244,11 +4888,11 @@
       "trend_ids": [
         "cd525498f9b74de1"
       ],
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.61,
+        "freshness": 18.81,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4274,11 +4918,11 @@
       "trend_ids": [
         "9f8307801abb53d9"
       ],
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.6,
+        "freshness": 18.8,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4304,11 +4948,11 @@
       "trend_ids": [
         "c7e53c8c9c58b4cc"
       ],
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.59,
+        "freshness": 18.79,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4334,11 +4978,11 @@
       "trend_ids": [
         "9651f9b685b450fc"
       ],
-      "hot_score": 39.42,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.59,
+        "freshness": 18.79,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4364,11 +5008,11 @@
       "trend_ids": [
         "52f29fd1e1363875"
       ],
-      "hot_score": 39.41,
+      "hot_score": 39.26,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.57,
+        "freshness": 18.78,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4394,11 +5038,11 @@
       "trend_ids": [
         "3e6aa3dec23127cf"
       ],
-      "hot_score": 39.4,
+      "hot_score": 39.24,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.51,
+        "freshness": 18.72,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4424,11 +5068,11 @@
       "trend_ids": [
         "b8b2e204037e4ec7"
       ],
-      "hot_score": 39.4,
+      "hot_score": 39.24,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.49,
+        "freshness": 18.7,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4454,11 +5098,11 @@
       "trend_ids": [
         "01275321b7ec914a"
       ],
-      "hot_score": 39.39,
+      "hot_score": 39.23,
       "score_breakdown": {
         "authority": 90.0,
         "heat": 0.0,
-        "freshness": 19.46,
+        "freshness": 18.67,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4544,11 +5188,11 @@
       "trend_ids": [
         "3191f8d4ba57286c"
       ],
-      "hot_score": 44.93,
+      "hot_score": 44.4,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 65.91,
+        "freshness": 63.23,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4574,11 +5218,11 @@
       "trend_ids": [
         "54b5b79f036a3e54"
       ],
-      "hot_score": 49.33,
+      "hot_score": 48.62,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 87.92,
+        "freshness": 84.35,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4604,11 +5248,11 @@
       "trend_ids": [
         "9837b7357388f8f7"
       ],
-      "hot_score": 44.35,
+      "hot_score": 43.84,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 63.0,
+        "freshness": 60.44,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4642,8 +5286,8 @@
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-26T02:01:35Z",
-      "updated_at": "2026-07-26T02:01:35Z"
+      "published_at": "2026-07-26T03:27:43Z",
+      "updated_at": "2026-07-26T03:27:43Z"
     },
     {
       "event_id": "evt-001647cb34a7",
@@ -4664,11 +5308,11 @@
       "trend_ids": [
         "869b28b8cd70d5b6"
       ],
-      "hot_score": 38.29,
+      "hot_score": 38.02,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 32.69,
+        "freshness": 31.36,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4694,11 +5338,11 @@
       "trend_ids": [
         "3ed57715238258bc"
       ],
-      "hot_score": 34.48,
+      "hot_score": 34.37,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 13.65,
+        "freshness": 13.09,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4724,11 +5368,11 @@
       "trend_ids": [
         "3eb4a1ecf75f6126"
       ],
-      "hot_score": 32.85,
+      "hot_score": 32.8,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 5.49,
+        "freshness": 5.26,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4754,11 +5398,11 @@
       "trend_ids": [
         "e68aa7f48845629f"
       ],
-      "hot_score": 32.12,
+      "hot_score": 32.1,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 1.84,
+        "freshness": 1.77,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4784,11 +5428,11 @@
       "trend_ids": [
         "239bdbda9a37b45b"
       ],
-      "hot_score": 40.49,
+      "hot_score": 40.13,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 43.69,
+        "freshness": 41.91,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4814,16 +5458,16 @@
       "trend_ids": [
         "08d0aff0d7b2adaa"
       ],
-      "hot_score": 51.71,
+      "hot_score": 51.55,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 99.79,
+        "freshness": 98.99,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-26T01:57:34Z",
-      "updated_at": "2026-07-26T01:57:34Z"
+      "published_at": "2026-07-26T03:07:05Z",
+      "updated_at": "2026-07-26T03:07:05Z"
     },
     {
       "event_id": "evt-7a2a8c4b059b",
@@ -4844,11 +5488,11 @@
       "trend_ids": [
         "83df4bf6d4ca361a"
       ],
-      "hot_score": 47.34,
+      "hot_score": 46.71,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 77.96,
+        "freshness": 74.79,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4874,11 +5518,11 @@
       "trend_ids": [
         "ebe5e44a2bb6b040"
       ],
-      "hot_score": 41.45,
+      "hot_score": 41.06,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 48.5,
+        "freshness": 46.53,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4904,11 +5548,11 @@
       "trend_ids": [
         "c33c5f7d57ca1054"
       ],
-      "hot_score": 32.59,
+      "hot_score": 32.56,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 4.21,
+        "freshness": 4.04,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -4934,16 +5578,16 @@
       "trend_ids": [
         "ade16614f36cc3bc"
       ],
-      "hot_score": 51.71,
+      "hot_score": 51.69,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 99.81,
+        "freshness": 99.68,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-26T01:58:02Z",
-      "updated_at": "2026-07-26T01:58:02Z"
+      "published_at": "2026-07-26T03:21:34Z",
+      "updated_at": "2026-07-26T03:21:34Z"
     },
     {
       "event_id": "evt-b339953ea86d",
@@ -4994,11 +5638,11 @@
       "trend_ids": [
         "b2200a220683fb8e"
       ],
-      "hot_score": 50.73,
+      "hot_score": 49.96,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 94.88,
+        "freshness": 91.03,
         "multi_source": 33.33,
         "platform": 80.0
       },
@@ -5024,16 +5668,16 @@
       "trend_ids": [
         "fa583e61d6724b09"
       ],
-      "hot_score": 51.46,
+      "hot_score": 51.7,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 98.53,
+        "freshness": 99.75,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-07-26T01:31:15Z",
-      "updated_at": "2026-07-26T01:31:15Z"
+      "published_at": "2026-07-26T03:22:56Z",
+      "updated_at": "2026-07-26T03:22:56Z"
     },
     {
       "event_id": "evt-48bbf582d2ad",
@@ -5054,16 +5698,16 @@
       "trend_ids": [
         "bef5e2187e2e37cb"
       ],
-      "hot_score": 31.75,
+      "hot_score": 51.32,
       "score_breakdown": {
         "authority": 75.0,
         "heat": 0.0,
-        "freshness": 0.0,
+        "freshness": 97.85,
         "multi_source": 33.33,
         "platform": 80.0
       },
-      "published_at": "2026-06-26T22:49:17Z",
-      "updated_at": "2026-06-26T22:49:17Z"
+      "published_at": "2026-07-26T02:43:08Z",
+      "updated_at": "2026-07-26T02:43:08Z"
     }
   ],
   "metadata": {

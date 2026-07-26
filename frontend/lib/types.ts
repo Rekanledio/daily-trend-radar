@@ -51,6 +51,9 @@ export interface Trend {
   is_mock: boolean; // production MUST be false
   metadata?: Record<string, unknown> | null; // source-specific snapshot (stars/forks/authors etc.)
   ai_summary?: AISummary | null; // AI-generated summary enrichment
+  trend_score?: number | null; // 0-100, rule-based composite score
+  impact_level?: "critical" | "high" | "medium" | "low" | null;
+  score_reason?: string[] | null;
 }
 
 export interface AISummary {
