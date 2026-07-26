@@ -234,22 +234,14 @@ function TrendCard({
         <span className="meta-tag ml-auto">{formatTime(trend.published_at)}</span>
       </div>
 
-      {/* Hot score bar */}
-      <div className="flex items-center gap-3">
-        <span className="text-xs font-semibold shrink-0 tabular-nums"
+      {/* Hot score — compact numeric display */}
+      <div className="flex items-center gap-2">
+        <span className="text-xs text-gray-400 dark:text-gray-500">热度</span>
+        <span className="text-sm font-semibold tabular-nums"
           style={{ color: hsValid ? (hs >= 50 ? "#ef4444" : hs >= 25 ? "#eab308" : "#22c55e") : undefined }}
         >
           {hsValid ? hs.toFixed(1) : "—"}
         </span>
-        <div className="flex-1 h-1.5 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
-          {hsValid && (
-            <div
-              className="hot-bar"
-              style={{ width: `${Math.max(1, hs)}%` }}
-            />
-          )}
-        </div>
-        <span className="text-[10px] text-gray-400 dark:text-gray-500 shrink-0">热度</span>
       </div>
 
       {/* AI Summary */}
