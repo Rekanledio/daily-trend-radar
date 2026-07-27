@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test lib/repositories/__tests__/json-file-repository.test.ts"
+    "test": "node --experimental-strip-types --test \"lib/**/__tests__/*.test.ts\""
   },
   "dependencies": {
     "next": "^15.1.6",
