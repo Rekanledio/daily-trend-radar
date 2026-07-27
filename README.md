@@ -41,7 +41,7 @@
 - **Next.js Dashboard**：搜索、筛选、排序、日期导航、历史趋势、健康状态
 - **GitHub Actions** 每日 02:00 UTC 自动运行 Pipeline，数据同步提交后触发 Vercel 部署
 
-> **注意**：项目当前处于数据积累初期（2 天真实数据），部分历史趋势功能（如多日热点 ≥3 天）需更多数据后才能自然体现。跨源 Event 聚合能力已就绪，但当前数据中多源事件数量为零，有待进一步积累。
+> **注意**：项目当前处于数据积累初期（当前已积累 3 天真实数据，随每日自动运行持续增长），部分历史趋势功能（如多日热点 ≥3 天）需更多数据后才能自然体现。跨源 Event 聚合能力已就绪，但当前数据中多源事件数量为零，有待进一步积累。
 
 ---
 
@@ -87,7 +87,7 @@ Adapter Fetch → Normalize → Validate → Source Verify → Dedup
 - **First Seen** — 该趋势首次出现的日期
 - **非连续日期比较** — 跳过中间缺失日期，直接比较最近两次出现
 
-> 当前仅有 2 天真实数据，长期趋势分析能力处于数据积累阶段。
+> 项目处于数据积累阶段（当前已积累 3 天真实数据），长期趋势分析能力随数据增长持续增强。
 
 ---
 
@@ -146,7 +146,7 @@ Adapter Fetch → Normalize → Validate → Source Verify → Dedup
 - 排序（最热 / 最新）
 - 日期选择（Dropdown + URL searchParams `?date=YYYY-MM-DD`）
 - 健康状态面板（可折叠，每源状态 + 更新时间）
-- Hot Score 进度条
+- Hot Score 紧凑数字显示
 - Trend Score 条形图 + Impact Level 彩色徽章
 - Score Reason 可折叠详情
 - AI Summary 展示（summary + why_it_matters + keywords）
@@ -275,7 +275,7 @@ npm run build
 # TypeScript 类型检查
 npm run typecheck
 
-# Repository 测试（11 项）
+# 前端测试（全部 37 项）
 npm test
 ```
 
@@ -286,10 +286,13 @@ npm test
 | 类型 | 数量 | 运行方式 |
 |------|------|---------|
 | Python Pipeline 测试 | 约 243 项 | `cd pipeline && pytest` |
-| 前端 Repository 测试 | 11 项 | `cd frontend && npm test` |
-| 前端 Trend Utils 测试 | 26 项 | `cd frontend && node --experimental-strip-types --test lib/__tests__/trend-utils.test.ts` |
+| 前端测试（trend-utils + repository） | 37 项 | `cd frontend && npm test` |
+| 前端类型检查 | — | `cd frontend && npm run typecheck` |
+| 前端生产构建 | — | `cd frontend && npm run build` |
+| GitHub Actions CI（Python） | 约 243 项 | push 自动触发 `pytest + ruff + compileall` |
+| GitHub Actions CI（Frontend） | 37 项 | push 自动触发 `typecheck + test + build` |
 
-> npm test 当前只覆盖 Repository 测试；Trend Utils 测试需使用上述单独命令运行。合计约 37 项前端测试。
+> `npm test` 使用 Node.js `--test` glob 模式自动发现并运行全部前端测试文件。合计 37 项前端测试。
 
 ---
 
