@@ -354,7 +354,7 @@ function TrendCard({
                 <span className={`text-[11px] font-medium ${
                   rankChange > 0 ? "text-green-600 dark:text-green-400" : "text-red-500 dark:text-red-400"
                 }`}>
-                  {rankChange > 0 ? `��${rankChange}` : `↓${Math.abs(rankChange)}`}
+                  {rankChange > 0 ? `↑${rankChange}` : `↓${Math.abs(rankChange)}`}
                 </span>
               )}
               {sparklineHtml && (
