@@ -156,3 +156,7 @@ jobs:
 
       - name: Push to master
         run: git push origin master
+
+      - name: Trigger Vercel deployment
+        run: |
+          curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
