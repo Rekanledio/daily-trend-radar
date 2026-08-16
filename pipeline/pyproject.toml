@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "daily-trend-radar-pipeline"
 version = "0.2.0"
 description = "Data collection and processing pipeline for Daily Trend Radar"
-readme = "../README.md"
 requires-python = ">=3.12"
 dependencies = [
     "pydantic>=2.7",
