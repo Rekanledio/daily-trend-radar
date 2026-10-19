@@ -1,0 +1,5057 @@
+{
+  "date": "2026-10-19",
+  "schema_version": "1.0",
+  "generated_at": "2026-10-19T07:03:08Z",
+  "pipeline_version": "0.2.0",
+  "ai_enabled": false,
+  "categories": {
+    "opensource": {
+      "count": 18,
+      "items": [
+        {
+          "id": "3191f8d4ba57286c",
+          "event_id": "evt-0be0ad180714",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "freeCodeCamp/freeCodeCamp",
+          "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "canonical_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-19T06:46:52Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 51.59,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 99.22,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+            "name": "freeCodeCamp",
+            "owner": "freeCodeCamp",
+            "stars": 457459,
+            "forks": 49648,
+            "watchers": 457459,
+            "open_issues": 178,
+            "language": "TypeScript",
+            "pushed_at": "2026-10-19T06:46:52Z",
+            "created_at": "2014-12-24T17:49:19Z",
+            "updated_at": "2026-10-19T07:02:30Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: freeCodeCamp/freeCodeCamp",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.6.",
+            "keywords": [
+              "freecodecamp"
+            ]
+          },
+          "trend_score": 65.4,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (52): 15.5/30",
+            "Freshness (0.0d ago): 19.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "a08913f6e399bb42",
+          "event_id": "evt-a5b6cf30f0c2",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "morluto/rea",
+          "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/morluto/rea",
+          "canonical_url": "https://github.com/morluto/rea",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-19T06:38:20Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 51.51,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 98.81,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/morluto/rea",
+            "name": "rea",
+            "owner": "morluto",
+            "stars": 326870,
+            "forks": 82764,
+            "watchers": 326870,
+            "open_issues": 1224,
+            "language": "TypeScript",
+            "pushed_at": "2026-10-19T06:38:20Z",
+            "created_at": "2026-04-14T00:51:32Z",
+            "updated_at": "2026-10-19T07:04:01Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: morluto/rea",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.5.",
+            "keywords": [
+              "morluto"
+            ]
+          },
+          "trend_score": 67.4,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (52): 15.5/30",
+            "Freshness (0.0d ago): 19.9/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "3ed57715238258bc",
+          "event_id": "evt-fff8df9733e4",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "vinta/awesome-python",
+          "summary": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+          "summary_origin": "original",
+          "original_url": "https://github.com/vinta/awesome-python",
+          "canonical_url": "https://github.com/vinta/awesome-python",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-19T05:39:01Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 50.96,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 96.03,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/vinta/awesome-python",
+            "name": "awesome-python",
+            "owner": "vinta",
+            "stars": 328552,
+            "forks": 28960,
+            "watchers": 328552,
+            "open_issues": 16,
+            "language": "Python",
+            "pushed_at": "2026-10-19T05:39:01Z",
+            "created_at": "2014-06-27T21:00:06Z",
+            "updated_at": "2026-10-19T07:03:15Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: vinta/awesome-python",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.0.",
+            "keywords": [
+              "awesome",
+              "python",
+              "vinta"
+            ]
+          },
+          "trend_score": 64.9,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (51): 15.3/30",
+            "Freshness (0.1d ago): 19.6/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "ebe5e44a2bb6b040",
+          "event_id": "evt-0658d7fa2f87",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "affaan-m/ECC",
+          "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/affaan-m/ECC",
+          "canonical_url": "https://github.com/affaan-m/ECC",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-19T05:03:15Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 50.63,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 94.39,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/affaan-m/ECC",
+            "name": "ECC",
+            "owner": "affaan-m",
+            "stars": 283479,
+            "forks": 42105,
+            "watchers": 283479,
+            "open_issues": 244,
+            "language": "JavaScript",
+            "pushed_at": "2026-10-19T05:03:15Z",
+            "created_at": "2026-01-18T00:51:51Z",
+            "updated_at": "2026-10-19T07:03:31Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: affaan-m/ECC",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 50.6.",
+            "keywords": [
+              "affaan"
+            ]
+          },
+          "trend_score": 66.6,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (51): 15.2/30",
+            "Freshness (0.1d ago): 19.4/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "08d0aff0d7b2adaa",
+          "event_id": "evt-b9a0988e7e70",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "react/react",
+          "summary": "The library for web and native user interfaces.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/react/react",
+          "canonical_url": "https://github.com/react/react",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-19T00:36:28Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 48.35,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 83.02,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/react/react",
+            "name": "react",
+            "owner": "react",
+            "stars": 251351,
+            "forks": 51538,
+            "watchers": 251351,
+            "open_issues": 1466,
+            "language": "JavaScript",
+            "pushed_at": "2026-10-19T00:36:28Z",
+            "created_at": "2013-05-24T16:15:54Z",
+            "updated_at": "2026-10-19T07:03:57Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: react/react",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 48.4.",
+            "keywords": [
+              "react"
+            ]
+          },
+          "trend_score": 62.7,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (48): 14.5/30",
+            "Freshness (0.3d ago): 18.2/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "83df4bf6d4ca361a",
+          "event_id": "evt-6d2d5b87602b",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "torvalds/linux",
+          "summary": "Linux kernel source tree",
+          "summary_origin": "original",
+          "original_url": "https://github.com/torvalds/linux",
+          "canonical_url": "https://github.com/torvalds/linux",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-18T23:21:18Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 47.76,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 80.07,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/torvalds/linux",
+            "name": "linux",
+            "owner": "torvalds",
+            "stars": 252519,
+            "forks": 68348,
+            "watchers": 252519,
+            "open_issues": 3,
+            "language": "C",
+            "pushed_at": "2026-10-18T23:21:18Z",
+            "created_at": "2011-09-04T22:48:12Z",
+            "updated_at": "2026-10-19T06:59:42Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: torvalds/linux",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 47.8.",
+            "keywords": [
+              "linux",
+              "torvalds"
+            ]
+          },
+          "trend_score": 62.2,
+          "impact_level": "high",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (48): 14.3/30",
+            "Freshness (0.3d ago): 17.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "3eb4a1ecf75f6126",
+          "event_id": "evt-9ef50c8fb0e6",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "awesome-selfhosted/awesome-selfhosted",
+          "summary": "A list of Free Software network services and web applications which can be hosted on your own servers",
+          "summary_origin": "original",
+          "original_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+          "canonical_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-18T15:44:07Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 44.6,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 64.25,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
+            "name": "awesome-selfhosted",
+            "owner": "awesome-selfhosted",
+            "stars": 328125,
+            "forks": 15414,
+            "watchers": 328125,
+            "open_issues": 0,
+            "language": null,
+            "pushed_at": "2026-10-18T15:44:07Z",
+            "created_at": "2015-06-01T02:33:17Z",
+            "updated_at": "2026-10-19T07:02:33Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: awesome-selfhosted/awesome-selfhosted",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.6.",
+            "keywords": [
+              "awesome",
+              "selfhosted"
+            ]
+          },
+          "trend_score": 59.4,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (45): 13.4/30",
+            "Freshness (0.6d ago): 16.0/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "9837b7357388f8f7",
+          "event_id": "evt-b4321855507e",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "EbookFoundation/free-programming-books",
+          "summary": ":books: Freely available programming books",
+          "summary_origin": "original",
+          "original_url": "https://github.com/EbookFoundation/free-programming-books",
+          "canonical_url": "https://github.com/EbookFoundation/free-programming-books",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-18T00:26:58Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 40.01,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 41.32,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
+            "name": "free-programming-books",
+            "owner": "EbookFoundation",
+            "stars": 399521,
+            "forks": 66952,
+            "watchers": 399521,
+            "open_issues": 95,
+            "language": "Python",
+            "pushed_at": "2026-10-18T00:26:58Z",
+            "created_at": "2013-10-11T06:50:37Z",
+            "updated_at": "2026-10-19T07:02:17Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: EbookFoundation/free-programming-books",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 40.0.",
+            "keywords": [
+              "books",
+              "ebookfoundation",
+              "free",
+              "programming"
+            ]
+          },
+          "trend_score": 54.9,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (40): 12.0/30",
+            "Freshness (1.3d ago): 12.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "54b5b79f036a3e54",
+          "event_id": "evt-fa7dc4680dc1",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "public-apis/public-apis",
+          "summary": "A collective list of free APIs",
+          "summary_origin": "original",
+          "original_url": "https://github.com/public-apis/public-apis",
+          "canonical_url": "https://github.com/public-apis/public-apis",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-17T17:36:01Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 38.53,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 33.9,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/public-apis/public-apis",
+            "name": "public-apis",
+            "owner": "public-apis",
+            "stars": 490190,
+            "forks": 54427,
+            "watchers": 490190,
+            "open_issues": 2227,
+            "language": "Python",
+            "pushed_at": "2026-10-17T17:36:01Z",
+            "created_at": "2016-03-20T23:49:42Z",
+            "updated_at": "2026-10-19T07:03:23Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: public-apis/public-apis",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 38.5.",
+            "keywords": [
+              "apis",
+              "public"
+            ]
+          },
+          "trend_score": 53.2,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (39): 11.6/30",
+            "Freshness (1.6d ago): 11.6/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "3ae6e12dedfe776c",
+          "event_id": "evt-026ca8e8b41b",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "deepseek-ai/deepseek-harness",
+          "summary": "DeepSeek Harness: Everything is a Plugin.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/deepseek-ai/deepseek-harness",
+          "canonical_url": "https://github.com/deepseek-ai/deepseek-harness",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-17T08:16:09Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 36.93,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 25.89,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/deepseek-ai/deepseek-harness",
+            "name": "deepseek-harness",
+            "owner": "deepseek-ai",
+            "stars": 253623,
+            "forks": 30599,
+            "watchers": 253623,
+            "open_issues": 0,
+            "language": "TypeScript",
+            "pushed_at": "2026-10-17T08:16:09Z",
+            "created_at": "2026-08-13T11:56:32Z",
+            "updated_at": "2026-10-19T07:02:53Z"
+          },
+          "ai_summary": {
+            "summary": "AI trend from GitHub: deepseek-ai/deepseek-harness",
+            "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 36.9.",
+            "keywords": [
+              "deepseek",
+              "harness"
+            ]
+          },
+          "trend_score": 51.3,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (37): 11.1/30",
+            "Freshness (1.9d ago): 10.2/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "c33c5f7d57ca1054",
+          "event_id": "evt-757076ddaa5c",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "TheAlgorithms/Python",
+          "summary": "All Algorithms implemented in Python",
+          "summary_origin": "original",
+          "original_url": "https://github.com/TheAlgorithms/Python",
+          "canonical_url": "https://github.com/TheAlgorithms/Python",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-16T20:23:44Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 35.43,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 18.38,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/TheAlgorithms/Python",
+            "name": "Python",
+            "owner": "TheAlgorithms",
+            "stars": 225387,
+            "forks": 51191,
+            "watchers": 225387,
+            "open_issues": 34,
+            "language": "Python",
+            "pushed_at": "2026-10-16T20:23:44Z",
+            "created_at": "2016-07-16T09:44:01Z",
+            "updated_at": "2026-10-19T06:51:37Z"
+          },
+          "ai_summary": null,
+          "trend_score": 47.2,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (35): 10.6/30",
+            "Freshness (2.4d ago): 8.6/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        },
+        {
+          "id": "869b28b8cd70d5b6",
+          "event_id": "evt-d3682563581e",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "nilbuild/developer-roadmap",
+          "summary": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/nilbuild/developer-roadmap",
+          "canonical_url": "https://github.com/nilbuild/developer-roadmap",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-16T16:41:47Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 35.05,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 16.51,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
+            "name": "developer-roadmap",
+            "owner": "nilbuild",
+            "stars": 369821,
+            "forks": 45107,
+            "watchers": 369821,
+            "open_issues": 4,
+            "language": "TypeScript",
+            "pushed_at": "2026-10-16T16:41:47Z",
+            "created_at": "2017-03-15T13:45:52Z",
+            "updated_at": "2026-10-19T07:03:11Z"
+          },
+          "ai_summary": null,
+          "trend_score": 46.6,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (35): 10.5/30",
+            "Freshness (2.6d ago): 8.1/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        },
+        {
+          "id": "0d0cbd02cba471c6",
+          "event_id": "evt-89e612f6ea97",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "mattpocock/skills",
+          "summary": "Skills for Real Engineers. Straight from my .agents directory.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/mattpocock/skills",
+          "canonical_url": "https://github.com/mattpocock/skills",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-13T08:46:40Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 32.08,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 1.64,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/mattpocock/skills",
+            "name": "skills",
+            "owner": "mattpocock",
+            "stars": 296564,
+            "forks": 24896,
+            "watchers": 296564,
+            "open_issues": 194,
+            "language": "Shell",
+            "pushed_at": "2026-10-13T08:46:40Z",
+            "created_at": "2026-02-03T11:15:53Z",
+            "updated_at": "2026-10-19T07:03:53Z"
+          },
+          "ai_summary": null,
+          "trend_score": 44.2,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.6/30",
+            "Freshness (5.9d ago): 2.6/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "e68aa7f48845629f",
+          "event_id": "evt-a65055ef0812",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "practical-tutorials/project-based-learning",
+          "summary": "Curated list of project-based tutorials",
+          "summary_origin": "original",
+          "original_url": "https://github.com/practical-tutorials/project-based-learning",
+          "canonical_url": "https://github.com/practical-tutorials/project-based-learning",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-12T07:22:00Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 31.91,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.79,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/practical-tutorials/project-based-learning",
+            "name": "project-based-learning",
+            "owner": "practical-tutorials",
+            "stars": 287222,
+            "forks": 36640,
+            "watchers": 287222,
+            "open_issues": 236,
+            "language": "Python",
+            "pushed_at": "2026-10-12T07:22:00Z",
+            "created_at": "2017-04-12T05:07:46Z",
+            "updated_at": "2026-10-19T07:02:15Z"
+          },
+          "ai_summary": null,
+          "trend_score": 39.4,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.6/30",
+            "Freshness (7.0d ago): 1.8/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        },
+        {
+          "id": "239bdbda9a37b45b",
+          "event_id": "evt-4251a228ae40",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "obra/superpowers",
+          "summary": "An agentic skills framework & software development methodology that works.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/obra/superpowers",
+          "canonical_url": "https://github.com/obra/superpowers",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-10T03:03:30Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 31.78,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.17,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/obra/superpowers",
+            "name": "superpowers",
+            "owner": "obra",
+            "stars": 301765,
+            "forks": 26947,
+            "watchers": 301765,
+            "open_issues": 382,
+            "language": "Shell",
+            "pushed_at": "2026-10-10T03:03:30Z",
+            "created_at": "2025-10-09T19:45:18Z",
+            "updated_at": "2026-10-19T07:00:51Z"
+          },
+          "ai_summary": null,
+          "trend_score": 40.3,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (9.2d ago): 0.8/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "c3200ef3dc226c14",
+          "event_id": "evt-d5549494bcee",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "codecrafters-io/build-your-own-x",
+          "summary": "Master programming by recreating your favorite technologies from scratch.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/codecrafters-io/build-your-own-x",
+          "canonical_url": "https://github.com/codecrafters-io/build-your-own-x",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-07-14T19:25:58Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 31.75,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.0,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/codecrafters-io/build-your-own-x",
+            "name": "build-your-own-x",
+            "owner": "codecrafters-io",
+            "stars": 554417,
+            "forks": 51968,
+            "watchers": 554417,
+            "open_issues": 680,
+            "language": "Markdown",
+            "pushed_at": "2026-07-14T19:25:58Z",
+            "created_at": "2018-05-09T12:03:18Z",
+            "updated_at": "2026-10-19T07:00:31Z"
+          },
+          "ai_summary": null,
+          "trend_score": 37.5,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (96.5d ago): 0.0/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        },
+        {
+          "id": "3aa8876b4c5a6100",
+          "event_id": "evt-f8eb225f583e",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "sindresorhus/awesome",
+          "summary": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+          "summary_origin": "original",
+          "original_url": "https://github.com/sindresorhus/awesome",
+          "canonical_url": "https://github.com/sindresorhus/awesome",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-09-02T02:10:47Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 31.75,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.0,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/sindresorhus/awesome",
+            "name": "awesome",
+            "owner": "sindresorhus",
+            "stars": 521105,
+            "forks": 37562,
+            "watchers": 521105,
+            "open_issues": 105,
+            "language": null,
+            "pushed_at": "2026-09-02T02:10:47Z",
+            "created_at": "2014-07-11T13:42:37Z",
+            "updated_at": "2026-10-19T07:02:44Z"
+          },
+          "ai_summary": null,
+          "trend_score": 37.5,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (47.2d ago): 0.0/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        },
+        {
+          "id": "60e2cbfcc2e4d598",
+          "event_id": "evt-9550a53772dd",
+          "source_id": "github",
+          "source_name": "GitHub",
+          "category": "opensource",
+          "title": "donnemartin/system-design-primer",
+          "summary": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+          "summary_origin": "original",
+          "original_url": "https://github.com/donnemartin/system-design-primer",
+          "canonical_url": "https://github.com/donnemartin/system-design-primer",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-09-15T01:10:09Z",
+          "collected_at": "2026-10-19T07:04:01Z",
+          "updated_at": "2026-10-19T07:04:01Z",
+          "heat_raw": null,
+          "hot_score": 31.75,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.0,
+            "multi_source": 33.33,
+            "platform": 80.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "api_url": "https://api.github.com/repos/donnemartin/system-design-primer",
+            "name": "system-design-primer",
+            "owner": "donnemartin",
+            "stars": 374691,
+            "forks": 58900,
+            "watchers": 374691,
+            "open_issues": 627,
+            "language": "Python",
+            "pushed_at": "2026-09-15T01:10:09Z",
+            "created_at": "2017-02-26T16:15:28Z",
+            "updated_at": "2026-10-19T07:03:49Z"
+          },
+          "ai_summary": null,
+          "trend_score": 37.5,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (GitHub): 28/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (34.2d ago): 0.0/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        }
+      ]
+    },
+    "ai_official": {
+      "count": 20,
+      "items": [
+        {
+          "id": "a44c109c3ba53a1a",
+          "event_id": "evt-14adbbcd6951",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "How Itaú is building generative AI for its entire customer base",
+          "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/itau-generative-ai",
+          "canonical_url": "https://openai.com/index/itau-generative-ai",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-16T19:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 34.28,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 17.65,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 40.7,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (34): 10.3/30",
+            "Freshness (2.5d ago): 8.4/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "a21333237b8eb38f",
+          "event_id": "evt-8eed5fb75823",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Benefit Street Partners answers questions faster with Codex",
+          "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/benefit-street-partners",
+          "canonical_url": "https://openai.com/index/benefit-street-partners",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-16T00:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 32.79,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 10.2,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 36.2,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (33): 9.8/30",
+            "Freshness (3.3d ago): 6.4/20",
+            "AI relevance (0 keywords): 0.0/20"
+          ]
+        },
+        {
+          "id": "46a356c6d6b71f99",
+          "event_id": "evt-f9771e17770e",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+          "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+          "canonical_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-16T00:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 32.79,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 10.2,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Startup"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 40.2,
+          "impact_level": "medium",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (33): 9.8/30",
+            "Freshness (3.3d ago): 6.4/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "746c5ea1004a295d",
+          "event_id": "evt-81d0e9283b2d",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Bringing GPT-Rosalind to academic research labs",
+          "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+          "canonical_url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-15T19:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 32.52,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 8.83,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Research"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 37.7,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (33): 9.8/30",
+            "Freshness (3.5d ago): 5.9/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "6fc17a24e7713d9b",
+          "event_id": "evt-88485d1fbfc9",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Teaching students to think and learn through questions",
+          "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+          "canonical_url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-15T13:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 32.23,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 7.42,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Company"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 37.1,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (32): 9.7/30",
+            "Freshness (3.8d ago): 5.4/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "458f9a2f2359248a",
+          "event_id": "evt-814c53d4f97d",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+          "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/sullivan-cromwell",
+          "canonical_url": "https://openai.com/index/sullivan-cromwell",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-15T00:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.77,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 5.1,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 36.0,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (32): 9.5/30",
+            "Freshness (4.3d ago): 4.5/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "e7d06069d53fbdaf",
+          "event_id": "evt-3e039dfea451",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/amp-beyond-coding",
+          "canonical_url": "https://openai.com/index/amp-beyond-coding",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-14T12:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.47,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 3.61,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Startup"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 39.2,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.4/30",
+            "Freshness (4.8d ago): 3.8/20",
+            "AI relevance (3 keywords): 6.0/20"
+          ]
+        },
+        {
+          "id": "af509332611ebf87",
+          "event_id": "evt-adbbf179c8ed",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/sentinelone",
+          "canonical_url": "https://openai.com/index/sentinelone",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-14T12:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.47,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 3.61,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 35.2,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.4/30",
+            "Freshness (4.8d ago): 3.8/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "5eaca857a135c7dd",
+          "event_id": "evt-1023048f1841",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+          "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/third-moment-research",
+          "canonical_url": "https://openai.com/index/third-moment-research",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-14T07:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.37,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 3.12,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Startup"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 38.9,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.4/30",
+            "Freshness (5.0d ago): 3.5/20",
+            "AI relevance (3 keywords): 6.0/20"
+          ]
+        },
+        {
+          "id": "02a26abc61673cdd",
+          "event_id": "evt-79aa9ac9ee5a",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "How Block is building AI-powered security with OpenAI technology",
+          "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/block-ai-powered-security",
+          "canonical_url": "https://openai.com/index/block-ai-powered-security",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-14T07:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.37,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 3.12,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 34.9,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.4/30",
+            "Freshness (5.0d ago): 3.5/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "a59b63d1cc72bb9f",
+          "event_id": "evt-2f9435bd41eb",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "The EU’s next chapter in AI is agentic",
+          "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+          "canonical_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-14T00:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.26,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 2.55,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Global Affairs"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 36.6,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.4/30",
+            "Freshness (5.3d ago): 3.2/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "19f6746724024442",
+          "event_id": "evt-7fad06ceb2d4",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+          "canonical_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-13T12:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 31.11,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 1.8,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Startup"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 36.0,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.3/30",
+            "Freshness (5.8d ago): 2.7/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "aaf6f61ad30afdbc",
+          "event_id": "evt-a2b5693a4bab",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/asana-browser-agent",
+          "canonical_url": "https://openai.com/index/asana-browser-agent",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-09T07:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.77,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.1,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 33.8,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (10.0d ago): 0.6/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "b2336ad269076087",
+          "event_id": "evt-dc4966291e89",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/sophos",
+          "canonical_url": "https://openai.com/index/sophos",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-09T07:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.77,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.1,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 31.8,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (10.0d ago): 0.6/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "a785bae53216829c",
+          "event_id": "evt-b86c8db50245",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/oracle",
+          "canonical_url": "https://openai.com/index/oracle",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-08T16:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.76,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.06,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 31.7,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (10.6d ago): 0.5/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "ea499b4051b89cc2",
+          "event_id": "evt-87eac7505e04",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/pollo-ai",
+          "canonical_url": "https://openai.com/index/pollo-ai",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-08T12:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.76,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.06,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Startup"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 33.7,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (10.8d ago): 0.5/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "4ad759dd6a563cf0",
+          "event_id": "evt-dd77d241b50c",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/legalon-halves-codex-costs",
+          "canonical_url": "https://openai.com/index/legalon-halves-codex-costs",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-08T12:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.76,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.06,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 31.7,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (10.8d ago): 0.5/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "1e32656eb792995d",
+          "event_id": "evt-8cd356407a58",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Disrupting AI-enabled “false front” operations",
+          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+          "canonical_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-08T00:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.76,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.04,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Safety"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 31.6,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (11.3d ago): 0.4/20",
+            "AI relevance (1 keywords): 2.0/20"
+          ]
+        },
+        {
+          "id": "35eda89d4cc4e817",
+          "event_id": "evt-56a65876a4e9",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Helping teens learn, plan, and shape the future of AI",
+          "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/teens-learn-and-plan",
+          "canonical_url": "https://openai.com/index/teens-learn-and-plan",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-07T12:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.76,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.03,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": [
+              "Product"
+            ]
+          },
+          "ai_summary": null,
+          "trend_score": 33.5,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (11.8d ago): 0.3/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        },
+        {
+          "id": "c3a31b5510865a54",
+          "event_id": "evt-f58491b23a6b",
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "category": "ai_official",
+          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+          "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+          "summary_origin": "original",
+          "original_url": "https://openai.com/index/radisson",
+          "canonical_url": "https://openai.com/index/radisson",
+          "author": null,
+          "tags": [],
+          "tags_origin": "none",
+          "published_at": "2026-10-07T07:00:00Z",
+          "collected_at": "2026-10-19T07:04:02Z",
+          "updated_at": "2026-10-19T07:04:02Z",
+          "heat_raw": null,
+          "hot_score": 30.75,
+          "score_breakdown": {
+            "authority": 75.0,
+            "heat": 0.0,
+            "freshness": 0.02,
+            "multi_source": 33.33,
+            "platform": 70.0
+          },
+          "rank_in_source": null,
+          "status": "published",
+          "lang": "en",
+          "is_mock": false,
+          "metadata": {
+            "feed_type": "rss",
+            "author": null,
+            "categories": []
+          },
+          "ai_summary": null,
+          "trend_score": 33.5,
+          "impact_level": "low",
+          "score_reason": [
+            "Source (OpenAI Blog): 20/30",
+            "Hot score (31): 9.2/30",
+            "Freshness (12.0d ago): 0.3/20",
+            "AI relevance (2 keywords): 4.0/20"
+          ]
+        }
+      ]
+    }
+  },
+  "trends": [
+    {
+      "id": "3191f8d4ba57286c",
+      "event_id": "evt-0be0ad180714",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "freeCodeCamp/freeCodeCamp",
+      "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "canonical_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-19T06:46:52Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 51.59,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 99.22,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+        "name": "freeCodeCamp",
+        "owner": "freeCodeCamp",
+        "stars": 457459,
+        "forks": 49648,
+        "watchers": 457459,
+        "open_issues": 178,
+        "language": "TypeScript",
+        "pushed_at": "2026-10-19T06:46:52Z",
+        "created_at": "2014-12-24T17:49:19Z",
+        "updated_at": "2026-10-19T07:02:30Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: freeCodeCamp/freeCodeCamp",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.6.",
+        "keywords": [
+          "freecodecamp"
+        ]
+      },
+      "trend_score": 65.4,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (52): 15.5/30",
+        "Freshness (0.0d ago): 19.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "a08913f6e399bb42",
+      "event_id": "evt-a5b6cf30f0c2",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "morluto/rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/morluto/rea",
+      "canonical_url": "https://github.com/morluto/rea",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-19T06:38:20Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 51.51,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 98.81,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/morluto/rea",
+        "name": "rea",
+        "owner": "morluto",
+        "stars": 326870,
+        "forks": 82764,
+        "watchers": 326870,
+        "open_issues": 1224,
+        "language": "TypeScript",
+        "pushed_at": "2026-10-19T06:38:20Z",
+        "created_at": "2026-04-14T00:51:32Z",
+        "updated_at": "2026-10-19T07:04:01Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: morluto/rea",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.5.",
+        "keywords": [
+          "morluto"
+        ]
+      },
+      "trend_score": 67.4,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (52): 15.5/30",
+        "Freshness (0.0d ago): 19.9/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "3ed57715238258bc",
+      "event_id": "evt-fff8df9733e4",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "vinta/awesome-python",
+      "summary": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+      "summary_origin": "original",
+      "original_url": "https://github.com/vinta/awesome-python",
+      "canonical_url": "https://github.com/vinta/awesome-python",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-19T05:39:01Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 50.96,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 96.03,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/vinta/awesome-python",
+        "name": "awesome-python",
+        "owner": "vinta",
+        "stars": 328552,
+        "forks": 28960,
+        "watchers": 328552,
+        "open_issues": 16,
+        "language": "Python",
+        "pushed_at": "2026-10-19T05:39:01Z",
+        "created_at": "2014-06-27T21:00:06Z",
+        "updated_at": "2026-10-19T07:03:15Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: vinta/awesome-python",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 51.0.",
+        "keywords": [
+          "awesome",
+          "python",
+          "vinta"
+        ]
+      },
+      "trend_score": 64.9,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (51): 15.3/30",
+        "Freshness (0.1d ago): 19.6/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "ebe5e44a2bb6b040",
+      "event_id": "evt-0658d7fa2f87",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/affaan-m/ECC",
+      "canonical_url": "https://github.com/affaan-m/ECC",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-19T05:03:15Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 50.63,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 94.39,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/affaan-m/ECC",
+        "name": "ECC",
+        "owner": "affaan-m",
+        "stars": 283479,
+        "forks": 42105,
+        "watchers": 283479,
+        "open_issues": 244,
+        "language": "JavaScript",
+        "pushed_at": "2026-10-19T05:03:15Z",
+        "created_at": "2026-01-18T00:51:51Z",
+        "updated_at": "2026-10-19T07:03:31Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: affaan-m/ECC",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 50.6.",
+        "keywords": [
+          "affaan"
+        ]
+      },
+      "trend_score": 66.6,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (51): 15.2/30",
+        "Freshness (0.1d ago): 19.4/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "08d0aff0d7b2adaa",
+      "event_id": "evt-b9a0988e7e70",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "react/react",
+      "summary": "The library for web and native user interfaces.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/react/react",
+      "canonical_url": "https://github.com/react/react",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-19T00:36:28Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 48.35,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 83.02,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/react/react",
+        "name": "react",
+        "owner": "react",
+        "stars": 251351,
+        "forks": 51538,
+        "watchers": 251351,
+        "open_issues": 1466,
+        "language": "JavaScript",
+        "pushed_at": "2026-10-19T00:36:28Z",
+        "created_at": "2013-05-24T16:15:54Z",
+        "updated_at": "2026-10-19T07:03:57Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: react/react",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 48.4.",
+        "keywords": [
+          "react"
+        ]
+      },
+      "trend_score": 62.7,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (48): 14.5/30",
+        "Freshness (0.3d ago): 18.2/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "83df4bf6d4ca361a",
+      "event_id": "evt-6d2d5b87602b",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "torvalds/linux",
+      "summary": "Linux kernel source tree",
+      "summary_origin": "original",
+      "original_url": "https://github.com/torvalds/linux",
+      "canonical_url": "https://github.com/torvalds/linux",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-18T23:21:18Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 47.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 80.07,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/torvalds/linux",
+        "name": "linux",
+        "owner": "torvalds",
+        "stars": 252519,
+        "forks": 68348,
+        "watchers": 252519,
+        "open_issues": 3,
+        "language": "C",
+        "pushed_at": "2026-10-18T23:21:18Z",
+        "created_at": "2011-09-04T22:48:12Z",
+        "updated_at": "2026-10-19T06:59:42Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: torvalds/linux",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 47.8.",
+        "keywords": [
+          "linux",
+          "torvalds"
+        ]
+      },
+      "trend_score": 62.2,
+      "impact_level": "high",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (48): 14.3/30",
+        "Freshness (0.3d ago): 17.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "3eb4a1ecf75f6126",
+      "event_id": "evt-9ef50c8fb0e6",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "awesome-selfhosted/awesome-selfhosted",
+      "summary": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "summary_origin": "original",
+      "original_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "canonical_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-18T15:44:07Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 44.6,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 64.25,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
+        "name": "awesome-selfhosted",
+        "owner": "awesome-selfhosted",
+        "stars": 328125,
+        "forks": 15414,
+        "watchers": 328125,
+        "open_issues": 0,
+        "language": null,
+        "pushed_at": "2026-10-18T15:44:07Z",
+        "created_at": "2015-06-01T02:33:17Z",
+        "updated_at": "2026-10-19T07:02:33Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: awesome-selfhosted/awesome-selfhosted",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 44.6.",
+        "keywords": [
+          "awesome",
+          "selfhosted"
+        ]
+      },
+      "trend_score": 59.4,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (45): 13.4/30",
+        "Freshness (0.6d ago): 16.0/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "9837b7357388f8f7",
+      "event_id": "evt-b4321855507e",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "EbookFoundation/free-programming-books",
+      "summary": ":books: Freely available programming books",
+      "summary_origin": "original",
+      "original_url": "https://github.com/EbookFoundation/free-programming-books",
+      "canonical_url": "https://github.com/EbookFoundation/free-programming-books",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-18T00:26:58Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 40.01,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 41.32,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/EbookFoundation/free-programming-books",
+        "name": "free-programming-books",
+        "owner": "EbookFoundation",
+        "stars": 399521,
+        "forks": 66952,
+        "watchers": 399521,
+        "open_issues": 95,
+        "language": "Python",
+        "pushed_at": "2026-10-18T00:26:58Z",
+        "created_at": "2013-10-11T06:50:37Z",
+        "updated_at": "2026-10-19T07:02:17Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: EbookFoundation/free-programming-books",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 40.0.",
+        "keywords": [
+          "books",
+          "ebookfoundation",
+          "free",
+          "programming"
+        ]
+      },
+      "trend_score": 54.9,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (40): 12.0/30",
+        "Freshness (1.3d ago): 12.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "54b5b79f036a3e54",
+      "event_id": "evt-fa7dc4680dc1",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "public-apis/public-apis",
+      "summary": "A collective list of free APIs",
+      "summary_origin": "original",
+      "original_url": "https://github.com/public-apis/public-apis",
+      "canonical_url": "https://github.com/public-apis/public-apis",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-17T17:36:01Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 38.53,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 33.9,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/public-apis/public-apis",
+        "name": "public-apis",
+        "owner": "public-apis",
+        "stars": 490190,
+        "forks": 54427,
+        "watchers": 490190,
+        "open_issues": 2227,
+        "language": "Python",
+        "pushed_at": "2026-10-17T17:36:01Z",
+        "created_at": "2016-03-20T23:49:42Z",
+        "updated_at": "2026-10-19T07:03:23Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: public-apis/public-apis",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 38.5.",
+        "keywords": [
+          "apis",
+          "public"
+        ]
+      },
+      "trend_score": 53.2,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (39): 11.6/30",
+        "Freshness (1.6d ago): 11.6/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "3ae6e12dedfe776c",
+      "event_id": "evt-026ca8e8b41b",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "deepseek-ai/deepseek-harness",
+      "summary": "DeepSeek Harness: Everything is a Plugin.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "canonical_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-17T08:16:09Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 36.93,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 25.89,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/deepseek-ai/deepseek-harness",
+        "name": "deepseek-harness",
+        "owner": "deepseek-ai",
+        "stars": 253623,
+        "forks": 30599,
+        "watchers": 253623,
+        "open_issues": 0,
+        "language": "TypeScript",
+        "pushed_at": "2026-10-17T08:16:09Z",
+        "created_at": "2026-08-13T11:56:32Z",
+        "updated_at": "2026-10-19T07:02:53Z"
+      },
+      "ai_summary": {
+        "summary": "AI trend from GitHub: deepseek-ai/deepseek-harness",
+        "why_it_matters": "This GitHub trend covers opensource topics with a hot score of 36.9.",
+        "keywords": [
+          "deepseek",
+          "harness"
+        ]
+      },
+      "trend_score": 51.3,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (37): 11.1/30",
+        "Freshness (1.9d ago): 10.2/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "c33c5f7d57ca1054",
+      "event_id": "evt-757076ddaa5c",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "TheAlgorithms/Python",
+      "summary": "All Algorithms implemented in Python",
+      "summary_origin": "original",
+      "original_url": "https://github.com/TheAlgorithms/Python",
+      "canonical_url": "https://github.com/TheAlgorithms/Python",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-16T20:23:44Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 35.43,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 18.38,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/TheAlgorithms/Python",
+        "name": "Python",
+        "owner": "TheAlgorithms",
+        "stars": 225387,
+        "forks": 51191,
+        "watchers": 225387,
+        "open_issues": 34,
+        "language": "Python",
+        "pushed_at": "2026-10-16T20:23:44Z",
+        "created_at": "2016-07-16T09:44:01Z",
+        "updated_at": "2026-10-19T06:51:37Z"
+      },
+      "ai_summary": null,
+      "trend_score": 47.2,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (35): 10.6/30",
+        "Freshness (2.4d ago): 8.6/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "869b28b8cd70d5b6",
+      "event_id": "evt-d3682563581e",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "nilbuild/developer-roadmap",
+      "summary": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/nilbuild/developer-roadmap",
+      "canonical_url": "https://github.com/nilbuild/developer-roadmap",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-16T16:41:47Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 35.05,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 16.51,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
+        "name": "developer-roadmap",
+        "owner": "nilbuild",
+        "stars": 369821,
+        "forks": 45107,
+        "watchers": 369821,
+        "open_issues": 4,
+        "language": "TypeScript",
+        "pushed_at": "2026-10-16T16:41:47Z",
+        "created_at": "2017-03-15T13:45:52Z",
+        "updated_at": "2026-10-19T07:03:11Z"
+      },
+      "ai_summary": null,
+      "trend_score": 46.6,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (35): 10.5/30",
+        "Freshness (2.6d ago): 8.1/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "0d0cbd02cba471c6",
+      "event_id": "evt-89e612f6ea97",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .agents directory.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/mattpocock/skills",
+      "canonical_url": "https://github.com/mattpocock/skills",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-13T08:46:40Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 32.08,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 1.64,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/mattpocock/skills",
+        "name": "skills",
+        "owner": "mattpocock",
+        "stars": 296564,
+        "forks": 24896,
+        "watchers": 296564,
+        "open_issues": 194,
+        "language": "Shell",
+        "pushed_at": "2026-10-13T08:46:40Z",
+        "created_at": "2026-02-03T11:15:53Z",
+        "updated_at": "2026-10-19T07:03:53Z"
+      },
+      "ai_summary": null,
+      "trend_score": 44.2,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.6/30",
+        "Freshness (5.9d ago): 2.6/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "e68aa7f48845629f",
+      "event_id": "evt-a65055ef0812",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "practical-tutorials/project-based-learning",
+      "summary": "Curated list of project-based tutorials",
+      "summary_origin": "original",
+      "original_url": "https://github.com/practical-tutorials/project-based-learning",
+      "canonical_url": "https://github.com/practical-tutorials/project-based-learning",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-12T07:22:00Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 31.91,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.79,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/practical-tutorials/project-based-learning",
+        "name": "project-based-learning",
+        "owner": "practical-tutorials",
+        "stars": 287222,
+        "forks": 36640,
+        "watchers": 287222,
+        "open_issues": 236,
+        "language": "Python",
+        "pushed_at": "2026-10-12T07:22:00Z",
+        "created_at": "2017-04-12T05:07:46Z",
+        "updated_at": "2026-10-19T07:02:15Z"
+      },
+      "ai_summary": null,
+      "trend_score": 39.4,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.6/30",
+        "Freshness (7.0d ago): 1.8/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "239bdbda9a37b45b",
+      "event_id": "evt-4251a228ae40",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "obra/superpowers",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/obra/superpowers",
+      "canonical_url": "https://github.com/obra/superpowers",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-10T03:03:30Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 31.78,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.17,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/obra/superpowers",
+        "name": "superpowers",
+        "owner": "obra",
+        "stars": 301765,
+        "forks": 26947,
+        "watchers": 301765,
+        "open_issues": 382,
+        "language": "Shell",
+        "pushed_at": "2026-10-10T03:03:30Z",
+        "created_at": "2025-10-09T19:45:18Z",
+        "updated_at": "2026-10-19T07:00:51Z"
+      },
+      "ai_summary": null,
+      "trend_score": 40.3,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (9.2d ago): 0.8/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "c3200ef3dc226c14",
+      "event_id": "evt-d5549494bcee",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "codecrafters-io/build-your-own-x",
+      "summary": "Master programming by recreating your favorite technologies from scratch.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/codecrafters-io/build-your-own-x",
+      "canonical_url": "https://github.com/codecrafters-io/build-your-own-x",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-07-14T19:25:58Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 31.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.0,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/codecrafters-io/build-your-own-x",
+        "name": "build-your-own-x",
+        "owner": "codecrafters-io",
+        "stars": 554417,
+        "forks": 51968,
+        "watchers": 554417,
+        "open_issues": 680,
+        "language": "Markdown",
+        "pushed_at": "2026-07-14T19:25:58Z",
+        "created_at": "2018-05-09T12:03:18Z",
+        "updated_at": "2026-10-19T07:00:31Z"
+      },
+      "ai_summary": null,
+      "trend_score": 37.5,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (96.5d ago): 0.0/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "3aa8876b4c5a6100",
+      "event_id": "evt-f8eb225f583e",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "sindresorhus/awesome",
+      "summary": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+      "summary_origin": "original",
+      "original_url": "https://github.com/sindresorhus/awesome",
+      "canonical_url": "https://github.com/sindresorhus/awesome",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-09-02T02:10:47Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 31.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.0,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/sindresorhus/awesome",
+        "name": "awesome",
+        "owner": "sindresorhus",
+        "stars": 521105,
+        "forks": 37562,
+        "watchers": 521105,
+        "open_issues": 105,
+        "language": null,
+        "pushed_at": "2026-09-02T02:10:47Z",
+        "created_at": "2014-07-11T13:42:37Z",
+        "updated_at": "2026-10-19T07:02:44Z"
+      },
+      "ai_summary": null,
+      "trend_score": 37.5,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (47.2d ago): 0.0/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "60e2cbfcc2e4d598",
+      "event_id": "evt-9550a53772dd",
+      "source_id": "github",
+      "source_name": "GitHub",
+      "category": "opensource",
+      "title": "donnemartin/system-design-primer",
+      "summary": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+      "summary_origin": "original",
+      "original_url": "https://github.com/donnemartin/system-design-primer",
+      "canonical_url": "https://github.com/donnemartin/system-design-primer",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-09-15T01:10:09Z",
+      "collected_at": "2026-10-19T07:04:01Z",
+      "updated_at": "2026-10-19T07:04:01Z",
+      "heat_raw": null,
+      "hot_score": 31.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.0,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "api_url": "https://api.github.com/repos/donnemartin/system-design-primer",
+        "name": "system-design-primer",
+        "owner": "donnemartin",
+        "stars": 374691,
+        "forks": 58900,
+        "watchers": 374691,
+        "open_issues": 627,
+        "language": "Python",
+        "pushed_at": "2026-09-15T01:10:09Z",
+        "created_at": "2017-02-26T16:15:28Z",
+        "updated_at": "2026-10-19T07:03:49Z"
+      },
+      "ai_summary": null,
+      "trend_score": 37.5,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (GitHub): 28/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (34.2d ago): 0.0/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "a44c109c3ba53a1a",
+      "event_id": "evt-14adbbcd6951",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/itau-generative-ai",
+      "canonical_url": "https://openai.com/index/itau-generative-ai",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-16T19:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 34.28,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 17.65,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 40.7,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (34): 10.3/30",
+        "Freshness (2.5d ago): 8.4/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "a21333237b8eb38f",
+      "event_id": "evt-8eed5fb75823",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/benefit-street-partners",
+      "canonical_url": "https://openai.com/index/benefit-street-partners",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-16T00:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 32.79,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 10.2,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 36.2,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (33): 9.8/30",
+        "Freshness (3.3d ago): 6.4/20",
+        "AI relevance (0 keywords): 0.0/20"
+      ]
+    },
+    {
+      "id": "46a356c6d6b71f99",
+      "event_id": "evt-f9771e17770e",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "canonical_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-16T00:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 32.79,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 10.2,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Startup"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 40.2,
+      "impact_level": "medium",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (33): 9.8/30",
+        "Freshness (3.3d ago): 6.4/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "746c5ea1004a295d",
+      "event_id": "evt-81d0e9283b2d",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "canonical_url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-15T19:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 32.52,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 8.83,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Research"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 37.7,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (33): 9.8/30",
+        "Freshness (3.5d ago): 5.9/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "6fc17a24e7713d9b",
+      "event_id": "evt-88485d1fbfc9",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Teaching students to think and learn through questions",
+      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "canonical_url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-15T13:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 32.23,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 7.42,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Company"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 37.1,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (32): 9.7/30",
+        "Freshness (3.8d ago): 5.4/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "458f9a2f2359248a",
+      "event_id": "evt-814c53d4f97d",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/sullivan-cromwell",
+      "canonical_url": "https://openai.com/index/sullivan-cromwell",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-15T00:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.77,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 5.1,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 36.0,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (32): 9.5/30",
+        "Freshness (4.3d ago): 4.5/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "e7d06069d53fbdaf",
+      "event_id": "evt-3e039dfea451",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/amp-beyond-coding",
+      "canonical_url": "https://openai.com/index/amp-beyond-coding",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-14T12:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.47,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.61,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Startup"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 39.2,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.4/30",
+        "Freshness (4.8d ago): 3.8/20",
+        "AI relevance (3 keywords): 6.0/20"
+      ]
+    },
+    {
+      "id": "af509332611ebf87",
+      "event_id": "evt-adbbf179c8ed",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/sentinelone",
+      "canonical_url": "https://openai.com/index/sentinelone",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-14T12:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.47,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.61,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 35.2,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.4/30",
+        "Freshness (4.8d ago): 3.8/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "5eaca857a135c7dd",
+      "event_id": "evt-1023048f1841",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/third-moment-research",
+      "canonical_url": "https://openai.com/index/third-moment-research",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-14T07:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.37,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.12,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Startup"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 38.9,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.4/30",
+        "Freshness (5.0d ago): 3.5/20",
+        "AI relevance (3 keywords): 6.0/20"
+      ]
+    },
+    {
+      "id": "02a26abc61673cdd",
+      "event_id": "evt-79aa9ac9ee5a",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/block-ai-powered-security",
+      "canonical_url": "https://openai.com/index/block-ai-powered-security",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-14T07:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.37,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.12,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 34.9,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.4/30",
+        "Freshness (5.0d ago): 3.5/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "a59b63d1cc72bb9f",
+      "event_id": "evt-2f9435bd41eb",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "The EU’s next chapter in AI is agentic",
+      "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "canonical_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-14T00:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.26,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 2.55,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Global Affairs"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 36.6,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.4/30",
+        "Freshness (5.3d ago): 3.2/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "19f6746724024442",
+      "event_id": "evt-7fad06ceb2d4",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "canonical_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-13T12:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 31.11,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 1.8,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Startup"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 36.0,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.3/30",
+        "Freshness (5.8d ago): 2.7/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "aaf6f61ad30afdbc",
+      "event_id": "evt-a2b5693a4bab",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/asana-browser-agent",
+      "canonical_url": "https://openai.com/index/asana-browser-agent",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-09T07:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.77,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.1,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 33.8,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (10.0d ago): 0.6/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "b2336ad269076087",
+      "event_id": "evt-dc4966291e89",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/sophos",
+      "canonical_url": "https://openai.com/index/sophos",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-09T07:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.77,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.1,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 31.8,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (10.0d ago): 0.6/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "a785bae53216829c",
+      "event_id": "evt-b86c8db50245",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/oracle",
+      "canonical_url": "https://openai.com/index/oracle",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-08T16:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.06,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 31.7,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (10.6d ago): 0.5/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "ea499b4051b89cc2",
+      "event_id": "evt-87eac7505e04",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/pollo-ai",
+      "canonical_url": "https://openai.com/index/pollo-ai",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-08T12:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.06,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Startup"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 33.7,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (10.8d ago): 0.5/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "4ad759dd6a563cf0",
+      "event_id": "evt-dd77d241b50c",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/legalon-halves-codex-costs",
+      "canonical_url": "https://openai.com/index/legalon-halves-codex-costs",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-08T12:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.06,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 31.7,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (10.8d ago): 0.5/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "1e32656eb792995d",
+      "event_id": "evt-8cd356407a58",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "canonical_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-08T00:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.04,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Safety"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 31.6,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (11.3d ago): 0.4/20",
+        "AI relevance (1 keywords): 2.0/20"
+      ]
+    },
+    {
+      "id": "35eda89d4cc4e817",
+      "event_id": "evt-56a65876a4e9",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/teens-learn-and-plan",
+      "canonical_url": "https://openai.com/index/teens-learn-and-plan",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-07T12:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.03,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": [
+          "Product"
+        ]
+      },
+      "ai_summary": null,
+      "trend_score": 33.5,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (11.8d ago): 0.3/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    },
+    {
+      "id": "c3a31b5510865a54",
+      "event_id": "evt-f58491b23a6b",
+      "source_id": "openai_blog",
+      "source_name": "OpenAI Blog",
+      "category": "ai_official",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "summary_origin": "original",
+      "original_url": "https://openai.com/index/radisson",
+      "canonical_url": "https://openai.com/index/radisson",
+      "author": null,
+      "tags": [],
+      "tags_origin": "none",
+      "published_at": "2026-10-07T07:00:00Z",
+      "collected_at": "2026-10-19T07:04:02Z",
+      "updated_at": "2026-10-19T07:04:02Z",
+      "heat_raw": null,
+      "hot_score": 30.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.02,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "rank_in_source": null,
+      "status": "published",
+      "lang": "en",
+      "is_mock": false,
+      "metadata": {
+        "feed_type": "rss",
+        "author": null,
+        "categories": []
+      },
+      "ai_summary": null,
+      "trend_score": 33.5,
+      "impact_level": "low",
+      "score_reason": [
+        "Source (OpenAI Blog): 20/30",
+        "Hot score (31): 9.2/30",
+        "Freshness (12.0d ago): 0.3/20",
+        "AI relevance (2 keywords): 4.0/20"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt-d5549494bcee",
+      "title": "codecrafters-io/build-your-own-x",
+      "summary": "Master programming by recreating your favorite technologies from scratch.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "c3200ef3dc226c14",
+          "original_url": "https://github.com/codecrafters-io/build-your-own-x",
+          "title": "codecrafters-io/build-your-own-x",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "c3200ef3dc226c14"
+      ],
+      "hot_score": 31.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.0,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-07-14T19:25:58Z",
+      "updated_at": "2026-07-14T19:25:58Z"
+    },
+    {
+      "event_id": "evt-f8eb225f583e",
+      "title": "sindresorhus/awesome",
+      "summary": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "3aa8876b4c5a6100",
+          "original_url": "https://github.com/sindresorhus/awesome",
+          "title": "sindresorhus/awesome",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "3aa8876b4c5a6100"
+      ],
+      "hot_score": 31.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.0,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-09-02T02:10:47Z",
+      "updated_at": "2026-09-02T02:10:47Z"
+    },
+    {
+      "event_id": "evt-fa7dc4680dc1",
+      "title": "public-apis/public-apis",
+      "summary": "A collective list of free APIs",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "54b5b79f036a3e54",
+          "original_url": "https://github.com/public-apis/public-apis",
+          "title": "public-apis/public-apis",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "54b5b79f036a3e54"
+      ],
+      "hot_score": 38.53,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 33.9,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-17T17:36:01Z",
+      "updated_at": "2026-10-17T17:36:01Z"
+    },
+    {
+      "event_id": "evt-0be0ad180714",
+      "title": "freeCodeCamp/freeCodeCamp",
+      "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "3191f8d4ba57286c",
+          "original_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "title": "freeCodeCamp/freeCodeCamp",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "3191f8d4ba57286c"
+      ],
+      "hot_score": 51.59,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 99.22,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-19T06:46:52Z",
+      "updated_at": "2026-10-19T06:46:52Z"
+    },
+    {
+      "event_id": "evt-b4321855507e",
+      "title": "EbookFoundation/free-programming-books",
+      "summary": ":books: Freely available programming books",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "9837b7357388f8f7",
+          "original_url": "https://github.com/EbookFoundation/free-programming-books",
+          "title": "EbookFoundation/free-programming-books",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "9837b7357388f8f7"
+      ],
+      "hot_score": 40.01,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 41.32,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-18T00:26:58Z",
+      "updated_at": "2026-10-18T00:26:58Z"
+    },
+    {
+      "event_id": "evt-9550a53772dd",
+      "title": "donnemartin/system-design-primer",
+      "summary": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "60e2cbfcc2e4d598",
+          "original_url": "https://github.com/donnemartin/system-design-primer",
+          "title": "donnemartin/system-design-primer",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "60e2cbfcc2e4d598"
+      ],
+      "hot_score": 31.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.0,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-09-15T01:10:09Z",
+      "updated_at": "2026-09-15T01:10:09Z"
+    },
+    {
+      "event_id": "evt-d3682563581e",
+      "title": "nilbuild/developer-roadmap",
+      "summary": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "869b28b8cd70d5b6",
+          "original_url": "https://github.com/nilbuild/developer-roadmap",
+          "title": "nilbuild/developer-roadmap",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "869b28b8cd70d5b6"
+      ],
+      "hot_score": 35.05,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 16.51,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-16T16:41:47Z",
+      "updated_at": "2026-10-16T16:41:47Z"
+    },
+    {
+      "event_id": "evt-fff8df9733e4",
+      "title": "vinta/awesome-python",
+      "summary": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "3ed57715238258bc",
+          "original_url": "https://github.com/vinta/awesome-python",
+          "title": "vinta/awesome-python",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "3ed57715238258bc"
+      ],
+      "hot_score": 50.96,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 96.03,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-19T05:39:01Z",
+      "updated_at": "2026-10-19T05:39:01Z"
+    },
+    {
+      "event_id": "evt-9ef50c8fb0e6",
+      "title": "awesome-selfhosted/awesome-selfhosted",
+      "summary": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "3eb4a1ecf75f6126",
+          "original_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+          "title": "awesome-selfhosted/awesome-selfhosted",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "3eb4a1ecf75f6126"
+      ],
+      "hot_score": 44.6,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 64.25,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-18T15:44:07Z",
+      "updated_at": "2026-10-18T15:44:07Z"
+    },
+    {
+      "event_id": "evt-a5b6cf30f0c2",
+      "title": "morluto/rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "a08913f6e399bb42",
+          "original_url": "https://github.com/morluto/rea",
+          "title": "morluto/rea",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "a08913f6e399bb42"
+      ],
+      "hot_score": 51.51,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 98.81,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-19T06:38:20Z",
+      "updated_at": "2026-10-19T06:38:20Z"
+    },
+    {
+      "event_id": "evt-4251a228ae40",
+      "title": "obra/superpowers",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "239bdbda9a37b45b",
+          "original_url": "https://github.com/obra/superpowers",
+          "title": "obra/superpowers",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "239bdbda9a37b45b"
+      ],
+      "hot_score": 31.78,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.17,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-10T03:03:30Z",
+      "updated_at": "2026-10-10T03:03:30Z"
+    },
+    {
+      "event_id": "evt-89e612f6ea97",
+      "title": "mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .agents directory.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "0d0cbd02cba471c6",
+          "original_url": "https://github.com/mattpocock/skills",
+          "title": "mattpocock/skills",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "0d0cbd02cba471c6"
+      ],
+      "hot_score": 32.08,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 1.64,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-13T08:46:40Z",
+      "updated_at": "2026-10-13T08:46:40Z"
+    },
+    {
+      "event_id": "evt-a65055ef0812",
+      "title": "practical-tutorials/project-based-learning",
+      "summary": "Curated list of project-based tutorials",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "e68aa7f48845629f",
+          "original_url": "https://github.com/practical-tutorials/project-based-learning",
+          "title": "practical-tutorials/project-based-learning",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "e68aa7f48845629f"
+      ],
+      "hot_score": 31.91,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.79,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-12T07:22:00Z",
+      "updated_at": "2026-10-12T07:22:00Z"
+    },
+    {
+      "event_id": "evt-0658d7fa2f87",
+      "title": "affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "ebe5e44a2bb6b040",
+          "original_url": "https://github.com/affaan-m/ECC",
+          "title": "affaan-m/ECC",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "ebe5e44a2bb6b040"
+      ],
+      "hot_score": 50.63,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 94.39,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-19T05:03:15Z",
+      "updated_at": "2026-10-19T05:03:15Z"
+    },
+    {
+      "event_id": "evt-026ca8e8b41b",
+      "title": "deepseek-ai/deepseek-harness",
+      "summary": "DeepSeek Harness: Everything is a Plugin.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "3ae6e12dedfe776c",
+          "original_url": "https://github.com/deepseek-ai/deepseek-harness",
+          "title": "deepseek-ai/deepseek-harness",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "3ae6e12dedfe776c"
+      ],
+      "hot_score": 36.93,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 25.89,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-17T08:16:09Z",
+      "updated_at": "2026-10-17T08:16:09Z"
+    },
+    {
+      "event_id": "evt-6d2d5b87602b",
+      "title": "torvalds/linux",
+      "summary": "Linux kernel source tree",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "83df4bf6d4ca361a",
+          "original_url": "https://github.com/torvalds/linux",
+          "title": "torvalds/linux",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "83df4bf6d4ca361a"
+      ],
+      "hot_score": 47.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 80.07,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-18T23:21:18Z",
+      "updated_at": "2026-10-18T23:21:18Z"
+    },
+    {
+      "event_id": "evt-b9a0988e7e70",
+      "title": "react/react",
+      "summary": "The library for web and native user interfaces.",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "08d0aff0d7b2adaa",
+          "original_url": "https://github.com/react/react",
+          "title": "react/react",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "08d0aff0d7b2adaa"
+      ],
+      "hot_score": 48.35,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 83.02,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-19T00:36:28Z",
+      "updated_at": "2026-10-19T00:36:28Z"
+    },
+    {
+      "event_id": "evt-757076ddaa5c",
+      "title": "TheAlgorithms/Python",
+      "summary": "All Algorithms implemented in Python",
+      "category": "opensource",
+      "sources": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub",
+          "trend_id": "c33c5f7d57ca1054",
+          "original_url": "https://github.com/TheAlgorithms/Python",
+          "title": "TheAlgorithms/Python",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "c33c5f7d57ca1054"
+      ],
+      "hot_score": 35.43,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 18.38,
+        "multi_source": 33.33,
+        "platform": 80.0
+      },
+      "published_at": "2026-10-16T20:23:44Z",
+      "updated_at": "2026-10-16T20:23:44Z"
+    },
+    {
+      "event_id": "evt-14adbbcd6951",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "a44c109c3ba53a1a",
+          "original_url": "https://openai.com/index/itau-generative-ai",
+          "title": "How Itaú is building generative AI for its entire customer base",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "a44c109c3ba53a1a"
+      ],
+      "hot_score": 34.28,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 17.65,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-16T19:00:00Z",
+      "updated_at": "2026-10-16T19:00:00Z"
+    },
+    {
+      "event_id": "evt-8eed5fb75823",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "a21333237b8eb38f",
+          "original_url": "https://openai.com/index/benefit-street-partners",
+          "title": "Benefit Street Partners answers questions faster with Codex",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "a21333237b8eb38f"
+      ],
+      "hot_score": 32.79,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 10.2,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-16T00:00:00Z",
+      "updated_at": "2026-10-16T00:00:00Z"
+    },
+    {
+      "event_id": "evt-f9771e17770e",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "46a356c6d6b71f99",
+          "original_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "46a356c6d6b71f99"
+      ],
+      "hot_score": 32.79,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 10.2,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-16T00:00:00Z",
+      "updated_at": "2026-10-16T00:00:00Z"
+    },
+    {
+      "event_id": "evt-81d0e9283b2d",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "746c5ea1004a295d",
+          "original_url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+          "title": "Bringing GPT-Rosalind to academic research labs",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "746c5ea1004a295d"
+      ],
+      "hot_score": 32.52,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 8.83,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-15T19:00:00Z",
+      "updated_at": "2026-10-15T19:00:00Z"
+    },
+    {
+      "event_id": "evt-88485d1fbfc9",
+      "title": "Teaching students to think and learn through questions",
+      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "6fc17a24e7713d9b",
+          "original_url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+          "title": "Teaching students to think and learn through questions",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "6fc17a24e7713d9b"
+      ],
+      "hot_score": 32.23,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 7.42,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-15T13:00:00Z",
+      "updated_at": "2026-10-15T13:00:00Z"
+    },
+    {
+      "event_id": "evt-814c53d4f97d",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "458f9a2f2359248a",
+          "original_url": "https://openai.com/index/sullivan-cromwell",
+          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "458f9a2f2359248a"
+      ],
+      "hot_score": 31.77,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 5.1,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    },
+    {
+      "event_id": "evt-3e039dfea451",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "e7d06069d53fbdaf",
+          "original_url": "https://openai.com/index/amp-beyond-coding",
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "e7d06069d53fbdaf"
+      ],
+      "hot_score": 31.47,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.61,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-14T12:00:00Z",
+      "updated_at": "2026-10-14T12:00:00Z"
+    },
+    {
+      "event_id": "evt-adbbf179c8ed",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "af509332611ebf87",
+          "original_url": "https://openai.com/index/sentinelone",
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "af509332611ebf87"
+      ],
+      "hot_score": 31.47,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.61,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-14T12:00:00Z",
+      "updated_at": "2026-10-14T12:00:00Z"
+    },
+    {
+      "event_id": "evt-1023048f1841",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "5eaca857a135c7dd",
+          "original_url": "https://openai.com/index/third-moment-research",
+          "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "5eaca857a135c7dd"
+      ],
+      "hot_score": 31.37,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.12,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-14T07:00:00Z",
+      "updated_at": "2026-10-14T07:00:00Z"
+    },
+    {
+      "event_id": "evt-79aa9ac9ee5a",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "02a26abc61673cdd",
+          "original_url": "https://openai.com/index/block-ai-powered-security",
+          "title": "How Block is building AI-powered security with OpenAI technology",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "02a26abc61673cdd"
+      ],
+      "hot_score": 31.37,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 3.12,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-14T07:00:00Z",
+      "updated_at": "2026-10-14T07:00:00Z"
+    },
+    {
+      "event_id": "evt-2f9435bd41eb",
+      "title": "The EU’s next chapter in AI is agentic",
+      "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "a59b63d1cc72bb9f",
+          "original_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+          "title": "The EU’s next chapter in AI is agentic",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "a59b63d1cc72bb9f"
+      ],
+      "hot_score": 31.26,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 2.55,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-14T00:00:00Z",
+      "updated_at": "2026-10-14T00:00:00Z"
+    },
+    {
+      "event_id": "evt-7fad06ceb2d4",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "19f6746724024442",
+          "original_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "19f6746724024442"
+      ],
+      "hot_score": 31.11,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 1.8,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-13T12:00:00Z",
+      "updated_at": "2026-10-13T12:00:00Z"
+    },
+    {
+      "event_id": "evt-a2b5693a4bab",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "aaf6f61ad30afdbc",
+          "original_url": "https://openai.com/index/asana-browser-agent",
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "aaf6f61ad30afdbc"
+      ],
+      "hot_score": 30.77,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.1,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-09T07:00:00Z",
+      "updated_at": "2026-10-09T07:00:00Z"
+    },
+    {
+      "event_id": "evt-dc4966291e89",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "b2336ad269076087",
+          "original_url": "https://openai.com/index/sophos",
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "b2336ad269076087"
+      ],
+      "hot_score": 30.77,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.1,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-09T07:00:00Z",
+      "updated_at": "2026-10-09T07:00:00Z"
+    },
+    {
+      "event_id": "evt-b86c8db50245",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "a785bae53216829c",
+          "original_url": "https://openai.com/index/oracle",
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "a785bae53216829c"
+      ],
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.06,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-08T16:00:00Z",
+      "updated_at": "2026-10-08T16:00:00Z"
+    },
+    {
+      "event_id": "evt-87eac7505e04",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "ea499b4051b89cc2",
+          "original_url": "https://openai.com/index/pollo-ai",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "ea499b4051b89cc2"
+      ],
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.06,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-08T12:00:00Z",
+      "updated_at": "2026-10-08T12:00:00Z"
+    },
+    {
+      "event_id": "evt-dd77d241b50c",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "4ad759dd6a563cf0",
+          "original_url": "https://openai.com/index/legalon-halves-codex-costs",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "4ad759dd6a563cf0"
+      ],
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.06,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-08T12:00:00Z",
+      "updated_at": "2026-10-08T12:00:00Z"
+    },
+    {
+      "event_id": "evt-8cd356407a58",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "1e32656eb792995d",
+          "original_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+          "title": "Disrupting AI-enabled “false front” operations",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "1e32656eb792995d"
+      ],
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.04,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-08T00:00:00Z",
+      "updated_at": "2026-10-08T00:00:00Z"
+    },
+    {
+      "event_id": "evt-56a65876a4e9",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "35eda89d4cc4e817",
+          "original_url": "https://openai.com/index/teens-learn-and-plan",
+          "title": "Helping teens learn, plan, and shape the future of AI",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "35eda89d4cc4e817"
+      ],
+      "hot_score": 30.76,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.03,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-07T12:00:00Z",
+      "updated_at": "2026-10-07T12:00:00Z"
+    },
+    {
+      "event_id": "evt-f58491b23a6b",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "category": "ai_official",
+      "sources": [
+        {
+          "source_id": "openai_blog",
+          "source_name": "OpenAI Blog",
+          "trend_id": "c3a31b5510865a54",
+          "original_url": "https://openai.com/index/radisson",
+          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+          "hot_score": 0.0
+        }
+      ],
+      "source_count": 1,
+      "trend_ids": [
+        "c3a31b5510865a54"
+      ],
+      "hot_score": 30.75,
+      "score_breakdown": {
+        "authority": 75.0,
+        "heat": 0.0,
+        "freshness": 0.02,
+        "multi_source": 33.33,
+        "platform": 70.0
+      },
+      "published_at": "2026-10-07T07:00:00Z",
+      "updated_at": "2026-10-07T07:00:00Z"
+    }
+  ],
+  "metadata": {
+    "run_summary": {
+      "sources_ok": 2,
+      "sources_failed": 1,
+      "total_dropped": 2,
+      "generated_by": "daily-trend-radar-pipeline/0.2.0"
+    }
+  }
+}
