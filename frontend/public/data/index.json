@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-17T09:49:55Z",
-  "latest_date": "2026-11-17",
+  "updated_at": "2026-11-18T09:21:46Z",
+  "latest_date": "2026-11-18",
   "available_dates": [
-    "2026-11-11",
     "2026-11-12",
     "2026-11-13",
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-18"
   ],
   "categories": [
     "ai_official",
@@ -1005,6 +1005,15 @@
     },
     "2026-11-17": {
       "path": "2026/11/2026-11-17.json",
+      "total_items": 60,
+      "categories": {
+        "ai_research": 20,
+        "opensource": 20,
+        "ai_official": 20
+      }
+    },
+    "2026-11-18": {
+      "path": "2026/11/2026-11-18.json",
       "total_items": 60,
       "categories": {
         "ai_research": 20,
